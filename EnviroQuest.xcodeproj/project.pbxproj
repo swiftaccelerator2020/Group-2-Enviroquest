@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9D25680CF30071B496 /* AppDelegate.swift */; };
+		3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */; };
+		3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA125680CF30071B496 /* ViewController.swift */; };
+		3A1BBFA525680CF30071B496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA325680CF30071B496 /* Main.storyboard */; };
+		3A1BBFA725680CF60071B496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA625680CF60071B496 /* Assets.xcassets */; };
+		3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */; };
+		3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */; };
+		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A1BBFB125680CF70071B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1BBF9225680CF30071B496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A1BBF9925680CF30071B496;
+			remoteInfo = EnviroQuest;
+		};
+		3A1BBFBC25680CF70071B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1BBF9225680CF30071B496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A1BBF9925680CF30071B496;
+			remoteInfo = EnviroQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A1BBF9A25680CF30071B496 /* EnviroQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnviroQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1BBF9D25680CF30071B496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A1BBFA125680CF30071B496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A1BBFA425680CF30071B496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A1BBFA625680CF60071B496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A1BBFA925680CF60071B496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A1BBFAB25680CF60071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1BBFB025680CF70071B496 /* EnviroQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnviroQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestTests.swift; sourceTree = "<group>"; };
+		3A1BBFB625680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnviroQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestUITests.swift; sourceTree = "<group>"; };
+		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A1BBF9725680CF30071B496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFAD25680CF70071B496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFB825680CF70071B496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1BBF9125680CF30071B496 = {
+			isa = PBXGroup;
+			children = (
+				3A1BBF9C25680CF30071B496 /* EnviroQuest */,
+				3A1BBFB325680CF70071B496 /* EnviroQuestTests */,
+				3A1BBFBE25680CF70071B496 /* EnviroQuestUITests */,
+				3A1BBF9B25680CF30071B496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A1BBF9B25680CF30071B496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A1BBF9A25680CF30071B496 /* EnviroQuest.app */,
+				3A1BBFB025680CF70071B496 /* EnviroQuestTests.xctest */,
+				3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A1BBF9C25680CF30071B496 /* EnviroQuest */ = {
+			isa = PBXGroup;
+			children = (
+				3A1BBF9D25680CF30071B496 /* AppDelegate.swift */,
+				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
+				3A1BBFA125680CF30071B496 /* ViewController.swift */,
+				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				3A1BBFA625680CF60071B496 /* Assets.xcassets */,
+				3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */,
+				3A1BBFAB25680CF60071B496 /* Info.plist */,
+			);
+			path = EnviroQuest;
+			sourceTree = "<group>";
+		};
+		3A1BBFB325680CF70071B496 /* EnviroQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */,
+				3A1BBFB625680CF70071B496 /* Info.plist */,
+			);
+			path = EnviroQuestTests;
+			sourceTree = "<group>";
+		};
+		3A1BBFBE25680CF70071B496 /* EnviroQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */,
+				3A1BBFC125680CF70071B496 /* Info.plist */,
+			);
+			path = EnviroQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A1BBF9925680CF30071B496 /* EnviroQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A1BBFC425680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuest" */;
+			buildPhases = (
+				3A1BBF9625680CF30071B496 /* Sources */,
+				3A1BBF9725680CF30071B496 /* Frameworks */,
+				3A1BBF9825680CF30071B496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnviroQuest;
+			productName = EnviroQuest;
+			productReference = 3A1BBF9A25680CF30071B496 /* EnviroQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A1BBFAF25680CF70071B496 /* EnviroQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A1BBFC725680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuestTests" */;
+			buildPhases = (
+				3A1BBFAC25680CF70071B496 /* Sources */,
+				3A1BBFAD25680CF70071B496 /* Frameworks */,
+				3A1BBFAE25680CF70071B496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A1BBFB225680CF70071B496 /* PBXTargetDependency */,
+			);
+			name = EnviroQuestTests;
+			productName = EnviroQuestTests;
+			productReference = 3A1BBFB025680CF70071B496 /* EnviroQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A1BBFBA25680CF70071B496 /* EnviroQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A1BBFCA25680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuestUITests" */;
+			buildPhases = (
+				3A1BBFB725680CF70071B496 /* Sources */,
+				3A1BBFB825680CF70071B496 /* Frameworks */,
+				3A1BBFB925680CF70071B496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A1BBFBD25680CF70071B496 /* PBXTargetDependency */,
+			);
+			name = EnviroQuestUITests;
+			productName = EnviroQuestUITests;
+			productReference = 3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A1BBF9225680CF30071B496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3A1BBF9925680CF30071B496 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					3A1BBFAF25680CF70071B496 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3A1BBF9925680CF30071B496;
+					};
+					3A1BBFBA25680CF70071B496 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3A1BBF9925680CF30071B496;
+					};
+				};
+			};
+			buildConfigurationList = 3A1BBF9525680CF30071B496 /* Build configuration list for PBXProject "EnviroQuest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A1BBF9125680CF30071B496;
+			productRefGroup = 3A1BBF9B25680CF30071B496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A1BBF9925680CF30071B496 /* EnviroQuest */,
+				3A1BBFAF25680CF70071B496 /* EnviroQuestTests */,
+				3A1BBFBA25680CF70071B496 /* EnviroQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A1BBF9825680CF30071B496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */,
+				3A1BBFA725680CF60071B496 /* Assets.xcassets in Resources */,
+				3A1BBFA525680CF30071B496 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFAE25680CF70071B496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFB925680CF70071B496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A1BBF9625680CF30071B496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */,
+				3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */,
+				3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFAC25680CF70071B496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1BBFB725680CF70071B496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A1BBFB225680CF70071B496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A1BBF9925680CF30071B496 /* EnviroQuest */;
+			targetProxy = 3A1BBFB125680CF70071B496 /* PBXContainerItemProxy */;
+		};
+		3A1BBFBD25680CF70071B496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A1BBF9925680CF30071B496 /* EnviroQuest */;
+			targetProxy = 3A1BBFBC25680CF70071B496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A1BBFA325680CF30071B496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1BBFA425680CF30071B496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1BBFA925680CF60071B496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A1BBFC225680CF70071B496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A1BBFC325680CF70071B496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A1BBFC525680CF70071B496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A1BBFC625680CF70071B496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A1BBFC825680CF70071B496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnviroQuest.app/EnviroQuest";
+			};
+			name = Debug;
+		};
+		3A1BBFC925680CF70071B496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnviroQuest.app/EnviroQuest";
+			};
+			name = Release;
+		};
+		3A1BBFCB25680CF70071B496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnviroQuest;
+			};
+			name = Debug;
+		};
+		3A1BBFCC25680CF70071B496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnviroQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.yinjia.EnviroQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnviroQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A1BBF9525680CF30071B496 /* Build configuration list for PBXProject "EnviroQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1BBFC225680CF70071B496 /* Debug */,
+				3A1BBFC325680CF70071B496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A1BBFC425680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1BBFC525680CF70071B496 /* Debug */,
+				3A1BBFC625680CF70071B496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A1BBFC725680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1BBFC825680CF70071B496 /* Debug */,
+				3A1BBFC925680CF70071B496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A1BBFCA25680CF70071B496 /* Build configuration list for PBXNativeTarget "EnviroQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1BBFCB25680CF70071B496 /* Debug */,
+				3A1BBFCC25680CF70071B496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A1BBF9225680CF30071B496 /* Project object */;
+}
