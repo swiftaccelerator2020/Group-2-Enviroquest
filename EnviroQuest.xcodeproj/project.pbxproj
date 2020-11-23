@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */; };
+		3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFBD2568D48E003BB858 /* StoryViewController.swift */; };
+		3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFC22568D571003BB858 /* HomeViewController.swift */; };
 		3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9D25680CF30071B496 /* AppDelegate.swift */; };
 		3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */; };
 		3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA125680CF30071B496 /* ViewController.swift */; };
@@ -15,6 +18,8 @@
 		3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */; };
 		3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */; };
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
+		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
+		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDetailsViewController.swift; sourceTree = "<group>"; };
+		3A03BFBD2568D48E003BB858 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		3A03BFC22568D571003BB858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3A1BBF9A25680CF30071B496 /* EnviroQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnviroQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBF9D25680CF30071B496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnviroQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestUITests.swift; sourceTree = "<group>"; };
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */,
+				A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */,
+				3A03BFC22568D571003BB858 /* HomeViewController.swift */,
+				3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */,
+				3A03BFBD2568D48E003BB858 /* StoryViewController.swift */,
 				3A1BBFA625680CF60071B496 /* Assets.xcassets */,
 				3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */,
 				3A1BBFAB25680CF60071B496 /* Info.plist */,
@@ -258,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */,
+				3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */,
 				3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */,
+				A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */,
 				3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */,
 				3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */,
+				A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */,
+				3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
