@@ -49,31 +49,33 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gemsCounterLabel.text = "Gems: \(counter)"
-        newFactButton.layer.cornerRadius = 10
+        newFactButton.layer.cornerRadius = 20
         helloLabel.text = "Hello, \(receivedName)"
         newFactLabel.layer.cornerRadius = 20
+        newFactLabel.text = facts[currentFactCounter]
         }
     
     //will link after auto layout
     @IBAction func newFactButtonPressed(_ sender: Any) {
-        newFactLabel.text = facts[currentFactCounter]
-        currentFactCounter += 1
-        print("the current count is \(currentFactCounter)")
-        if currentFactCounter == facts.count {
+        if currentFactCounter == facts.count - 1 {
             print("reset")
             currentFactCounter = 0
+        }else{
+            currentFactCounter += 1
         }
+
+        
+        newFactLabel.text = facts[currentFactCounter]
+        
+        print("the current count is \(currentFactCounter)")
+        
        
     }
     
     
     
   
-    //hi
-    //and btw
-    //there are autolayout problems
-    //and so i have decided to start a new project
-    //IN CONCLUSION WE NEED TO REDO AUTOLAYOUT AND (ALSO BEST EXCUDE FOR NOT USING GITHUB BECAUSE OUR RECENT REPO GOT AUTOLAYOUT PROBLEMS AHAHAHAHAHAH)
+  
     
     
     

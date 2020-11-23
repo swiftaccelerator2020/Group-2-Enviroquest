@@ -159,22 +159,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-6j-9RR">
-                                <rect key="frame" x="20" y="250" width="374" height="396"/>
+                                <rect key="frame" x="20" y="232" width="374" height="432"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hell, Qin Guan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf7-IR-MSQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Qin Guan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf7-IR-MSQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="41"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-fq-ldJ">
-                                        <rect key="frame" x="0.0" y="35.5" width="374" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-fq-ldJ">
+                                        <rect key="frame" x="0.0" y="71.5" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="od6-Ra-S6x">
-                                        <rect key="frame" x="0.0" y="71" width="374" height="182"/>
+                                        <rect key="frame" x="0.0" y="107" width="374" height="182"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
@@ -190,9 +190,9 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-7T-pXX">
-                                        <rect key="frame" x="0.0" y="268" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="304" width="374" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-L8-SOv">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-L8-SOv">
                                                 <rect key="frame" x="16" y="16" width="342" height="46"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -200,10 +200,13 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-hC-PtO">
                                                 <rect key="frame" x="16" y="70" width="342" height="42"/>
+                                                <color key="backgroundColor" red="1" green="0.75294117647058822" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="BsI-Di-IJu"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Generate Fact!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="newFactButtonPressed:" destination="Dxm-Uq-uNS" eventType="touchUpInside" id="GSy-zK-rcc"/>
                                                 </connections>
@@ -320,9 +323,9 @@ Complete quests for 💎
                         <viewLayoutGuide key="safeArea" id="VqS-S1-uc0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="j97-KB-Mgg" firstAttribute="leading" secondItem="VqS-S1-uc0" secondAttribute="leading" id="03d-e5-rL4"/>
+                            <constraint firstItem="j97-KB-Mgg" firstAttribute="leading" secondItem="fGe-BY-a0K" secondAttribute="leading" id="03d-e5-rL4"/>
                             <constraint firstItem="Tfw-KC-V2F" firstAttribute="centerY" secondItem="fGe-BY-a0K" secondAttribute="centerY" id="1bV-Ub-rUS"/>
-                            <constraint firstItem="j97-KB-Mgg" firstAttribute="trailing" secondItem="VqS-S1-uc0" secondAttribute="trailing" id="7h4-lT-FCA"/>
+                            <constraint firstItem="j97-KB-Mgg" firstAttribute="trailing" secondItem="fGe-BY-a0K" secondAttribute="trailing" id="7h4-lT-FCA"/>
                             <constraint firstAttribute="bottom" secondItem="j97-KB-Mgg" secondAttribute="bottom" id="bi2-h9-kEl"/>
                             <constraint firstItem="Tfw-KC-V2F" firstAttribute="leading" secondItem="fGe-BY-a0K" secondAttribute="leading" constant="20" id="eWx-UM-Hsp"/>
                             <constraint firstItem="Tfw-KC-V2F" firstAttribute="centerX" secondItem="fGe-BY-a0K" secondAttribute="centerX" id="sfZ-1a-dhD"/>
@@ -504,6 +507,9 @@ Complete quests for 💎
         <image name="Progress page" width="375" height="812"/>
         <image name="Screenshot_2020-11-21_at_11.39.03_AM" width="374" height="820"/>
         <image name="Starting screen (story)-1" width="375" height="812"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
