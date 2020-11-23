@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -432,6 +432,32 @@ Complete quests for 💎
             </objects>
             <point key="canvasLocation" x="3046.376811594203" y="-559.15178571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gpw-3j-Sn1">
+            <objects>
+                <viewController id="sjb-tq-vpW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhQ-qC-EDO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h8P-Lo-pdE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bil-NG-GNv" firstAttribute="top" secondItem="hhQ-qC-EDO" secondAttribute="top" id="8xc-Cu-xyK"/>
+                            <constraint firstAttribute="bottom" secondItem="bil-NG-GNv" secondAttribute="bottom" id="EbF-Y4-IhD"/>
+                            <constraint firstItem="bil-NG-GNv" firstAttribute="leading" secondItem="hhQ-qC-EDO" secondAttribute="leading" id="U46-7e-5gy"/>
+                            <constraint firstItem="bil-NG-GNv" firstAttribute="trailing" secondItem="hhQ-qC-EDO" secondAttribute="trailing" id="c42-Of-oL3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4154" y="-799"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GH3-JZ-eVG">
             <objects>
@@ -472,6 +498,7 @@ Complete quests for 💎
         </scene>
     </scenes>
     <resources>
+        <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
         <image name="Login page background" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
