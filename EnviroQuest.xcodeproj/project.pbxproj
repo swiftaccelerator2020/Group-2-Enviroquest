@@ -20,6 +20,7 @@
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
 		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
+		CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */,
 				A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */,
 				A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */,
 				3A03BFC22568D571003BB858 /* HomeViewController.swift */,
@@ -281,6 +284,7 @@
 				3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */,
 				A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */,
 				3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */,
+				CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

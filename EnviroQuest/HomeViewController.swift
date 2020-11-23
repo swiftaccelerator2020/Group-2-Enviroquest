@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        gemsCounterLabel.text = "Gems: \(counter)"
+        gemsCounterLabel.text = "💎 \(counter)"
         newFactButton.layer.cornerRadius = 20
         helloLabel.text = "Hello, \(receivedName)"
         newFactLabel.layer.cornerRadius = 20
