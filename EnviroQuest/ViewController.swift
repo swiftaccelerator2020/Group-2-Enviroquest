@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func screenTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "login", sender: nil)
+    }
     var time: Float = 0
     
     override func viewDidLoad() {

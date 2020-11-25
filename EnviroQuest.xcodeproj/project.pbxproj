@@ -18,6 +18,8 @@
 		3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */; };
 		3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */; };
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
+		A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */; };
+		A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */; };
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
 		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
 		CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */; };
@@ -58,6 +60,8 @@
 		3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnviroQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestUITests.swift; sourceTree = "<group>"; };
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */,
+				A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */,
 				CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */,
 				A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */,
 				A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */,
@@ -277,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */,
+				A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */,
 				3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */,
 				3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */,
 				A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */,
@@ -285,6 +292,7 @@
 				A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */,
 				3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */,
 				CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */,
+				A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
