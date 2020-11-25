@@ -195,6 +195,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ProgressView"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FYv-9Q-62s" secondAttribute="height" multiplier="1:1" id="zxW-Wc-I2N"/>
                                                 </constraints>
@@ -286,6 +287,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop background" id="2tI-n0-vLb">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="TlA-54-tu3" customClass="PhotoCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="120" height="120"/>
@@ -301,10 +306,11 @@
                                             <rect key="frame" x="5" y="89.5" width="110" height="20.5"/>
                                             <accessibility key="accessibilityConfiguration" identifier="PhotoCell"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="1ZH-5Z-F74" secondAttribute="bottom" constant="10" id="VA4-2c-Qua"/>
                                         <constraint firstItem="1ZH-5Z-F74" firstAttribute="top" secondItem="p4T-dE-Aw4" secondAttribute="bottom" constant="10" id="Yg5-WK-Hti"/>
@@ -315,6 +321,7 @@
                                         <constraint firstItem="1ZH-5Z-F74" firstAttribute="leading" secondItem="Sag-bE-bWP" secondAttribute="leading" constant="5" id="qMp-ui-Mv9"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="customSize" width="120" height="120"/>
                                 <connections>
                                     <outlet property="shopImage" destination="p4T-dE-Aw4" id="uJV-Zb-5oy"/>
@@ -611,6 +618,7 @@ Complete quests for 💎
         <image name="Login page background" width="375" height="812"/>
         <image name="Photo gallery background-1" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
+        <image name="Shop background" width="375" height="812"/>
         <image name="Starting screen (story)-1" width="375" height="812"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
