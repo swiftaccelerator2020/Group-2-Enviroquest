@@ -152,7 +152,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot_2020-11-21_at_11.39.03_AM" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-A7-7ar">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-A7-7ar">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💎 qinguan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH0-I7-4Hd">
@@ -173,7 +173,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-fq-ldJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-fq-ldJ">
                                         <rect key="frame" x="0.0" y="70" width="374" height="26"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                         <nil key="textColor"/>
@@ -218,7 +218,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="1" green="0.88388648390971591" blue="0.77498468906367024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="pNh-L8-SOv" secondAttribute="trailing" constant="16" id="JCO-Ee-swQ"/>
                                             <constraint firstItem="pNh-L8-SOv" firstAttribute="leading" secondItem="4ZZ-7T-pXX" secondAttribute="leading" constant="16" id="NhL-xq-hUS"/>
@@ -250,6 +250,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Civ-TB-ala"/>
                     <connections>
+                        <outlet property="factUIView" destination="4ZZ-7T-pXX" id="GPD-8N-Sq3"/>
                         <outlet property="gemsCounterLabel" destination="nH0-I7-4Hd" id="TdE-8Z-e8J"/>
                         <outlet property="helloLabel" destination="tf7-IR-MSQ" id="R67-EN-C4I"/>
                         <outlet property="newFactButton" destination="Mg7-hC-PtO" id="S4C-tD-cBZ"/>
@@ -449,7 +450,7 @@ Complete quests for 💎
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW7-42-YUg">
@@ -535,8 +536,8 @@ Complete quests for 💎
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
         <image name="Login page background" width="375" height="812"/>
+        <image name="Photo gallery background-1" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
-        <image name="Screenshot_2020-11-21_at_11.39.03_AM" width="374" height="820"/>
         <image name="Starting screen (story)-1" width="375" height="812"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>

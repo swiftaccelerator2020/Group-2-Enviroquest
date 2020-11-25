@@ -9,7 +9,7 @@ import UIKit
 
 
 var currentFactCounter = 1
-var counter = 10
+var gemCounter = 0
 
 
 var facts = ["Every day, American businesses generate enough paper to circle the earth 20 times!",
@@ -43,16 +43,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var newFactLabel: UILabel!
     //will link after auto layout
     @IBOutlet weak var helloLabel: UILabel!
+    @IBOutlet weak var factUIView: UIView!
     
     var receivedName = ""
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        gemsCounterLabel.text = "💎 \(counter)"
+        gemsCounterLabel.text = "💎 \(gemCounter)"
         newFactButton.layer.cornerRadius = 20
         helloLabel.text = "Hello, \(receivedName)"
         newFactLabel.layer.cornerRadius = 20
         newFactLabel.text = facts[currentFactCounter]
+        factUIView.layer.cornerRadius = 20;
         }
     
     //will link after auto layout
