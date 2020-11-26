@@ -60,10 +60,11 @@ class HomeViewController: UIViewController {
     
     //will link after auto layout
     @IBAction func newFactButtonPressed(_ sender: Any) {
-        if currentFactCounter == facts.count - 1 {
+        if currentFactCounter == facts.count {
             print("reset")
             currentFactCounter = 0
-        }else{
+        }
+        else{
             currentFactCounter += 1
         }
 
