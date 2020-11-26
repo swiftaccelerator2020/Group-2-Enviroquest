@@ -221,7 +221,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="BsI-Di-IJu"/>
                                                 </constraints>
-                                                <state key="normal" title="Generate Fact!">
+                                                <state key="normal" title="Generate New Qin Guan!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -338,7 +338,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655.07246376811599" y="-861.16071428571422"/>
+            <point key="canvasLocation" x="1636" y="-715"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">

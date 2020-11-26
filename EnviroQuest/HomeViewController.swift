@@ -51,6 +51,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         gemsCounterLabel.text = "💎 \(gemCounter)"
         newFactButton.layer.cornerRadius = 20
+        newFactButton.setTitle("Generate New Fact", for: .normal)
         helloLabel.text = "Hello, \(receivedName)"
         newFactLabel.layer.cornerRadius = 20
         newFactLabel.text = facts[currentFactCounter]
