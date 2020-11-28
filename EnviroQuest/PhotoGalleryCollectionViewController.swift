@@ -8,6 +8,7 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+var photographyLabels = ["hi","hi","hi"]
 
 class PhotoGalleryCollectionViewController: UICollectionViewController {
 
@@ -45,12 +46,12 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return 3
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as!PhotoGalleryCollectionViewCell
-        cell.photoLabel.text = "hi"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as!PhotoGalleryCollectionViewCell
+        cell.photoLabel.text = "HELLO"
         // Configure the cell
     
         return cell
