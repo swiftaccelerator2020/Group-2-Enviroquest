@@ -80,6 +80,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-ua-UwW">
                                                 <rect key="frame" x="0.0" y="65" width="300" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BhG-zM-3Dx"/>
                                                 </constraints>
@@ -99,6 +100,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-Rm-M4o">
                                                 <rect key="frame" x="0.0" y="66" width="300" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -272,6 +274,66 @@
             </objects>
             <point key="canvasLocation" x="4110.144927536232" y="78.348214285714278"/>
         </scene>
+        <!--Gallery-->
+        <scene sceneID="JFv-B4-SK2">
+            <objects>
+                <collectionViewController id="JG1-VJ-8lc" customClass="PhotoGalleryCollectionViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EI8-2i-1rr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VAh-tf-F3v">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background" id="IFd-rV-GZV">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wdX-fL-Pz6" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xej-T4-3Sz" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-14-4MH">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-7T-2Y3">
+                                            <rect key="frame" x="43" y="99" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="photoGalleryView" destination="0Sj-14-4MH" id="VI2-Rg-1FZ"/>
+                                    <outlet property="photoLabel" destination="GqW-7T-2Y3" id="DW1-9m-hxo"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="JG1-VJ-8lc" id="QtJ-FF-PET"/>
+                            <outlet property="delegate" destination="JG1-VJ-8lc" id="jUg-Wl-62t"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="camera.fill" catalog="system" selectedImage="camera.fill" id="UPj-Fh-20f"/>
+                    <connections>
+                        <outlet property="photoGalleryBackgroundView" destination="IFd-rV-GZV" id="Lbu-4T-0MQ"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="-704.46428571428567"/>
+        </scene>
         <!--Shop-->
         <scene sceneID="EfO-mp-Vnr">
             <objects>
@@ -334,7 +396,7 @@
                             <outlet property="delegate" destination="5I8-TH-hfY" id="xUg-vv-X3K"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Shop" selectedImage="cart.fill" catalog="system" id="RVk-oE-803"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="cart.fill" catalog="system" selectedImage="cart.fill" id="RVk-oE-803"/>
                     <connections>
                         <outlet property="stubbornImageView" destination="2tI-n0-vLb" id="pii-1C-Dum"/>
                     </connections>
@@ -590,6 +652,7 @@ Complete quests for 💎
                         <segue destination="EBg-Ue-5W8" kind="relationship" relationship="viewControllers" id="otO-dx-Tfe"/>
                         <segue destination="UKI-BC-1CO" kind="relationship" relationship="viewControllers" id="y86-dJ-aQ9"/>
                         <segue destination="5I8-TH-hfY" kind="relationship" relationship="viewControllers" id="I4u-j3-ehP"/>
+                        <segue destination="JG1-VJ-8lc" kind="relationship" relationship="viewControllers" id="aFt-ys-2e2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gE-es-itA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -620,10 +683,12 @@ Complete quests for 💎
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
         <image name="Login page background" width="375" height="812"/>
+        <image name="Photo gallery background" width="375" height="812"/>
         <image name="Photo gallery background-1" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
         <image name="Shop background" width="375" height="812"/>
         <image name="Starting screen (story)-1" width="375" height="812"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
