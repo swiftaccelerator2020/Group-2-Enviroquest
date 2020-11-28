@@ -11,6 +11,7 @@ class StoryViewController: UIViewController {
 
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var letsGoButton: UIButton!
+    @IBOutlet weak var anotherStubbornImageView: UIImageView!
     //will both link after auto layout
     var name = ""
     
@@ -18,6 +19,7 @@ class StoryViewController: UIViewController {
         super.viewDidLoad()
         letsGoButton.layer.cornerRadius = 10
         storyLabel.layer.cornerRadius = 20
+        anotherStubbornImageView.contentMode = .scaleAspectFill
         
         storyLabel.text = "Hello \(name), the year is 2100... The Earth is almost inhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to time travel back to 2000 to change things! Complete quests for 💎"
         

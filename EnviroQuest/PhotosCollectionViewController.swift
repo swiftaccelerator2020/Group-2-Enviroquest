@@ -10,10 +10,11 @@ import UIKit
 private let reuseIdentifier = "PhotoCell"
 
 class PhotosCollectionViewController: UICollectionViewController {
-
+    @IBOutlet weak var stubbornImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        stubbornImageView.contentMode = .scaleAspectFill
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,6 +24,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     /*
     // MARK: - Navigation
 
