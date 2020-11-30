@@ -14,7 +14,7 @@ class ProgressTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var buttonDescriptionView: UIButton!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var numberView: UIView!
     override func setSelected(_ selected: Bool, animated: Bool) {

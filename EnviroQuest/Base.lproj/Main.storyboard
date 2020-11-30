@@ -545,27 +545,28 @@ Complete quests for 💎
                                                         <constraint firstAttribute="width" secondItem="acS-uq-n1J" secondAttribute="height" multiplier="1:1" id="vAq-V7-UT4"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smQ-ml-Wc9">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-Ih-HwZ">
                                                     <rect key="frame" x="86.5" y="19" width="299.5" height="50.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bhm-Ih-HwZ" secondAttribute="bottom" constant="8" id="046-ob-q83"/>
+                                                <constraint firstItem="Bhm-Ih-HwZ" firstAttribute="top" secondItem="73e-cq-mI0" secondAttribute="topMargin" constant="8" id="0eg-me-IoW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bhm-Ih-HwZ" secondAttribute="trailing" constant="8" id="Jau-uG-vgk"/>
                                                 <constraint firstItem="acS-uq-n1J" firstAttribute="leading" secondItem="73e-cq-mI0" secondAttribute="leadingMargin" constant="8" id="Prc-Nl-15Q"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="acS-uq-n1J" secondAttribute="bottom" constant="8" id="TXf-lc-S2t"/>
                                                 <constraint firstItem="acS-uq-n1J" firstAttribute="top" secondItem="73e-cq-mI0" secondAttribute="topMargin" constant="8" id="dGZ-K8-BPM"/>
-                                                <constraint firstItem="smQ-ml-Wc9" firstAttribute="leading" secondItem="acS-uq-n1J" secondAttribute="trailing" constant="8" id="fW5-4y-6rs"/>
-                                                <constraint firstItem="smQ-ml-Wc9" firstAttribute="top" secondItem="73e-cq-mI0" secondAttribute="topMargin" constant="8" id="fWb-td-H0E"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="smQ-ml-Wc9" secondAttribute="bottom" constant="8" id="njT-Uo-kvt"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="smQ-ml-Wc9" secondAttribute="trailing" constant="8" id="rUK-6Q-8r9"/>
+                                                <constraint firstItem="Bhm-Ih-HwZ" firstAttribute="leading" secondItem="acS-uq-n1J" secondAttribute="trailing" constant="8" id="ndH-dc-lnS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="smQ-ml-Wc9" id="wNi-g9-Rob"/>
+                                            <outlet property="buttonDescriptionView" destination="Bhm-Ih-HwZ" id="y2m-Cq-WrQ"/>
                                             <outlet property="numberLabel" destination="2ob-1e-Mir" id="sP4-IJ-rSy"/>
                                             <outlet property="numberView" destination="acS-uq-n1J" id="MSC-7g-S3B"/>
                                         </connections>
@@ -594,7 +595,7 @@ Complete quests for 💎
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clQ-D3-xdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="-715"/>
+            <point key="canvasLocation" x="3226" y="-807"/>
         </scene>
         <!--Quest View Controller-->
         <scene sceneID="gpw-3j-Sn1">

@@ -8,7 +8,6 @@
 import UIKit
 
 class EnterDetailsViewController: UIViewController, UITextFieldDelegate {
-
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     //will link after auto layout
