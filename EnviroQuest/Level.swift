@@ -14,4 +14,5 @@ class Level{
         self.levelNumber = levelNumber
         self.questNames = questNames
         self.questDescriptions = questDescriptions
-   
+    }
+}
