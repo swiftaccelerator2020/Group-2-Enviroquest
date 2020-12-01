@@ -343,7 +343,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876.81159420289862" y="-704.46428571428567"/>
+            <point key="canvasLocation" x="1272" y="-966"/>
         </scene>
         <!--Shop-->
         <scene sceneID="EfO-mp-Vnr">
@@ -414,7 +414,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636" y="-715"/>
+            <point key="canvasLocation" x="4054" y="-704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
@@ -446,10 +446,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-KC-V2F">
-                                <rect key="frame" x="20" y="254.5" width="374" height="387.5"/>
+                                <rect key="frame" x="20" y="84" width="374" height="738"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F75-eX-dkj">
-                                        <rect key="frame" x="20" y="315.5" width="334" height="30"/>
+                                        <rect key="frame" x="20" y="596" width="334" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="PLk-b1-byF"/>
+                                        </constraints>
                                         <state key="normal" title="Let's Go!"/>
                                         <connections>
                                             <action selector="letsGoButtonPressed:" destination="vPC-WQ-YN3" eventType="touchUpInside" id="CzF-er-4q5"/>
@@ -457,7 +460,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-w4-Hq8">
-                                        <rect key="frame" x="20" y="42" width="334" height="223.5"/>
+                                        <rect key="frame" x="20" y="50" width="334" height="496"/>
                                         <string key="text">The year is 2100. The Earth is almost uninhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to time travel back to (insert year) to change things!
 
 etc etc
@@ -474,9 +477,9 @@ Complete quests for 💎
                                 <constraints>
                                     <constraint firstItem="F75-eX-dkj" firstAttribute="leading" secondItem="Tfw-KC-V2F" secondAttribute="leading" constant="20" id="C7m-xT-5hI"/>
                                     <constraint firstItem="F75-eX-dkj" firstAttribute="top" secondItem="bgv-w4-Hq8" secondAttribute="bottom" constant="50" id="F4W-fs-AzH"/>
-                                    <constraint firstItem="bgv-w4-Hq8" firstAttribute="top" secondItem="Tfw-KC-V2F" secondAttribute="top" constant="42" id="J6U-1H-03D"/>
                                     <constraint firstAttribute="bottom" secondItem="F75-eX-dkj" secondAttribute="bottom" constant="42" id="WJH-Se-VFc"/>
                                     <constraint firstAttribute="trailing" secondItem="bgv-w4-Hq8" secondAttribute="trailing" constant="20" id="kjk-23-NYU"/>
+                                    <constraint firstItem="bgv-w4-Hq8" firstAttribute="top" secondItem="Tfw-KC-V2F" secondAttribute="top" constant="50" id="uma-9v-JpH"/>
                                     <constraint firstItem="bgv-w4-Hq8" firstAttribute="leading" secondItem="Tfw-KC-V2F" secondAttribute="leading" constant="20" id="xU1-46-Kbl"/>
                                     <constraint firstAttribute="trailing" secondItem="F75-eX-dkj" secondAttribute="trailing" constant="20" id="xaB-Rl-kd8"/>
                                 </constraints>
@@ -486,13 +489,18 @@ Complete quests for 💎
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="j97-KB-Mgg" firstAttribute="leading" secondItem="fGe-BY-a0K" secondAttribute="leading" id="03d-e5-rL4"/>
-                            <constraint firstItem="Tfw-KC-V2F" firstAttribute="centerY" secondItem="fGe-BY-a0K" secondAttribute="centerY" id="1bV-Ub-rUS"/>
+                            <constraint firstItem="Tfw-KC-V2F" firstAttribute="leading" secondItem="VqS-S1-uc0" secondAttribute="leading" constant="20" id="4e8-GC-moz"/>
                             <constraint firstItem="j97-KB-Mgg" firstAttribute="trailing" secondItem="fGe-BY-a0K" secondAttribute="trailing" id="7h4-lT-FCA"/>
+                            <constraint firstItem="VqS-S1-uc0" firstAttribute="trailing" secondItem="Tfw-KC-V2F" secondAttribute="trailing" constant="20" id="Fu4-6X-Eqt"/>
+                            <constraint firstItem="VqS-S1-uc0" firstAttribute="bottom" secondItem="Tfw-KC-V2F" secondAttribute="bottom" constant="40" id="Vc2-SM-IUd"/>
+                            <constraint firstItem="j97-KB-Mgg" firstAttribute="trailing" secondItem="fGe-BY-a0K" secondAttribute="trailing" id="Vz6-2t-Ry3"/>
                             <constraint firstAttribute="bottom" secondItem="j97-KB-Mgg" secondAttribute="bottom" id="bi2-h9-kEl"/>
                             <constraint firstItem="Tfw-KC-V2F" firstAttribute="leading" secondItem="fGe-BY-a0K" secondAttribute="leading" constant="20" id="eWx-UM-Hsp"/>
+                            <constraint firstItem="Tfw-KC-V2F" firstAttribute="top" secondItem="VqS-S1-uc0" secondAttribute="top" constant="40" id="r7g-cA-gyG"/>
                             <constraint firstItem="Tfw-KC-V2F" firstAttribute="centerX" secondItem="fGe-BY-a0K" secondAttribute="centerX" id="sfZ-1a-dhD"/>
                             <constraint firstItem="j97-KB-Mgg" firstAttribute="top" secondItem="fGe-BY-a0K" secondAttribute="top" id="yHD-sT-zqG"/>
                             <constraint firstAttribute="trailing" secondItem="Tfw-KC-V2F" secondAttribute="trailing" constant="20" id="zU8-NC-OaN"/>
+                            <constraint firstItem="j97-KB-Mgg" firstAttribute="leading" secondItem="fGe-BY-a0K" secondAttribute="leading" id="zkT-ns-jLO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -506,6 +514,23 @@ Complete quests for 💎
             <point key="canvasLocation" x="2486" y="-1402"/>
         </scene>
         <!--Progress-->
+        <scene sceneID="0lK-F0-QOK">
+            <objects>
+                <navigationController id="M1d-2h-MUY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Progress" selectedImage="chart.bar.xaxis" catalog="system" id="16N-Eo-dlQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mCw-DI-gP0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UKI-BC-1CO" kind="relationship" relationship="rootViewController" id="6VG-if-7Rf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pl-Sv-DOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3200" y="-1402"/>
+        </scene>
+        <!--Progress-->
         <scene sceneID="R2g-dW-AOI">
             <objects>
                 <viewController id="UKI-BC-1CO" customClass="ProgressViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
@@ -517,7 +542,7 @@ Complete quests for 💎
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-nf-kOR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Levels" id="JQw-FQ-aTB" customClass="ProgressTableViewCell" customModule="EnviroQuest" customModuleProvider="target">
@@ -594,39 +619,42 @@ Complete quests for 💎
                             <constraint firstItem="HWs-1R-W1K" firstAttribute="top" secondItem="bBf-Xi-z15" secondAttribute="top" id="yqs-58-QOW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Progress" image="chart.bar.doc.horizontal.fill" catalog="system" id="TNX-F6-oMH"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="chart.bar.doc.horizontal.fill" catalog="system" selectedImage="chart.bar.xaxis" id="TNX-F6-oMH"/>
+                    <navigationItem key="navigationItem" id="6bd-gk-VVF"/>
                     <connections>
                         <outlet property="tableView" destination="a1z-nf-kOR" id="ULQ-j3-Ah2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clQ-D3-xdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226" y="-807"/>
+            <point key="canvasLocation" x="4055" y="-1402"/>
         </scene>
         <!--Quest View Controller-->
         <scene sceneID="gpw-3j-Sn1">
             <objects>
                 <viewController id="sjb-tq-vpW" customClass="QuestViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhQ-qC-EDO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW7-42-YUg">
-                                <rect key="frame" x="20" y="20" width="55" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="&lt; back"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
-                                <rect key="frame" x="111" y="70" width="192" height="192"/>
+                                <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="192" id="Au2-uq-bPG"/>
                                     <constraint firstAttribute="width" secondItem="N06-Pg-kBs" secondAttribute="height" multiplier="1:1" id="iUk-eo-5Uv"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-hK-vKv">
+                                <rect key="frame" x="160" y="413" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h8P-Lo-pdE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -635,18 +663,19 @@ Complete quests for 💎
                             <constraint firstItem="bil-NG-GNv" firstAttribute="top" secondItem="hhQ-qC-EDO" secondAttribute="top" id="8xc-Cu-xyK"/>
                             <constraint firstItem="N06-Pg-kBs" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="111" id="A9L-mD-Msc"/>
                             <constraint firstAttribute="bottom" secondItem="bil-NG-GNv" secondAttribute="bottom" id="EbF-Y4-IhD"/>
-                            <constraint firstItem="eW7-42-YUg" firstAttribute="top" secondItem="h8P-Lo-pdE" secondAttribute="top" constant="20" id="GoB-OS-dlc"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="leading" secondItem="hhQ-qC-EDO" secondAttribute="leading" id="U46-7e-5gy"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="trailing" secondItem="hhQ-qC-EDO" secondAttribute="trailing" id="c42-Of-oL3"/>
-                            <constraint firstItem="eW7-42-YUg" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="20" id="qey-y2-Cs3"/>
                             <constraint firstItem="N06-Pg-kBs" firstAttribute="top" secondItem="h8P-Lo-pdE" secondAttribute="top" constant="70" id="yFb-lH-k9R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
+                    <connections>
+                        <outlet property="labelThing" destination="Ewd-hK-vKv" id="7Uy-Qn-ZhK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4152.1739130434789" y="-799.55357142857144"/>
+            <point key="canvasLocation" x="4918.840579710145" y="-1402.2321428571429"/>
         </scene>
         <!--Shop-->
         <scene sceneID="GH3-JZ-eVG">
@@ -660,9 +689,9 @@ Complete quests for 💎
                     </tabBar>
                     <connections>
                         <segue destination="EBg-Ue-5W8" kind="relationship" relationship="viewControllers" id="otO-dx-Tfe"/>
-                        <segue destination="UKI-BC-1CO" kind="relationship" relationship="viewControllers" id="y86-dJ-aQ9"/>
                         <segue destination="5I8-TH-hfY" kind="relationship" relationship="viewControllers" id="I4u-j3-ehP"/>
                         <segue destination="JG1-VJ-8lc" kind="relationship" relationship="viewControllers" id="aFt-ys-2e2"/>
+                        <segue destination="M1d-2h-MUY" kind="relationship" relationship="viewControllers" id="yhI-1v-8rE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gE-es-itA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -701,6 +730,7 @@ Complete quests for 💎
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
+        <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
