@@ -35,7 +35,11 @@ var facts = ["Every day, American businesses generate enough paper to circle the
              "The U.S. is the #1 trash-producing country in the world at 1,609 pounds per person per year. This means that 5% of the world's people generate 40% of the world's waste.",
              "We toss out two billion plastic razors, a million and a half tons of paper towels, and 12 billion disposable diapers annually.",
              "More than 20,000,000 Hershey's Kisses are wrapped each day, using 133 square miles of tinfoil. All that foil is recyclable!",
-             "Rainforests are being cut down at the rate of 100 acres per minute."]
+             "Rainforests are being cut down at the rate of 100 acres per minute.", "If Earth’s history is compared to a calendar year: Modern human has existed for about 37 minutes. One third of Earth’s natural resources has been consumed in the last 0.2 seconds (by modern humans).", "If current patterns continue, we will have emptied the world’s oceans for seafood by 2050.", "The consumer society is thirsty. Very thirsty. 'There will be no water by 2040 if we keep doing what we're doing today'. (Professor Benjamin Sovacool of Aarhus University, Denmark).", "The world population is 215,000 people larger today than it was yesterday.", "If all life on Earth was put on a scale, the human population would only make up about one ten-thousandth of the total weight of life on Earth.", "By 2100, the global urban population will produce three times more waste than today", "27,000 trees are cut down each day so we can have Toilet Paper.", "American companies alone use enough Paper to encircle the Earth 3x! (It’s a good thing that businesses are moving towards going paperless)", "When you throw plastic bags and other plastic materials in the ocean, it kills as many as 1 million sea creatures annually.", "A glass bottle made in our time will take more than 4,000 years to decompose.", "Only 1% of our planet’s water supply can be used. 97% is ocean water and 2% is frozen solid in the Arctic, for now.", "Our planet gains inhabitants numbering to 77 million people a year.", "An estimated 50,000 species inhabiting our tropical forests become extinct annually. That’s an average of 137 species a day.", "Rainforests are cut down at a rate of 100 acres per minute.", "The world’s oldest trees are more than 4,600 years old.", "Landfills are composed of 35% packaging materials."]
+
+
+
+
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var gemsCounterLabel: UILabel!
