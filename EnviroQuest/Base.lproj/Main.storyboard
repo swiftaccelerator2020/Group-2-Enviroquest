@@ -622,7 +622,7 @@ Complete quests for 💎
                     <tabBarItem key="tabBarItem" title="Progress" image="chart.bar.doc.horizontal.fill" catalog="system" selectedImage="chart.bar.xaxis" id="TNX-F6-oMH"/>
                     <navigationItem key="navigationItem" id="6bd-gk-VVF"/>
                     <connections>
-                        <outlet property="tableView" destination="a1z-nf-kOR" id="ULQ-j3-Ah2"/>
+                        <outlet property="tableView" destination="a1z-nf-kOR" id="aTb-0i-yCh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clQ-D3-xdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -648,13 +648,6 @@ Complete quests for 💎
                                     <constraint firstAttribute="width" secondItem="N06-Pg-kBs" secondAttribute="height" multiplier="1:1" id="iUk-eo-5Uv"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-hK-vKv">
-                                <rect key="frame" x="160" y="413" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h8P-Lo-pdE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -669,9 +662,6 @@ Complete quests for 💎
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
-                    <connections>
-                        <outlet property="labelThing" destination="Ewd-hK-vKv" id="7Uy-Qn-ZhK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
