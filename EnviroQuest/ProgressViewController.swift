@@ -38,7 +38,14 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
                             "Whether a toy, gadget or a picture frame, there are instructions on how to fix anything on YouTube! Discuss how repair cuts waste while you fix your item. Besides, repairing something is actually a form of recyling. Way to go! /nTask: Repair something old or broken you have lying in your home. Take a picture of the repaired item!",
                             "Hoho! This one's interesting. Did you know that composting not only adds nutrients to the soil, but also introduces valuable organisms to the soil? Microorganisms, such as bacteria, fungi, and protozoa, decompose organic material. It's great for the environment! And if you're really up to it, go ahead and learn about how the process of decomposition works! \nTask: Make a compost bin and snap a picture of you using it!",
                             "Yes, you heard us right. Measuring your weekly trash output may seem a little dry, but it's very important if you want to control and regulate the amount of trash your family contributes to! This way, you know how much trash you need to cut back on. Feel free to involve your family too! \nTask: Make a chart on your family's weekly trash output and snap a picture of it!",
-                            "This one is as easy as ABC. On your way out of a room, take the extra effort to turn of all your appliances, be it the fan, the air conditioner, the lights, and more! This saves electricity and the environment will definitely have it better. \nTask: Turn off the electric appliances when you leave your room or house. Don't forget to take a selfie of yourself saving electricity!"])]
+                            "This one is as easy as ABC. On your way out of a room, take the extra effort to turn of all your appliances, be it the fan, the air conditioner, the lights, and more! This saves electricity and the environment will definitely have it better. \nTask: Turn off the electric appliances when you leave your room or house. Don't forget to take a selfie of yourself saving electricity!"]),
+    Level(levelNumber: 4, questNames: ["Measure your trash output for one day","Reorganisise your fridge","Create an environmental online challenge","Repair an old item","Recycle an old iphone","Go cycling with your family!","Watch The Story of Stuff","Create an Earth Jar"], questDescriptions:
+            /*
+            the "create an Earth jar" challenge can be moved to level 5 onwards, it's pretty hard
+            https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAm_3horPtAhUadCsKHQLUB6YQwqsBMAF6BAgDEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9GorqroigqM%26vl%3Den&usg=AOvVaw01ydigrirzfFBXb4Qk32Xj
+            link to the story of stuff
+ */
+            ["","","","","","","",""])]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 300
@@ -69,7 +76,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
                 {
                 destination.currentLevel = theLevels[currentlySelectedCell.row]
             }
-            //holy fuk
+            //There was never anything sus here
             
         }
     /*
