@@ -7,7 +7,10 @@
 
 import UIKit
 
+//see all comments
+//they are moved to somewhere after this whole chunck
 class ProgressViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     var theLevels = [Level(levelNumber: 1, questNames: ["Switch off lights that are not needed or used","Reuse plastic bags", "Recycle an empty plastic bottle","Take a shower that is shorter than 10 minutes", "Say no to straws!", "Calculate your family’s carbon footprints", "Make a pledge to reduce your plastic use", "Use a cloth bag when shopping instead of a plastic bag"],questDescriptions:[
                             "A simple but effective act! Many times, people forget to turn off the lights even though they are not in use. This, compounded globally, actually leaves a huge impact on our energy consumption. However, if everyone can do this simple act, we can take our first step towards saving our planet!/nTask: Switch off lights that are not in use. Take a photo of the light switched flipped to off. Simple but sweet!",
@@ -39,16 +42,67 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
                             "Hoho! This one's interesting. Did you know that composting not only adds nutrients to the soil, but also introduces valuable organisms to the soil? Microorganisms, such as bacteria, fungi, and protozoa, decompose organic material. It's great for the environment! And if you're really up to it, go ahead and learn about how the process of decomposition works! \nTask: Make a compost bin and snap a picture of you using it!",
                             "Yes, you heard us right. Measuring your weekly trash output may seem a little dry, but it's very important if you want to control and regulate the amount of trash your family contributes to! This way, you know how much trash you need to cut back on. Feel free to involve your family too! \nTask: Make a chart on your family's weekly trash output and snap a picture of it!",
                             "This one is as easy as ABC. On your way out of a room, take the extra effort to turn of all your appliances, be it the fan, the air conditioner, the lights, and more! This saves electricity and the environment will definitely have it better. \nTask: Turn off the electric appliances when you leave your room or house. Don't forget to take a selfie of yourself saving electricity!"]),
-    Level(levelNumber: 4, questNames: ["Measure your trash output for one day","Reorganisise your fridge","Create an environmental online challenge","Repair an old item","Recycle an old iphone","Go cycling with your family!","Watch The Story of Stuff","Create an Earth Jar"], questDescriptions:
-            /*
-            the "create an Earth jar" challenge can be moved to level 5 onwards, it's pretty hard
-            https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAm_3horPtAhUadCsKHQLUB6YQwqsBMAF6BAgDEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9GorqroigqM%26vl%3Den&usg=AOvVaw01ydigrirzfFBXb4Qk32Xj
-            link to the story of stuff
- */
-            ["","","","","","","",""])]
+    Level(levelNumber: 4, questNames: ["Measure your trash output for one day","Reorganisise your fridge","Create an environmental online challenge","Repair an old item","Recycle an old iphone","Go cycling with your family!","Watch The Story of Stuff","Create an Earth Jar"], questDescriptions: ["","","","","","","",""]),
+    Level(levelNumber: 5, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 6, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 7, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 8, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 9, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 10, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 11, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 12, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 13, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 14, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 15, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 16, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 17, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 18, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 19, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 20, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 21, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 22, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 23, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 24, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 25, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 26, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 27, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 28, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 29, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 30, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 31, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 32, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 33, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 34, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 35, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 36, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 37, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 38, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 39, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 40, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 41, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 42, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 43, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 44, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 45, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 46, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 47, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 48, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 49, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 50, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""])
+    ]
+    
+    
+    
+    /*
+    the "create an Earth jar" challenge can be moved to level 5 onwards, it's pretty hard
+    https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAm_3horPtAhUadCsKHQLUB6YQwqsBMAF6BAgDEAM&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9GorqroigqM%26vl%3Den&usg=AOvVaw01ydigrirzfFBXb4Qk32Xj
+    link to the story of stuff
+*/
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 300
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
