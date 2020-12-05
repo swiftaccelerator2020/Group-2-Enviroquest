@@ -88,7 +88,35 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     Level(levelNumber: 47, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
     Level(levelNumber: 48, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
     Level(levelNumber: 49, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
-    Level(levelNumber: 50, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""])
+    Level(levelNumber: 50, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 51, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 52, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 53, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 54, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 55, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 56, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 57, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 58, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 59, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 60, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 61, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 62, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 63, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 64, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 65, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 66, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 67, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 68, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 69, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 70, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 71, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 72, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 73, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 74, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 75, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 76, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    
+    
     ]
     
     
@@ -102,7 +130,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return 76
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -131,6 +159,8 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
                 destination.currentLevel = theLevels[currentlySelectedCell.row]
             }
             //There was never anything sus here
+        
+            //everything sus happened here
             
         }
     /*
