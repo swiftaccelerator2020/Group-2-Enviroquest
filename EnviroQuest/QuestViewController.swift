@@ -10,9 +10,12 @@ import UIKit
 class QuestViewController: UIViewController {
     var currentLevel:Level!
     
-
+    @IBOutlet weak var tempQuestLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tempQuestLabel.text = currentLevel.questNames[1]
 
         // Do any additional setup after loading the view.
     }

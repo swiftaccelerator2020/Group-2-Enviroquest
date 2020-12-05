@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -49,7 +49,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="84" y="72"/>
+            <point key="canvasLocation" x="-523" y="80"/>
         </scene>
         <!--Login-->
         <scene sceneID="tde-gb-LBx">
@@ -154,7 +154,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1554" y="80"/>
+            <point key="canvasLocation" x="846" y="80"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="73b-VZ-wdi">
@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeA-po-lEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4110.144927536232" y="78.348214285714278"/>
+            <point key="canvasLocation" x="3807" y="78"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="JFv-B4-SK2">
@@ -414,7 +414,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4054" y="-704"/>
+            <point key="canvasLocation" x="2904" y="-600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
@@ -432,7 +432,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMr-qH-sYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="80"/>
+            <point key="canvasLocation" x="184" y="78"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="w5a-uv-4Ey">
@@ -511,7 +511,7 @@ Complete quests for 💎
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwA-MH-USn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="-1402"/>
+            <point key="canvasLocation" x="1575" y="80"/>
         </scene>
         <!--Progress-->
         <scene sceneID="0lK-F0-QOK">
@@ -528,7 +528,7 @@ Complete quests for 💎
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pl-Sv-DOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3200" y="-1402"/>
+            <point key="canvasLocation" x="3419" y="-1402"/>
         </scene>
         <!--Progress-->
         <scene sceneID="R2g-dW-AOI">
@@ -627,7 +627,7 @@ Complete quests for 💎
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clQ-D3-xdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4055" y="-1402"/>
+            <point key="canvasLocation" x="4110" y="-1402"/>
         </scene>
         <!--Quest View Controller-->
         <scene sceneID="gpw-3j-Sn1">
@@ -648,6 +648,13 @@ Complete quests for 💎
                                     <constraint firstAttribute="width" secondItem="N06-Pg-kBs" secondAttribute="height" multiplier="1:1" id="iUk-eo-5Uv"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIG-Xj-0PV">
+                                <rect key="frame" x="111" y="438" width="192" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h8P-Lo-pdE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -662,6 +669,9 @@ Complete quests for 💎
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
+                    <connections>
+                        <outlet property="tempQuestLabel" destination="fIG-Xj-0PV" id="dnB-G9-XEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,7 +680,7 @@ Complete quests for 💎
         <!--Shop-->
         <scene sceneID="GH3-JZ-eVG">
             <objects>
-                <tabBarController title="Shop" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" interfaceStyle="light" id="ZGK-oI-Aju" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="start" title="Shop" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" interfaceStyle="light" id="ZGK-oI-Aju" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h0S-O1-v4Y">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -686,7 +696,7 @@ Complete quests for 💎
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gE-es-itA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2289.8550724637685" y="78.348214285714278"/>
+            <point key="canvasLocation" x="2338" y="78"/>
         </scene>
         <!--Item-->
         <scene sceneID="Elg-u6-eZ8">
@@ -705,7 +715,7 @@ Complete quests for 💎
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vw9-3k-qb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3200.0000000000005" y="78.348214285714278"/>
+            <point key="canvasLocation" x="3083" y="78"/>
         </scene>
     </scenes>
     <resources>

@@ -27,8 +27,10 @@ class EnterDetailsViewController: UIViewController, UITextFieldDelegate {
         nameTextField.resignFirstResponder()
     }
     
-    //will link after auto layout
+   
     @IBAction func doneButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(nameTextField.text, forKey: "Username")
+        UserDefaults.standard.set(ageTextField.text, forKey: "Age")
         self.performSegue(withIdentifier: "story", sender: nil)
     }
     
