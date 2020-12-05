@@ -97,7 +97,63 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     Level(levelNumber: 47, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 48, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 49, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 50, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
+    Level(levelNumber: 50, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 51, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 52, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 53, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 54, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 55, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 56, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 57, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 58, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 59, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 60, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 61, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 62, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 63, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 64, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 65, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 66, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 67, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 68, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 69, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 70, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 72, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 73, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 74, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 75, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 76, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 77, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 78, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 79, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 80, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 81, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 82, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 83, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 84, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 85, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 86, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 87, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 88, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 89, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 90, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 91, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 92, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 93, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 94, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 95, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 96, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 97, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 98, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 99, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 100, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 101, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 102, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 103, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 104, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 105, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 106, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
+    Level(levelNumber: 107, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
     ]
     
     
@@ -111,7 +167,9 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 76
+        return 107
+        //which is totally the best class ever
+        //~someone who is not from 107
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
