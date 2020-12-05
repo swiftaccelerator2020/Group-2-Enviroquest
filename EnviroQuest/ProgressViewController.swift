@@ -88,7 +88,11 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     Level(levelNumber: 47, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
     Level(levelNumber: 48, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
     Level(levelNumber: 49, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
-    Level(levelNumber: 50, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""])
+    Level(levelNumber: 50, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 51, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 52, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""]),
+    Level(levelNumber: 53, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""],
+    Level(levelNumber: 54, questNames: ["", "", "", "", "", "", "", ""], questDescriptions: ["", "", "", "", "", "", "", "", ""])
     ]
     
     
