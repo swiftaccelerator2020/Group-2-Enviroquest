@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */; };
 		3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */; };
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
+		3A767496257B2D7800735559 /* UICircularProgressRing in Frameworks */ = {isa = PBXBuildFile; productRef = 3A767495257B2D7800735559 /* UICircularProgressRing */; };
 		A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */; };
 		A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */; };
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
@@ -78,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A767496257B2D7800735559 /* UICircularProgressRing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +179,9 @@
 			dependencies = (
 			);
 			name = EnviroQuest;
+			packageProductDependencies = (
+				3A767495257B2D7800735559 /* UICircularProgressRing */,
+			);
 			productName = EnviroQuest;
 			productReference = 3A1BBF9A25680CF30071B496 /* EnviroQuest.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 3A1BBF9125680CF30071B496;
+			packageReferences = (
+				3A767494257B2D7800735559 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */,
+			);
 			productRefGroup = 3A1BBF9B25680CF30071B496 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A767494257B2D7800735559 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luispadron/UICircularProgressRing.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A767495257B2D7800735559 /* UICircularProgressRing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A767494257B2D7800735559 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */;
+			productName = UICircularProgressRing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A1BBF9225680CF30071B496 /* Project object */;
 }
