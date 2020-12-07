@@ -65,17 +65,17 @@ class HomeViewController: UIViewController {
     //will link after auto layout
     @IBAction func newFactButtonPressed(_ sender: Any) {
         currentFactCounter += 1
-        print("The current fact count is \(currentFactCounter)")
+        print("The current Qin Guan (fact) count is \(currentFactCounter)")
         
         if currentFactCounter == facts.count {
             currentFactCounter = 0
-            print("The fact count has been reset")
+            print("The Qin Guan (fact) count has been reset")
         }
 
         
         newFactLabel.text = facts[currentFactCounter]
         
-        print("the current count is \(currentFactCounter)")
+        print("A new Qin Guan has been generated! The current Qin Guan count is \(currentFactCounter)")
         
        
     }

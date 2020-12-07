@@ -11,25 +11,29 @@ class ViewController: UIViewController {
     @IBAction func screenTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "login", sender: nil)
     }
-    var time: Float = 0
+    var timer: Timer?
+    var timeElapsed = 0.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(update),userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCounter() {
+        timeElapsed += 0.1
+        if timeElapsed == 20.0 {
+          self.performSegue(withIdentifier: "login", sender: nil)
         }
+    }
     
     
     
-    @objc func update() {
-      time += 0.5
-      print(time)
-      if time == 20.0 {
-        self.performSegue(withIdentifier: "login", sender: nil)
-      }
+    
     
     
     }
 
-}
+
   
