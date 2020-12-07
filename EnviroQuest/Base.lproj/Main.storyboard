@@ -657,7 +657,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="92" id="pGh-Do-cwf"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest1" id="N2G-jO-PfE"/>
+                                    <action selector="firstButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="eAa-Dc-MM2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEq-PM-JAr">
@@ -668,7 +668,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="92" id="ipF-4I-oD0"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest2" id="x6d-dw-Q7p"/>
+                                    <action selector="secondButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="Dsc-DE-aTO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-T7-Qst">
@@ -678,7 +678,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="90" id="bjL-dv-szU"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest3" id="X6s-T9-UkC"/>
+                                    <action selector="thirdButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="nkQ-mo-JZX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-0k-buw">
@@ -743,6 +743,15 @@ Complete quests for 💎
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
+                    <connections>
+                        <outlet property="firstButtonView" destination="buw-52-AE2" id="oTo-Jw-ztD"/>
+                        <outlet property="secondButtonView" destination="nEq-PM-JAr" id="oy1-4v-ZKz"/>
+                        <outlet property="theFirstQuest" destination="fn3-0k-buw" id="FDz-G4-oEG"/>
+                        <outlet property="theSecondQuest" destination="GtF-re-ewT" id="TQn-9x-g3v"/>
+                        <outlet property="theThirdQuest" destination="OEZ-AJ-LHk" id="9Pe-gK-1RD"/>
+                        <outlet property="thirdButtonView" destination="7A7-T7-Qst" id="9Eh-Zh-6yn"/>
+                        <segue destination="2N4-ex-dun" kind="presentation" identifier="revealQuestInfo" id="Fqv-Nz-7Yn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -804,9 +813,6 @@ Complete quests for 💎
             <point key="canvasLocation" x="3083" y="78"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="N2G-jO-PfE"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
