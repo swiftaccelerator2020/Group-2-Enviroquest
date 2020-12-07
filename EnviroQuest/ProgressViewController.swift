@@ -145,14 +145,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     Level(levelNumber: 97, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 98, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 99, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 100, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 101, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 102, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 103, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 104, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 105, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 106, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 107, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
+    Level(levelNumber: 100, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
     ]
     
     
@@ -166,9 +159,8 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 107
-        //which is totally the best class ever
-        //~someone who is not from 107
+        return 100
+        //exactly a hundred :)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
