@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -645,19 +645,68 @@ Complete quests for 💎
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="192" id="Au2-uq-bPG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="aFw-QI-w5v"/>
                                     <constraint firstAttribute="width" secondItem="N06-Pg-kBs" secondAttribute="height" multiplier="1:1" id="iUk-eo-5Uv"/>
+                                    <constraint firstAttribute="height" constant="192" id="mOP-KT-psL"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91n-HV-e4M">
-                                <rect key="frame" x="55" y="451" width="206" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-52-AE2">
+                                <rect key="frame" x="54" y="400" width="306" height="92"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="pGh-Do-cwf"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest1" id="N2G-jO-PfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEq-PM-JAr">
+                                <rect key="frame" x="54" y="527" width="306" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="gL3-Zr-72t"/>
+                                    <constraint firstAttribute="height" constant="92" id="ipF-4I-oD0"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest2" id="x6d-dw-Q7p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-T7-Qst">
+                                <rect key="frame" x="54" y="654" width="306" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="bjL-dv-szU"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2N4-ex-dun" kind="presentation" identifier="quest3" id="X6s-T9-UkC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-0k-buw">
+                                <rect key="frame" x="57" y="406" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5Tn-Wr-hsx"/>
+                                    <constraint firstAttribute="width" constant="300" id="ayP-b1-50e"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiL-6L-mB2">
-                                <rect key="frame" x="55" y="563" width="206" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-re-ewT">
+                                <rect key="frame" x="57" y="533" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6ml-6b-8bi"/>
+                                    <constraint firstAttribute="width" constant="300" id="URj-qb-3Ap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
+                                <rect key="frame" x="57" y="659" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="INI-Mv-oX4"/>
+                                    <constraint firstAttribute="width" constant="300" id="OIQ-Iq-fuK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -667,23 +716,52 @@ Complete quests for 💎
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" secondItem="N06-Pg-kBs" secondAttribute="trailing" constant="111" id="0oX-4I-o0m"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="bottom" secondItem="7A7-T7-Qst" secondAttribute="bottom" constant="69" id="8OT-Bk-SM7"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="top" secondItem="hhQ-qC-EDO" secondAttribute="top" id="8xc-Cu-xyK"/>
                             <constraint firstItem="N06-Pg-kBs" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="111" id="A9L-mD-Msc"/>
+                            <constraint firstItem="7A7-T7-Qst" firstAttribute="top" secondItem="nEq-PM-JAr" secondAttribute="bottom" constant="35" id="Dyy-5K-zac"/>
                             <constraint firstAttribute="bottom" secondItem="bil-NG-GNv" secondAttribute="bottom" id="EbF-Y4-IhD"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GtF-re-ewT" secondAttribute="trailing" symbolic="YES" id="Gq2-d4-fNT"/>
+                            <constraint firstItem="7A7-T7-Qst" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="54" id="IHd-V7-guw"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OEZ-AJ-LHk" secondAttribute="trailing" symbolic="YES" id="Qxs-rt-AdW"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="leading" secondItem="hhQ-qC-EDO" secondAttribute="leading" id="U46-7e-5gy"/>
+                            <constraint firstItem="nEq-PM-JAr" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="54" id="ZLd-lM-m2l"/>
+                            <constraint firstItem="fn3-0k-buw" firstAttribute="centerX" secondItem="buw-52-AE2" secondAttribute="centerX" id="bfH-Vn-XZy"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="trailing" secondItem="hhQ-qC-EDO" secondAttribute="trailing" id="c42-Of-oL3"/>
+                            <constraint firstItem="GtF-re-ewT" firstAttribute="centerY" secondItem="nEq-PM-JAr" secondAttribute="centerY" id="g8J-oX-YBX"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" secondItem="7A7-T7-Qst" secondAttribute="trailing" constant="54" id="gVa-z1-dnW"/>
+                            <constraint firstItem="7A7-T7-Qst" firstAttribute="top" secondItem="nEq-PM-JAr" secondAttribute="bottom" constant="35" id="gxS-6i-Eae"/>
+                            <constraint firstItem="fn3-0k-buw" firstAttribute="centerY" secondItem="buw-52-AE2" secondAttribute="centerY" id="iDI-w0-O3j"/>
+                            <constraint firstItem="buw-52-AE2" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="54" id="keh-es-3Te"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" secondItem="nEq-PM-JAr" secondAttribute="trailing" constant="54" id="m9r-QL-UDg"/>
+                            <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" secondItem="buw-52-AE2" secondAttribute="trailing" constant="54" id="oml-xd-cTV"/>
+                            <constraint firstItem="nEq-PM-JAr" firstAttribute="top" secondItem="buw-52-AE2" secondAttribute="bottom" constant="35" id="pbf-xU-d8d"/>
+                            <constraint firstItem="OEZ-AJ-LHk" firstAttribute="centerY" secondItem="7A7-T7-Qst" secondAttribute="centerY" id="r5m-oe-hXV"/>
+                            <constraint firstItem="OEZ-AJ-LHk" firstAttribute="leading" secondItem="GtF-re-ewT" secondAttribute="leading" id="rJq-TV-wk6"/>
+                            <constraint firstItem="GtF-re-ewT" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="57" id="vk0-u9-niU"/>
                             <constraint firstItem="N06-Pg-kBs" firstAttribute="top" secondItem="h8P-Lo-pdE" secondAttribute="top" constant="70" id="yFb-lH-k9R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
-                    <connections>
-                        <outlet property="tempDescriptionLabel" destination="iiL-6L-mB2" id="W7O-rW-R7j"/>
-                        <outlet property="tempQuestLabel" destination="91n-HV-e4M" id="auu-Br-aPV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4918.840579710145" y="-1402.2321428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bvG-14-9Sq">
+            <objects>
+                <viewController id="2N4-ex-dun" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycT-OM-jca">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lVb-ZM-J00"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-RT-cIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5790" y="-1398"/>
         </scene>
         <!--Shop-->
         <scene sceneID="GH3-JZ-eVG">
@@ -726,6 +804,9 @@ Complete quests for 💎
             <point key="canvasLocation" x="3083" y="78"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="N2G-jO-PfE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
@@ -744,6 +825,9 @@ Complete quests for 💎
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
