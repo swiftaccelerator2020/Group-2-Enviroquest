@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -681,7 +681,7 @@ Complete quests for 💎
                                     <action selector="thirdButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="nkQ-mo-JZX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-0k-buw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan number 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-0k-buw">
                                 <rect key="frame" x="57" y="406" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5Tn-Wr-hsx"/>
@@ -691,7 +691,7 @@ Complete quests for 💎
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-re-ewT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan number 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-re-ewT">
                                 <rect key="frame" x="57" y="533" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6ml-6b-8bi"/>
@@ -701,7 +701,7 @@ Complete quests for 💎
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QinGuan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
                                 <rect key="frame" x="57" y="659" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="INI-Mv-oX4"/>
@@ -750,7 +750,7 @@ Complete quests for 💎
                         <outlet property="theSecondQuest" destination="GtF-re-ewT" id="TQn-9x-g3v"/>
                         <outlet property="theThirdQuest" destination="OEZ-AJ-LHk" id="9Pe-gK-1RD"/>
                         <outlet property="thirdButtonView" destination="7A7-T7-Qst" id="9Eh-Zh-6yn"/>
-                        <segue destination="2N4-ex-dun" kind="presentation" identifier="revealQuestInfo" id="Fqv-Nz-7Yn"/>
+                        <segue destination="2N4-ex-dun" kind="presentation" identifier="revealQuestInfo" modalPresentationStyle="fullScreen" id="Fqv-Nz-7Yn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -762,7 +762,7 @@ Complete quests for 💎
             <objects>
                 <viewController id="2N4-ex-dun" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ycT-OM-jca">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lVb-ZM-J00"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
