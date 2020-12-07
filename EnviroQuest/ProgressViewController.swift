@@ -47,7 +47,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         "Yes, you heard us right. Measuring your weekly trash output may seem a little dry, but it's very important if you want to control and regulate the amount of trash your family contributes to! This way, you know how much trash you need to cut back on. Feel free to involve your family too! \nTask: Make a chart on your family's weekly trash output and snap a picture of it!",
         "Oh no! Look at all the pollution on the beach! The bottle caps dotting the coast, plastic bags bobbing up and down in the sea... It really is a mess! Or maybe it is a park that is dirty, with straws 'decorating' the withering grass. No matter the place, it would definitely help if you could clean it up! By picking up litter and cleaning up places, not only are we keeping these public places sanitary, but we also prevent land pollution. Why not give it a try!\nTask: Sign up for a public clean up. Take a picture of yourself contributing to society!",
         "With all the traffic in the world, we are producing so much greenhouse gases everyday! In fact, in 2018, greenhouse gas emissions from transportation accounted for about 28.2 percent of total U.S. greenhouse gas emissions, making it the largest contributer of U.S. greenhouse gas emissions. However, more use of public transportation can help reduce air pollution. Public transportation produces far fewer quantities of air pollutants per passenger mile. So try it!\nTask: Take public transport for one day! Take a selfie as you go around the country!",
-        "",]),
+        "What else can you do to help the environment? Is there something fun that you can do with your friends? Come up with an environmental challenge and post it online! Whether on instagram or facebook, go ahead and post your unique challenge and footage of yourself doing it. Fun for yourself and everyone else! Make sure it is not copyright!\nTask: Create an online environmental challenge. Screenshot it!",]),
     Level(levelNumber: 7, questNames: ["", "Buy organic vegetables / fruits!", "", "", ""], questDescriptions: ["",
         "'Wait, why?' you say. 'Organic vegetables and fruits are more expensive than the normal ones!' Well, yes, but did you know that organic farming is better for the environemnt? Organic farming practices may reduce pollution, conserve water, reduce soil erosion, increase soil fertility, and use less energy. Farming without synthetic pesticides is also better for nearby birds and animals as well as people who live close to farms. By supporting these environmently-friendly farms, you would be one step closer to helping the environment!\nTask: Buy organic vegetables, and take a selfie!",
         "",
@@ -145,14 +145,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     Level(levelNumber: 97, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 98, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
     Level(levelNumber: 99, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 100, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 101, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 102, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 103, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 104, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 105, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 106, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""]),
-    Level(levelNumber: 107, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
+    Level(levelNumber: 100, questNames: ["", "", "", "", ""], questDescriptions:["", "", "", "", "", ""])
     ]
     
     
@@ -166,9 +159,8 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 107
-        //which is totally the best class ever
-        //~someone who is not from 107
+        return 100
+        //exactly a hundred :)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
