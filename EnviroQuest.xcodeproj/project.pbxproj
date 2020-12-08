@@ -18,6 +18,7 @@
 		3A1BBFAA25680CF60071B496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA825680CF60071B496 /* LaunchScreen.storyboard */; };
 		3A1BBFB525680CF70071B496 /* EnviroQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFB425680CF70071B496 /* EnviroQuestTests.swift */; };
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
+		3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29B186257F565700F76C40 /* QuestDoneViewController.swift */; };
 		3A767496257B2D7800735559 /* UICircularProgressRing in Frameworks */ = {isa = PBXBuildFile; productRef = 3A767495257B2D7800735559 /* UICircularProgressRing */; };
 		A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */; };
 		A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */; };
@@ -65,6 +66,7 @@
 		3A1BBFBB25680CF70071B496 /* EnviroQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnviroQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestUITests.swift; sourceTree = "<group>"; };
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A29B186257F565700F76C40 /* QuestDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDoneViewController.swift; sourceTree = "<group>"; };
 		A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				3A29B186257F565700F76C40 /* QuestDoneViewController.swift */,
 				CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */,
 				CCD3D14925727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift */,
 				CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */,
@@ -317,6 +320,7 @@
 				3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */,
 				CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */,
 				A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */,
+				3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
