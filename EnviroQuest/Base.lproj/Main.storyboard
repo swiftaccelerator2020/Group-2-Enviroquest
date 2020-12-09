@@ -874,7 +874,7 @@ Complete quests for 💎
                                 </state>
                                 <connections>
                                     <action selector="confirmButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="9y0-CY-eUq"/>
-                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwind:" id="trh-fC-Qh1"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="sqa-KL-dUf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-op-VCh">
