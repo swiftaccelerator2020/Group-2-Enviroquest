@@ -9,13 +9,20 @@ import UIKit
 
 class QuestDoneViewController: UIViewController {
 
+    @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var uploadImageButton: UIButton!
+    @IBOutlet weak var doneLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func confirmButtonPressed(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

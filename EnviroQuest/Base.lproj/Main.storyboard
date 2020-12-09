@@ -842,10 +842,10 @@ Complete quests for 💎
             </objects>
             <point key="canvasLocation" x="5789.8550724637689" y="-1398.2142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Quest Done View Controller-->
         <scene sceneID="FyU-nj-a2h">
             <objects>
-                <viewController id="3MS-e5-xTY" sceneMemberID="viewController">
+                <viewController id="3MS-e5-xTY" customClass="QuestDoneViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZF-kK-P3V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -872,6 +872,10 @@ Complete quests for 💎
                                 <state key="normal" title="Confirm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="9y0-CY-eUq"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwind:" id="trh-fC-Qh1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-op-VCh">
                                 <rect key="frame" x="91" y="511" width="232" height="50"/>
@@ -902,8 +906,14 @@ Complete quests for 💎
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="top" secondItem="ADU-OX-rZz" secondAttribute="bottom" constant="55" id="yDj-5q-rR1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
+                        <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
+                        <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhx-22-WEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5Tf-Dm-oK4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6563.7681159420299" y="-1398.2142857142856"/>
         </scene>
