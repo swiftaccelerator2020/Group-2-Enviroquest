@@ -701,7 +701,7 @@ Complete quests for 💎
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QinGuan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
                                 <rect key="frame" x="57" y="659" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="INI-Mv-oX4"/>
@@ -886,6 +886,9 @@ Complete quests for 💎
                                 <state key="normal" title="Upload an image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="ceR-Vq-fNj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Un6-lz-0lz"/>
@@ -909,6 +912,7 @@ Complete quests for 💎
                     <connections>
                         <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
                         <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
+                        <outlet property="questImageView" destination="fOQ-F7-ce0" id="982-Yq-NOV"/>
                         <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
                     </connections>
                 </viewController>
