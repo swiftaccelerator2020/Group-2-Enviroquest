@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -701,7 +701,7 @@ Complete quests for 💎
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QinGuan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan number 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-AJ-LHk">
                                 <rect key="frame" x="57" y="659" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="INI-Mv-oX4"/>
@@ -765,14 +765,13 @@ Complete quests for 💎
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="W90-iZ-ZMQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="W90-iZ-ZMQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-2n-Av5">
                                 <rect key="frame" x="30" y="99" width="354" height="633"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generating Qinguan Clones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3a-Rf-epE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generating Qin Guan Clones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3a-Rf-epE">
                                         <rect key="frame" x="35" y="28" width="284" height="72"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="72" id="BBx-Ha-NIY"/>
@@ -782,7 +781,7 @@ Complete quests for 💎
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qinguan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
                                         <rect key="frame" x="35" y="130" width="284" height="415"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="415" id="AhR-5E-mTt"/>
@@ -823,7 +822,11 @@ Complete quests for 💎
                             <constraint firstItem="uvp-2n-Av5" firstAttribute="leading" secondItem="lVb-ZM-J00" secondAttribute="leading" constant="30" id="4gD-P1-ozT"/>
                             <constraint firstItem="lVb-ZM-J00" firstAttribute="trailing" secondItem="uvp-2n-Av5" secondAttribute="trailing" constant="30" id="Fcw-L5-Aaa"/>
                             <constraint firstItem="uvp-2n-Av5" firstAttribute="top" secondItem="lVb-ZM-J00" secondAttribute="top" constant="55" id="HD7-z4-8wm"/>
+                            <constraint firstItem="W90-iZ-ZMQ" firstAttribute="top" secondItem="ycT-OM-jca" secondAttribute="top" id="MGl-L3-afe"/>
+                            <constraint firstAttribute="bottom" secondItem="W90-iZ-ZMQ" secondAttribute="bottom" id="NCt-Ml-Rh6"/>
                             <constraint firstItem="lVb-ZM-J00" firstAttribute="bottom" secondItem="uvp-2n-Av5" secondAttribute="bottom" constant="130" id="aEa-eJ-LKZ"/>
+                            <constraint firstItem="W90-iZ-ZMQ" firstAttribute="leading" secondItem="lVb-ZM-J00" secondAttribute="leading" id="ocQ-Wi-FVL"/>
+                            <constraint firstItem="W90-iZ-ZMQ" firstAttribute="trailing" secondItem="lVb-ZM-J00" secondAttribute="trailing" id="qkm-hR-FSB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -839,10 +842,10 @@ Complete quests for 💎
             </objects>
             <point key="canvasLocation" x="5789.8550724637689" y="-1398.2142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Quest Done View Controller-->
         <scene sceneID="FyU-nj-a2h">
             <objects>
-                <viewController id="3MS-e5-xTY" sceneMemberID="viewController">
+                <viewController id="3MS-e5-xTY" customClass="QuestDoneViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZF-kK-P3V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -869,6 +872,10 @@ Complete quests for 💎
                                 <state key="normal" title="Confirm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="9y0-CY-eUq"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="sqa-KL-dUf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-op-VCh">
                                 <rect key="frame" x="91" y="511" width="232" height="50"/>
@@ -879,6 +886,9 @@ Complete quests for 💎
                                 <state key="normal" title="Upload an image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="ceR-Vq-fNj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Un6-lz-0lz"/>
@@ -899,8 +909,15 @@ Complete quests for 💎
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="top" secondItem="ADU-OX-rZz" secondAttribute="bottom" constant="55" id="yDj-5q-rR1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
+                        <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
+                        <outlet property="questImageView" destination="fOQ-F7-ce0" id="982-Yq-NOV"/>
+                        <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhx-22-WEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5Tf-Dm-oK4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6563.7681159420299" y="-1398.2142857142856"/>
         </scene>

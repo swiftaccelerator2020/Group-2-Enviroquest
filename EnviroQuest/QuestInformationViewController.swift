@@ -31,6 +31,10 @@ class QuestInformationViewController: UIViewController {
         
     }
     
+    @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

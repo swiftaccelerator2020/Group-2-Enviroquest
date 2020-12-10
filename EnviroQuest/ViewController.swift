@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @objc func updateCounter() {
         timeElapsed += 0.1
-        if timeElapsed == 20.0 {
+        if timeElapsed == 3.0 {
           self.performSegue(withIdentifier: "login", sender: nil)
         }
     }
