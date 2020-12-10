@@ -102,7 +102,9 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func confirmButtonPressed(_ sender: Any) {
-        
+        var currentGems = UserDefaults.standard.integer(forKey: "gems")
+        currentGems += 10
+        UserDefaults.standard.setValue(currentGems, forKey: "gems")
     }
     
     @IBAction func uploadImageButtonPressed(_ sender: UIButton) {

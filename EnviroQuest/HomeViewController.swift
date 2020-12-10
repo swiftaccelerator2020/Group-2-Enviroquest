@@ -51,6 +51,10 @@ class HomeViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        gemCounter = UserDefaults.standard.integer(forKey: "gems")
+        
         receivedName = UserDefaults.standard.string(forKey: "Username") ?? ""
         gemsCounterLabel.text = "💎 \(gemCounter)"
         newFactButton.layer.cornerRadius = 20
