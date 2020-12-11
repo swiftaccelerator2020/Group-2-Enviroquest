@@ -94,6 +94,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     var imagePicker: ImagePicker!
+    var questComplete: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
