@@ -147,6 +147,14 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     */
 
     @IBAction func exitButtonPressed(_ sender: Any) {
+        func unwindToThisView(sender: Any) {
+            if let sourceViewController = (sender as AnyObject).source as? QuestViewController {
+            sourceViewController.firstQuestCompleted = true
+                sourceViewController.firstButtonView.backgroundColor = .green
+             }
+         }
+
+        
     }
 }
 

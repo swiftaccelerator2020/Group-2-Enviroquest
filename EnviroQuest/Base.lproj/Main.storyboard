@@ -295,20 +295,20 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="wdX-fL-Pz6" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="130.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xej-T4-3Sz" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="130.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-14-4MH">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="ZFh-GF-0ZI"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-7T-2Y3">
-                                            <rect key="frame" x="42" y="107" width="42" height="23.5"/>
+                                            <rect key="frame" x="42" y="107" width="42" height="33"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -326,6 +326,7 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GqW-7T-2Y3" secondAttribute="trailing" constant="20" symbolic="YES" id="vnE-st-P3g"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="140" height="140"/>
                                 <connections>
                                     <outlet property="photoGalleryView" destination="0Sj-14-4MH" id="VI2-Rg-1FZ"/>
                                     <outlet property="photoLabel" destination="GqW-7T-2Y3" id="DW1-9m-hxo"/>
@@ -674,7 +675,7 @@ Complete quests for 💎 !</string>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-T7-Qst">
                                 <rect key="frame" x="54" y="654" width="306" height="90"/>
-                                <color key="backgroundColor" red="0.090196078431372548" green="0.72941176470588232" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="bjL-dv-szU"/>
                                 </constraints>
@@ -778,7 +779,7 @@ Complete quests for 💎 !</string>
                                             <constraint firstAttribute="height" constant="72" id="BBx-Ha-NIY"/>
                                             <constraint firstAttribute="width" constant="284" id="ECh-ZH-nwX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -909,7 +910,7 @@ Complete quests for 💎 !</string>
                                 </state>
                                 <connections>
                                     <action selector="exitButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="iv2-MS-wL9"/>
-                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="LME-x6-lfq"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" identifier="unwindToThisView" unwindAction="unwindToQuestInfo:" id="LME-x6-lfq"/>
                                 </connections>
                             </button>
                         </subviews>
