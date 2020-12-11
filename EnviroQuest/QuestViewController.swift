@@ -17,9 +17,9 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var thirdButtonView: UIButton!
     
     var currentLevel:Level!
-    var assignedNumberFor1 = 1
-    var assignedNumberFor2 = 2
-    var assignedNumberFor3 = 3
+    var assignedNumberFor1 = 0
+    var assignedNumberFor2 = 1
+    var assignedNumberFor3 = 2
     override func viewDidLoad() {
         super.viewDidLoad()
         theFirstQuest.text = currentLevel.questNames[assignedNumberFor1]
