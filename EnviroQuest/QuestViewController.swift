@@ -18,9 +18,9 @@ class QuestViewController: UIViewController {
     
     var whateverLevelIsThis = 0
       var currentLevel:Level!
-      var firstQuestCompleted=false
-      var secondQuestCompleted=false
-      var thirdQuestCompleted=false
+    var firstQuestCompleted:Bool!
+    var secondQuestCompleted:Bool!
+    var thirdQuestCompleted:Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
         theFirstQuest.text = currentLevel.questNames[0]
@@ -29,8 +29,8 @@ class QuestViewController: UIViewController {
         secondButtonView.layer.cornerRadius = 20
         firstButtonView.layer.cornerRadius = 20
         thirdButtonView.layer.cornerRadius = 20
-        if firstQuestCompleted == true{
-                   firstButtonView.backgroundColor = .green
+   if firstQuestCompleted == true{
+                 firstButtonView.backgroundColor = .green
                }else{
                    firstButtonView.backgroundColor = .white
                }
@@ -38,8 +38,8 @@ class QuestViewController: UIViewController {
                    secondButtonView.backgroundColor = .green
                }else{
                    secondButtonView.backgroundColor = .white
-               }
-               
+              }
+
                if thirdQuestCompleted == true{
                    thirdButtonView.backgroundColor = .green
                }else{
