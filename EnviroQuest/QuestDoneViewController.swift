@@ -86,16 +86,19 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
 
     
     
-    
+    @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var uploadImageButton: UIButton!
     @IBOutlet weak var doneLabel: UILabel!
     @IBOutlet weak var questImageView: UIImageView!
     
+    
     var imagePicker: ImagePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        exitButton.isHidden = true
+        exitButton.isEnabled = false
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         // Do any additional setup after loading the view.
@@ -105,7 +108,29 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         var currentGems = UserDefaults.standard.integer(forKey: "gems")
         currentGems += 10
         UserDefaults.standard.setValue(currentGems, forKey: "gems")
+        
+        
+        let alert = UIAlertController(title: "Congratulation!", message: "You have earned 10 gems!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { _ in
+            
+          
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        confirmButton.isHidden = true
+        confirmButton.isEnabled = false
+        exitButton.isEnabled = true
+        exitButton.isHidden = false
+        
+        
+        
+        
+        
     }
+    
+    
+    
     
     @IBAction func uploadImageButtonPressed(_ sender: UIButton) {
         self.imagePicker.present(from: sender)
@@ -120,5 +145,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     }
     */
 
+    @IBAction func exitButtonPressed(_ sender: Any) {
+    }
 }
 

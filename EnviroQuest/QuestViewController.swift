@@ -43,6 +43,12 @@ class QuestViewController: UIViewController {
     @IBAction func thirdButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
     }
+    
+    @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
+        
+    }
+    
+    
     /*
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
