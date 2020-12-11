@@ -17,9 +17,9 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var thirdButtonView: UIButton!
     
     var currentLevel:Level!
-    var assignedNumberFor1 = 1
-    var assignedNumberFor2 = 2
-    var assignedNumberFor3 = 3
+    var assignedNumberFor1 = 0
+    var assignedNumberFor2 = 1
+    var assignedNumberFor3 = 2
     override func viewDidLoad() {
         super.viewDidLoad()
         theFirstQuest.text = currentLevel.questNames[assignedNumberFor1]
@@ -43,6 +43,12 @@ class QuestViewController: UIViewController {
     @IBAction func thirdButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
     }
+    
+    @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
+        
+    }
+    
+    
     /*
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

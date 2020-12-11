@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -67,19 +67,19 @@
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="tO1-OP-vka">
-                                <rect key="frame" x="57" y="188" width="300" height="396"/>
+                                <rect key="frame" x="57" y="188" width="300" height="407"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="B9j-Jx-GK8">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="115"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="121"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05Z-Pv-Xol">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="41"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-ua-UwW">
-                                                <rect key="frame" x="0.0" y="65" width="300" height="50"/>
+                                                <rect key="frame" x="0.0" y="71" width="300" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BhG-zM-3Dx"/>
@@ -90,16 +90,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NsL-b4-2NM">
-                                        <rect key="frame" x="0.0" y="175" width="300" height="116"/>
+                                        <rect key="frame" x="0.0" y="181" width="300" height="121"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-gO-Y4n">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="41"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-Rm-M4o">
-                                                <rect key="frame" x="0.0" y="66" width="300" height="50"/>
+                                                <rect key="frame" x="0.0" y="71" width="300" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -107,11 +107,11 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lu-4y-6rx">
-                                        <rect key="frame" x="0.0" y="351" width="300" height="45"/>
+                                        <rect key="frame" x="0.0" y="362" width="300" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="ivj-PW-FAJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -213,7 +213,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-L8-SOv">
                                                 <rect key="frame" x="16" y="10" width="342" height="52"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -223,6 +223,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="BsI-Di-IJu"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <state key="normal" title="Generate New Qin Guan!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -294,10 +295,10 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="wdX-fL-Pz6" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="130.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xej-T4-3Sz" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="130.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-14-4MH">
@@ -307,8 +308,8 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-7T-2Y3">
-                                            <rect key="frame" x="42" y="107" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="42" y="107" width="42" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -373,12 +374,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4T-dE-Aw4">
-                                            <rect key="frame" x="15" y="20" width="90" height="59.5"/>
+                                            <rect key="frame" x="15" y="20" width="90" height="56.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-5Z-F74">
-                                            <rect key="frame" x="5" y="89.5" width="110" height="20.5"/>
+                                            <rect key="frame" x="5" y="86.5" width="110" height="23.5"/>
                                             <accessibility key="accessibilityConfiguration" identifier="PhotoCell"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -450,10 +451,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F75-eX-dkj">
                                         <rect key="frame" x="20" y="596" width="334" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="PLk-b1-byF"/>
                                         </constraints>
-                                        <state key="normal" title="Let's Go!"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="Let's Go!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="letsGoButtonPressed:" destination="vPC-WQ-YN3" eventType="touchUpInside" id="CzF-er-4q5"/>
                                             <segue destination="ZGK-oI-Aju" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="Sqc-0E-Z8e"/>
@@ -461,14 +466,10 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-w4-Hq8">
                                         <rect key="frame" x="20" y="50" width="334" height="496"/>
-                                        <string key="text">The year is 2100. The Earth is almost uninhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to time travel back to (insert year) to change things!
+                                        <string key="text">The year is 2100. The Earth is almost uninhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to travel back in time and change things!
 
-etc etc
-
-Complete quests for 💎 
-
-[Insert other instructions]</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+Complete quests for 💎 !</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -557,7 +558,7 @@ Complete quests for 💎
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-1e-Mir">
                                                             <rect key="frame" x="5" y="5" width="40.5" height="40.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -574,7 +575,7 @@ Complete quests for 💎
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-Ih-HwZ">
                                                     <rect key="frame" x="86.5" y="19" width="299.5" height="50.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <state key="normal" title="Button">
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
@@ -650,9 +651,9 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="192" id="mOP-KT-psL"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-52-AE2">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-52-AE2">
                                 <rect key="frame" x="54" y="400" width="306" height="92"/>
-                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="pGh-Do-cwf"/>
                                 </constraints>
@@ -660,7 +661,7 @@ Complete quests for 💎
                                     <action selector="firstButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="eAa-Dc-MM2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEq-PM-JAr">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEq-PM-JAr">
                                 <rect key="frame" x="54" y="527" width="306" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -671,9 +672,9 @@ Complete quests for 💎
                                     <action selector="secondButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="Dsc-DE-aTO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-T7-Qst">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-T7-Qst">
                                 <rect key="frame" x="54" y="654" width="306" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.72941176470588232" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="bjL-dv-szU"/>
                                 </constraints>
@@ -687,7 +688,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="80" id="5Tn-Wr-hsx"/>
                                     <constraint firstAttribute="width" constant="300" id="ayP-b1-50e"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -697,7 +698,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="80" id="6ml-6b-8bi"/>
                                     <constraint firstAttribute="width" constant="300" id="URj-qb-3Ap"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -707,7 +708,7 @@ Complete quests for 💎
                                     <constraint firstAttribute="height" constant="80" id="INI-Mv-oX4"/>
                                     <constraint firstAttribute="width" constant="300" id="OIQ-Iq-fuK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -750,7 +751,7 @@ Complete quests for 💎
                         <outlet property="theSecondQuest" destination="GtF-re-ewT" id="TQn-9x-g3v"/>
                         <outlet property="theThirdQuest" destination="OEZ-AJ-LHk" id="9Pe-gK-1RD"/>
                         <outlet property="thirdButtonView" destination="7A7-T7-Qst" id="9Eh-Zh-6yn"/>
-                        <segue destination="2N4-ex-dun" kind="presentation" identifier="revealQuestInfo" modalPresentationStyle="fullScreen" id="Fqv-Nz-7Yn"/>
+                        <segue destination="I4l-UK-RWX" kind="presentation" identifier="revealQuestInfo" modalPresentationStyle="fullScreen" id="Fqv-Nz-7Yn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tf3-EV-OvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -769,7 +770,7 @@ Complete quests for 💎
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-2n-Av5">
-                                <rect key="frame" x="30" y="99" width="354" height="633"/>
+                                <rect key="frame" x="30" y="143" width="354" height="589"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generating Qin Guan Clones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3a-Rf-epE">
                                         <rect key="frame" x="35" y="28" width="284" height="72"/>
@@ -782,16 +783,16 @@ Complete quests for 💎
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
-                                        <rect key="frame" x="35" y="130" width="284" height="415"/>
+                                        <rect key="frame" x="35" y="130" width="284" height="320"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="415" id="AhR-5E-mTt"/>
+                                            <constraint firstAttribute="height" constant="320" id="Uwt-NC-8xV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzR-Bu-9FG">
-                                        <rect key="frame" x="100" y="576" width="154" height="34"/>
+                                        <rect key="frame" x="100" y="481" width="154" height="85"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" systemColor="labelColor"/>
@@ -829,6 +830,13 @@ Complete quests for 💎
                             <constraint firstItem="W90-iZ-ZMQ" firstAttribute="trailing" secondItem="lVb-ZM-J00" secondAttribute="trailing" id="qkm-hR-FSB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="D67-c3-bxs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="1EP-ud-1lR">
+                            <connections>
+                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuest:" id="c6X-nd-Rq8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="doneButton" destination="BzR-Bu-9FG" id="pIO-tD-Rct"/>
                         <outlet property="questDecriptionLabel" destination="jKj-48-eUn" id="gyd-AP-4Hj"/>
@@ -839,8 +847,9 @@ Complete quests for 💎
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-RT-cIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NXn-7t-gwv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5789.8550724637689" y="-1398.2142857142856"/>
+            <point key="canvasLocation" x="6700.0000000000009" y="-1398.2142857142856"/>
         </scene>
         <!--Quest Done View Controller-->
         <scene sceneID="FyU-nj-a2h">
@@ -874,7 +883,6 @@ Complete quests for 💎
                                 </state>
                                 <connections>
                                     <action selector="confirmButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="9y0-CY-eUq"/>
-                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="sqa-KL-dUf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-op-VCh">
@@ -890,6 +898,20 @@ Complete quests for 💎
                                     <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="ceR-Vq-fNj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n60-Z3-XSK">
+                                <rect key="frame" x="130" y="641" width="154" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CPI-nr-zL8"/>
+                                </constraints>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="iv2-MS-wL9"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="LME-x6-lfq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Un6-lz-0lz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -902,8 +924,11 @@ Complete quests for 💎
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="pG8-op-VCh" secondAttribute="trailing" constant="91" id="EnT-pO-nSl"/>
                             <constraint firstItem="Uij-kH-3ZB" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="130" id="Nz4-0w-8s7"/>
                             <constraint firstItem="pG8-op-VCh" firstAttribute="top" secondItem="fOQ-F7-ce0" secondAttribute="bottom" constant="37" id="RlT-bW-iNS"/>
+                            <constraint firstItem="n60-Z3-XSK" firstAttribute="trailing" secondItem="Uij-kH-3ZB" secondAttribute="trailing" id="Rn6-pN-IrE"/>
+                            <constraint firstItem="n60-Z3-XSK" firstAttribute="leading" secondItem="Uij-kH-3ZB" secondAttribute="leading" id="SDf-15-ALl"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="bottom" secondItem="Uij-kH-3ZB" secondAttribute="bottom" constant="127" id="WFv-s7-lUV"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="ADU-OX-rZz" secondAttribute="trailing" constant="150" id="bcD-iu-mvD"/>
+                            <constraint firstItem="n60-Z3-XSK" firstAttribute="baseline" secondItem="Uij-kH-3ZB" secondAttribute="baseline" id="mdi-MB-Zph"/>
                             <constraint firstItem="pG8-op-VCh" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="91" id="vsM-k4-2lm"/>
                             <constraint firstItem="ADU-OX-rZz" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="150" id="x7C-Ee-p9m"/>
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="top" secondItem="ADU-OX-rZz" secondAttribute="bottom" constant="55" id="yDj-5q-rR1"/>
@@ -912,6 +937,7 @@ Complete quests for 💎
                     <connections>
                         <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
                         <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
+                        <outlet property="exitButton" destination="n60-Z3-XSK" id="MmW-Su-sPt"/>
                         <outlet property="questImageView" destination="fOQ-F7-ce0" id="982-Yq-NOV"/>
                         <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
                     </connections>
@@ -919,7 +945,7 @@ Complete quests for 💎
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhx-22-WEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="5Tf-Dm-oK4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6563.7681159420299" y="-1398.2142857142856"/>
+            <point key="canvasLocation" x="7473.9130434782619" y="-1398.2142857142856"/>
         </scene>
         <!--Shop-->
         <scene sceneID="GH3-JZ-eVG">
@@ -961,6 +987,24 @@ Complete quests for 💎
             </objects>
             <point key="canvasLocation" x="3083" y="78"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O0B-x1-xE0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I4l-UK-RWX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PAU-sm-dqw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2N4-ex-dun" kind="relationship" relationship="rootViewController" id="T5l-3r-ljw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmL-jv-qei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5789.8550724637689" y="-1398.2142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Done with quest page" width="375" height="812"/>
@@ -984,9 +1028,6 @@ Complete quests for 💎
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

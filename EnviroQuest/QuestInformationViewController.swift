@@ -31,7 +31,7 @@ class QuestInformationViewController: UIViewController {
         
     }
     
-    @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
+    @IBAction func unwindToQuest(_ sender: UIStoryboardSegue) {
         
     }
     
