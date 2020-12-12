@@ -16,40 +16,74 @@ class QuestViewController: UIViewController {
     //my keyboard lagged and i nearly put the name as secondButto .-.
     @IBOutlet weak var thirdButtonView: UIButton!
     
-    var currentLevel:Level!
-    var assignedNumberFor1 = 0
-    var assignedNumberFor2 = 1
-    var assignedNumberFor3 = 2
+    var whateverLevelIsThis = 0
+      var currentLevel:Level!
+    var firstQuestCompleted:Bool!
+    var secondQuestCompleted:Bool!
+    var thirdQuestCompleted:Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
-        theFirstQuest.text = currentLevel.questNames[assignedNumberFor1]
-        theSecondQuest.text = currentLevel.questNames[assignedNumberFor2]
-        theThirdQuest.text = currentLevel.questNames[assignedNumberFor3]
+        theFirstQuest.text = currentLevel.questNames[0]
+        theSecondQuest.text = currentLevel.questNames[1]
+        theThirdQuest.text = currentLevel.questNames[2]
         secondButtonView.layer.cornerRadius = 20
         firstButtonView.layer.cornerRadius = 20
         thirdButtonView.layer.cornerRadius = 20
-        
+   if firstQuestCompleted == true{
+                 firstButtonView.backgroundColor = .green
+               }else{
+                   firstButtonView.backgroundColor = .white
+               }
+               if secondQuestCompleted == true{
+                   secondButtonView.backgroundColor = .green
+               }else{
+                   secondButtonView.backgroundColor = .white
+              }
+
+               if thirdQuestCompleted == true{
+                   thirdButtonView.backgroundColor = .green
+               }else{
+                   thirdButtonView.backgroundColor = .white
+               }
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func firstButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+        whateverLevelIsThis = 0
     }
     @IBAction func secondButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+        whateverLevelIsThis = 1
     }
     
     @IBAction func thirdButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+        whateverLevelIsThis = 2
     }
     
     @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Get the new view controller using segue.destination.
+            // Pass the selected object to the new view controller.
+        if segue.identifier == "revealQuestInfo"{
+//            let destination = segue.destination as? (UINavigationController.children.first) as? QuestInformationViewController
+            let destnv = segue.destination as? UINavigationController
+            let destination = destnv?.viewControllers.first as! QuestInformationViewController
+            destination.questDescription = currentLevel.questDescriptions[whateverLevelIsThis]
+            destination.questTitle = currentLevel.questNames[whateverLevelIsThis]
+        }
+            //There was never anything sus here
+        
+            //everything sus happened here
+            
+        }
     /*
+     
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
