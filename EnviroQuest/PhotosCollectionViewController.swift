@@ -51,7 +51,6 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as!PhotoCollectionViewCell
         cell.shopLabel.text = "Shop Item"
-    
         // Configure the cell
     
         return cell
