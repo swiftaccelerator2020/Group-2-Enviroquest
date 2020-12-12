@@ -21,7 +21,7 @@ class StoryViewController: UIViewController {
         storyLabel.layer.cornerRadius = 20
         anotherStubbornImageView.contentMode = .scaleAspectFill
         
-        storyLabel.text = "Hello \(name), the year is 2100... The Earth is almost inhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to time travel back to 2000 to change things! Complete quests for 💎"
+        storyLabel.text = "Hello \(name), the year is 2100... The Earth is almost inhabitable. Green life is dead. Biodiversity is down to 0.25%. \nYou are on a mission to time travel back to 2000 to change things! \nComplete quests for 💎"
         
    }
     
