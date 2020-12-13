@@ -829,9 +829,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D67-c3-bxs">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="kQb-Vr-b82">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="chevron.backward" catalog="system" id="t8w-0O-pyw">
                             <connections>
-                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuestInfo:" id="fLM-mL-TVj"/>
+                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuestInfo:" id="VHd-ZX-GBl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1017,6 +1017,7 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
