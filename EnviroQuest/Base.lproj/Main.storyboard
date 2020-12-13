@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -829,9 +829,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D67-c3-bxs">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="1EP-ud-1lR">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="kQb-Vr-b82">
                             <connections>
-                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuest:" id="c6X-nd-Rq8"/>
+                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuestInfo:" id="fLM-mL-TVj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -845,6 +845,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-RT-cIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Back" id="1EP-ud-1lR"/>
                 <exit id="NXn-7t-gwv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6700.0000000000009" y="-1398.2142857142856"/>
