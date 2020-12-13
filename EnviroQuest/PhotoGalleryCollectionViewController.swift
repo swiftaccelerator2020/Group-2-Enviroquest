@@ -40,7 +40,7 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 5
     }
 
 
@@ -57,7 +57,11 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    
+    func collectionView(_collectioniew: UICollectionView, layout collectioniewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)
+    -> CGSize
+        {
+        return CGSize(width: 140.0, height: 140.0)
+                        }
         // Configure the cell
     
        

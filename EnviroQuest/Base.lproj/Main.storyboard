@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -285,7 +285,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VAh-tf-F3v">
                             <size key="itemSize" width="140" height="140"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -295,7 +295,7 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="wdX-fL-Pz6" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                <rect key="frame" x="0.0" y="50" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xej-T4-3Sz" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
@@ -333,6 +333,26 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KXq-yf-eHM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEu-Uy-cKl">
+                                    <rect key="frame" x="53" y="3" width="308" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="2fK-jE-Ics"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="DEu-Uy-cKl" firstAttribute="top" secondItem="KXq-yf-eHM" secondAttribute="top" constant="3" id="f7Q-0U-8Fm"/>
+                                <constraint firstItem="DEu-Uy-cKl" firstAttribute="leading" secondItem="KXq-yf-eHM" secondAttribute="leading" constant="53" id="rcv-sZ-gGH"/>
+                                <constraint firstAttribute="trailing" secondItem="DEu-Uy-cKl" secondAttribute="trailing" constant="53" id="wWb-gl-Noe"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="JG1-VJ-8lc" id="QtJ-FF-PET"/>
                             <outlet property="delegate" destination="JG1-VJ-8lc" id="jUg-Wl-62t"/>
@@ -345,7 +365,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272" y="-966"/>
+            <point key="canvasLocation" x="1271.0144927536232" y="-966.29464285714278"/>
         </scene>
         <!--Shop-->
         <scene sceneID="EfO-mp-Vnr">
