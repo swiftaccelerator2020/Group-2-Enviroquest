@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -194,7 +194,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="od6-Ra-S6x">
                                         <rect key="frame" x="0.0" y="111" width="374" height="182"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="ProgressView"/>
@@ -219,7 +219,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -332,7 +332,6 @@
         <!--Gallery-->
         <scene sceneID="JFv-B4-SK2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="JG1-VJ-8lc" customClass="PhotoGalleryCollectionViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EI8-2i-1rr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -421,6 +420,7 @@
                         <outlet property="photoGalleryBackgroundView" destination="IFd-rV-GZV" id="Lbu-4T-0MQ"/>
                     </connections>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1271.0144927536232" y="-966.29464285714278"/>
         </scene>
@@ -716,7 +716,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
