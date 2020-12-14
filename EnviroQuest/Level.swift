@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Level{
+public class Level{
     var levelNumber: Int
     var questNames: Array<String>
     var questDescriptions: Array<String>

@@ -86,6 +86,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
 
     
     
+   
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var uploadImageButton: UIButton!
@@ -98,8 +99,9 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        exitButton.isHidden = true
-        exitButton.isEnabled = false
+        
+        uploadImageButton.layer.cornerRadius = 20
+        confirmButton.layer.cornerRadius = 20
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         // Do any additional setup after loading the view.
@@ -119,13 +121,11 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         self.present(alert, animated: true, completion: nil)
         
         
-        confirmButton.isHidden = true
         confirmButton.isEnabled = false
-        exitButton.isEnabled = true
-        exitButton.isHidden = false
         
         
-        //this is an empty push just to test the bot
+        
+        
         
         
     }
