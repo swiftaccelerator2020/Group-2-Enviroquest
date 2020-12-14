@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -111,7 +111,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="ivj-PW-FAJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -332,6 +332,7 @@
         <!--Gallery-->
         <scene sceneID="JFv-B4-SK2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="JG1-VJ-8lc" customClass="PhotoGalleryCollectionViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EI8-2i-1rr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -387,7 +388,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KXq-yf-eHM">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Photo" id="KXq-yf-eHM" customClass="PhotoGalleryCollectionReusableView" customModule="EnviroQuest" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -406,6 +407,9 @@
                                 <constraint firstItem="DEu-Uy-cKl" firstAttribute="leading" secondItem="KXq-yf-eHM" secondAttribute="leading" constant="53" id="rcv-sZ-gGH"/>
                                 <constraint firstAttribute="trailing" secondItem="DEu-Uy-cKl" secondAttribute="trailing" constant="53" id="wWb-gl-Noe"/>
                             </constraints>
+                            <connections>
+                                <outlet property="sectionHeaderlabel" destination="DEu-Uy-cKl" id="uZZ-YW-JsX"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="JG1-VJ-8lc" id="QtJ-FF-PET"/>
@@ -417,7 +421,6 @@
                         <outlet property="photoGalleryBackgroundView" destination="IFd-rV-GZV" id="Lbu-4T-0MQ"/>
                     </connections>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1271.0144927536232" y="-966.29464285714278"/>
         </scene>

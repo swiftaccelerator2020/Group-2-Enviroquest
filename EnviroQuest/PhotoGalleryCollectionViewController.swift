@@ -12,7 +12,9 @@ var photographyLabels = ["hi","hi","hi"]
 
 class PhotoGalleryCollectionViewController: UICollectionViewController {
 
+
     @IBOutlet weak var photoGalleryBackgroundView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         photoGalleryBackgroundView.contentMode = .scaleAspectFill
@@ -52,6 +54,7 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as!PhotoGalleryCollectionViewCell
         cell.photoLabel.text = "HELLO"
+        
         // Configure the cell
     
         return cell

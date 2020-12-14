@@ -21,7 +21,6 @@
 		3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29B186257F565700F76C40 /* QuestDoneViewController.swift */; };
 		3A767496257B2D7800735559 /* UICircularProgressRing in Frameworks */ = {isa = PBXBuildFile; productRef = 3A767495257B2D7800735559 /* UICircularProgressRing */; };
 		A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */; };
-		A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */; };
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
 		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
 		CC3C4C952574CC1900982310 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3C4C942574CC1900982310 /* Level.swift */; };
@@ -29,6 +28,8 @@
 		CC94511A257E0D6A004BD4B0 /* QuestInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */; };
 		CCD3D14525727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */; };
 		CCD3D14A25727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3D14925727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift */; };
+		CCDDF406258704C200D12216 /* PhotoGalleryCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDF405258704C200D12216 /* PhotoGalleryCollectionReusableView.swift */; };
+		CCDDF40B2587062700D12216 /* PhotosCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDF40A2587062700D12216 /* PhotosCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29B186257F565700F76C40 /* QuestDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDoneViewController.swift; sourceTree = "<group>"; };
 		A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		CC3C4C942574CC1900982310 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestInformationViewController.swift; sourceTree = "<group>"; };
 		CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		CCD3D14925727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCDDF405258704C200D12216 /* PhotoGalleryCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionReusableView.swift; sourceTree = "<group>"; };
+		CCDDF40A2587062700D12216 /* PhotosCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,15 +129,16 @@
 		3A1BBF9C25680CF30071B496 /* EnviroQuest */ = {
 			isa = PBXGroup;
 			children = (
+				CCDDF40A2587062700D12216 /* PhotosCollectionReusableView.swift */,
 				3A1BBF9D25680CF30071B496 /* AppDelegate.swift */,
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				CCDDF405258704C200D12216 /* PhotoGalleryCollectionReusableView.swift */,
 				3A29B186257F565700F76C40 /* QuestDoneViewController.swift */,
 				CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */,
 				CCD3D14925727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift */,
 				CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */,
-				A833C5F1256E068E0053C648 /* PhotosCollectionViewController.swift */,
 				A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */,
 				CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */,
 				A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */,
@@ -315,11 +318,12 @@
 				CCD3D14A25727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				CC3C4C952574CC1900982310 /* Level.swift in Sources */,
 				3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */,
+				CCDDF406258704C200D12216 /* PhotoGalleryCollectionReusableView.swift in Sources */,
 				A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */,
 				CC94511A257E0D6A004BD4B0 /* QuestInformationViewController.swift in Sources */,
 				3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */,
+				CCDDF40B2587062700D12216 /* PhotosCollectionReusableView.swift in Sources */,
 				CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */,
-				A833C5F2256E068E0053C648 /* PhotosCollectionViewController.swift in Sources */,
 				3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
