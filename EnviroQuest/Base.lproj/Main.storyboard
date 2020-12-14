@@ -111,7 +111,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="ivj-PW-FAJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -194,17 +194,71 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="od6-Ra-S6x">
                                         <rect key="frame" x="0.0" y="111" width="374" height="182"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="ProgressView"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FYv-9Q-62s" secondAttribute="height" multiplier="1:1" id="zxW-Wc-I2N"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                        <real key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDrawMinValueKnob" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE">
+                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                        <real key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                                        <color key="value" red="0.090196078430000007" green="0.72941176470000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                                        <color key="value" red="0.0" green="0.0" blue="0.5450980392" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingSpacing">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                        <color key="value" red="0.090196078430000007" green="0.72941176470000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -278,24 +332,25 @@
         <!--Gallery-->
         <scene sceneID="JFv-B4-SK2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="JG1-VJ-8lc" customClass="PhotoGalleryCollectionViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EI8-2i-1rr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VAh-tf-F3v">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="140" height="140"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background" id="IFd-rV-GZV">
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" id="IFd-rV-GZV">
                             <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="wdX-fL-Pz6" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                <rect key="frame" x="0.0" y="50" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xej-T4-3Sz" customClass="PhotoGalleryCollectionViewCell" customModule="EnviroQuest" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
@@ -333,6 +388,29 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Photo" id="KXq-yf-eHM" customClass="PhotoGalleryCollectionReusableView" customModule="EnviroQuest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEu-Uy-cKl">
+                                    <rect key="frame" x="53" y="3" width="308" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="2fK-jE-Ics"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="DEu-Uy-cKl" firstAttribute="top" secondItem="KXq-yf-eHM" secondAttribute="top" constant="3" id="f7Q-0U-8Fm"/>
+                                <constraint firstItem="DEu-Uy-cKl" firstAttribute="leading" secondItem="KXq-yf-eHM" secondAttribute="leading" constant="53" id="rcv-sZ-gGH"/>
+                                <constraint firstAttribute="trailing" secondItem="DEu-Uy-cKl" secondAttribute="trailing" constant="53" id="wWb-gl-Noe"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="sectionHeaderlabel" destination="DEu-Uy-cKl" id="uZZ-YW-JsX"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="JG1-VJ-8lc" id="QtJ-FF-PET"/>
                             <outlet property="delegate" destination="JG1-VJ-8lc" id="jUg-Wl-62t"/>
@@ -343,9 +421,8 @@
                         <outlet property="photoGalleryBackgroundView" destination="IFd-rV-GZV" id="Lbu-4T-0MQ"/>
                     </connections>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272" y="-966"/>
+            <point key="canvasLocation" x="1271.0144927536232" y="-966.29464285714278"/>
         </scene>
         <!--Shop-->
         <scene sceneID="EfO-mp-Vnr">
@@ -465,11 +542,8 @@
                                             <segue destination="ZGK-oI-Aju" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="Sqc-0E-Z8e"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-w4-Hq8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan Generation is a beautiful process!..... That taks much time and effort. Please be patient" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-w4-Hq8">
                                         <rect key="frame" x="20" y="50" width="334" height="496"/>
-                                        <string key="text">The year is 2100. The Earth is almost uninhabitable. Green life is dead. Biodiversity is down to 0.25%. You are on a mission to travel back in time and change things!
-
-Complete quests for 💎 !</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -577,7 +651,7 @@ Complete quests for 💎 !</string>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-Ih-HwZ">
                                                     <rect key="frame" x="86.5" y="19" width="299.5" height="50.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                    <state key="normal" title="Button">
+                                                    <state key="normal" title="Incomplete">
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                 </button>
@@ -642,7 +716,7 @@ Complete quests for 💎 !</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="UICircularProgressRing" customModule="EnviroQuest" customModuleProvider="target">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -832,9 +906,9 @@ Complete quests for 💎 !</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D67-c3-bxs">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="1EP-ud-1lR">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="chevron.backward" catalog="system" id="t8w-0O-pyw">
                             <connections>
-                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuest:" id="c6X-nd-Rq8"/>
+                                <segue destination="NXn-7t-gwv" kind="unwind" unwindAction="unwindToQuestInfo:" id="VHd-ZX-GBl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -848,6 +922,7 @@ Complete quests for 💎 !</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-RT-cIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Back" id="1EP-ud-1lR"/>
                 <exit id="NXn-7t-gwv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6700.0000000000009" y="-1398.2142857142856"/>
@@ -1011,7 +1086,6 @@ Complete quests for 💎 !</string>
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
         <image name="Login page background" width="375" height="812"/>
-        <image name="Photo gallery background" width="375" height="812"/>
         <image name="Photo gallery background-1" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
         <image name="Shop background" width="375" height="812"/>
@@ -1020,6 +1094,7 @@ Complete quests for 💎 !</string>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

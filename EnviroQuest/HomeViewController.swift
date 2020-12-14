@@ -12,6 +12,35 @@ var currentFactCounter = 1
 var gemCounter = 0
 
 
+//struct ProgressRingExample: View? {
+//    @State var progress = RingProgress.percent(0.44)
+//
+//    var body: some View {
+//        VStack {
+//            ProgressRing(
+//                progress: $progress,
+//                axis: .top,
+//                clockwise: true,
+//                outerRingStyle: .init(
+//                    color: .color(.gray),
+//                    strokeStyle: .init(lineWidth: 20)
+//                ),
+//                innerRingStyle: .init(
+//                    color: .color(.green),
+//                    strokeStyle: .init(lineWidth: 10),
+//                    padding: 5
+//                )
+//            )
+//                .animation(.easeInOut(duration: 5))
+//                .padding(32)
+//        }
+//    }
+//}
+//
+//
+
+
+
 var facts = ["Every day, American businesses generate enough paper to circle the earth 20 times!",
              "Recycling one aluminum can saves enough energy to run a TV for three hours.",
              "During the time it takes you to read this sentence, 50,000 12-ounce aluminum cans are made.",
@@ -39,11 +68,18 @@ var facts = ["Every day, American businesses generate enough paper to circle the
 
 
 
+
+
+
+
+
+
 class HomeViewController: UIViewController {
     @IBOutlet weak var gemsCounterLabel: UILabel!
     @IBOutlet weak var newFactButton: UIButton!
     @IBOutlet weak var newFactLabel: UILabel!
 
+    
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var factUIView: UIView!
     
@@ -51,6 +87,9 @@ class HomeViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         
         gemCounter = UserDefaults.standard.integer(forKey: "gems")

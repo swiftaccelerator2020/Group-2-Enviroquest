@@ -12,7 +12,9 @@ var photographyLabels = ["hi","hi","hi"]
 
 class PhotoGalleryCollectionViewController: UICollectionViewController {
 
+
     @IBOutlet weak var photoGalleryBackgroundView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         photoGalleryBackgroundView.contentMode = .scaleAspectFill
@@ -40,7 +42,7 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 5
     }
 
 
@@ -52,12 +54,17 @@ class PhotoGalleryCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as!PhotoGalleryCollectionViewCell
         cell.photoLabel.text = "HELLO"
+        
         // Configure the cell
     
         return cell
     }
     
-    
+    func collectionView(_collectioniew: UICollectionView, layout collectioniewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)
+    -> CGSize
+        {
+        return CGSize(width: 140.0, height: 140.0)
+                        }
         // Configure the cell
     
        

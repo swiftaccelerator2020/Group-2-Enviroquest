@@ -63,6 +63,6 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>EnviroQuest[to be confirmed]</string>
 	<key>NSCameraUsageDescription</key>
-	<string>[to be confirmed]</string>
+	<string>EnviroQuest requires you to use your camera to track your progress</string>
 </dict>
 </plist>
