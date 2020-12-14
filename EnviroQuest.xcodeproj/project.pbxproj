@@ -24,6 +24,7 @@
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
 		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
 		CC3C4C952574CC1900982310 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3C4C942574CC1900982310 /* Level.swift */; };
+		CC65BF9E25879B58005429B8 /* levelDoneOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65BF9D25879B58005429B8 /* levelDoneOrNot.swift */; };
 		CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */; };
 		CC94511A257E0D6A004BD4B0 /* QuestInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */; };
 		CCD3D14525727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */; };
@@ -72,6 +73,7 @@
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		CC3C4C942574CC1900982310 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		CC65BF9D25879B58005429B8 /* levelDoneOrNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelDoneOrNot.swift; sourceTree = "<group>"; };
 		CC6A7199256BE3C5003C3F75 /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
 		CC945119257E0D6A004BD4B0 /* QuestInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestInformationViewController.swift; sourceTree = "<group>"; };
 		CCD3D14425727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */,
 				A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */,
 				CC3C4C942574CC1900982310 /* Level.swift */,
+				CC65BF9D25879B58005429B8 /* levelDoneOrNot.swift */,
 				3A03BFC22568D571003BB858 /* HomeViewController.swift */,
 				3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */,
 				3A03BFBD2568D48E003BB858 /* StoryViewController.swift */,
@@ -311,6 +314,7 @@
 				3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */,
 				A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */,
 				3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */,
+				CC65BF9E25879B58005429B8 /* levelDoneOrNot.swift in Sources */,
 				3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */,
 				A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */,
 				3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */,

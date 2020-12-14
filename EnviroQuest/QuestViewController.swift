@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class QuestViewController: UIViewController {
     @IBOutlet weak var theFirstQuest: UILabel!
     @IBOutlet weak var theSecondQuest: UILabel!
@@ -18,9 +19,11 @@ class QuestViewController: UIViewController {
     
     var whateverLevelIsThis = 0
       var currentLevel:Level!
-    var firstQuestCompleted:Bool!
-    var secondQuestCompleted:Bool!
-    var thirdQuestCompleted:Bool!
+    var firstQuestCompleted = false
+    var secondQuestCompleted = false
+    var thirdQuestCompleted = false
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         theFirstQuest.text = currentLevel.questNames[0]
