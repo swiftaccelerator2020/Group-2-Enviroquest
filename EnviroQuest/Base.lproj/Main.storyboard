@@ -974,18 +974,12 @@
                                     <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="ceR-Vq-fNj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n60-Z3-XSK">
-                                <rect key="frame" x="130" y="641" width="154" height="40"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CPI-nr-zL8"/>
-                                </constraints>
-                                <state key="normal" title="Exit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-bX-VXi">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="iv2-MS-wL9"/>
-                                    <segue destination="5Tf-Dm-oK4" kind="unwind" identifier="unwindToThisView" unwindAction="unwindToQuestInfo:" id="LME-x6-lfq"/>
+                                    <action selector="exitButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="xeq-KO-eDU"/>
+                                    <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="dOg-G8-Jk6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -998,13 +992,12 @@
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="Uij-kH-3ZB" secondAttribute="trailing" constant="130" id="Bx2-dF-qaC"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="fOQ-F7-ce0" secondAttribute="trailing" constant="52" id="EDx-F4-wj7"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="pG8-op-VCh" secondAttribute="trailing" constant="91" id="EnT-pO-nSl"/>
+                            <constraint firstItem="NZL-bX-VXi" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="20" id="JY7-In-fXj"/>
                             <constraint firstItem="Uij-kH-3ZB" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="130" id="Nz4-0w-8s7"/>
                             <constraint firstItem="pG8-op-VCh" firstAttribute="top" secondItem="fOQ-F7-ce0" secondAttribute="bottom" constant="37" id="RlT-bW-iNS"/>
-                            <constraint firstItem="n60-Z3-XSK" firstAttribute="trailing" secondItem="Uij-kH-3ZB" secondAttribute="trailing" id="Rn6-pN-IrE"/>
-                            <constraint firstItem="n60-Z3-XSK" firstAttribute="leading" secondItem="Uij-kH-3ZB" secondAttribute="leading" id="SDf-15-ALl"/>
+                            <constraint firstItem="NZL-bX-VXi" firstAttribute="top" secondItem="Un6-lz-0lz" secondAttribute="top" constant="20" id="Uur-dY-DSZ"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="bottom" secondItem="Uij-kH-3ZB" secondAttribute="bottom" constant="127" id="WFv-s7-lUV"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="ADU-OX-rZz" secondAttribute="trailing" constant="150" id="bcD-iu-mvD"/>
-                            <constraint firstItem="n60-Z3-XSK" firstAttribute="baseline" secondItem="Uij-kH-3ZB" secondAttribute="baseline" id="mdi-MB-Zph"/>
                             <constraint firstItem="pG8-op-VCh" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="91" id="vsM-k4-2lm"/>
                             <constraint firstItem="ADU-OX-rZz" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="150" id="x7C-Ee-p9m"/>
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="top" secondItem="ADU-OX-rZz" secondAttribute="bottom" constant="55" id="yDj-5q-rR1"/>
@@ -1013,7 +1006,7 @@
                     <connections>
                         <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
                         <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
-                        <outlet property="exitButton" destination="n60-Z3-XSK" id="MmW-Su-sPt"/>
+                        <outlet property="exitButton" destination="NZL-bX-VXi" id="Pnz-KF-U1X"/>
                         <outlet property="questImageView" destination="fOQ-F7-ce0" id="982-Yq-NOV"/>
                         <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
                     </connections>
