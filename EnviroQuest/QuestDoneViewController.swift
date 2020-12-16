@@ -87,6 +87,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     
     
    
+    @IBOutlet weak var anotherStubbornImageView: UIImageView!
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var uploadImageButton: UIButton!
@@ -96,13 +97,15 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     
     var imagePicker: ImagePicker!
     var questComplete: Bool!
+    var currentLevel: Int!
+    var currentQuestNumber:Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         uploadImageButton.layer.cornerRadius = 20
         confirmButton.layer.cornerRadius = 20
-        
+        anotherStubbornImageView.contentMode = .scaleAspectFill
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         // Do any additional setup after loading the view.
     }
@@ -147,7 +150,8 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     */
 
     @IBAction func exitButtonPressed(_ sender: Any) {
-       
+        levelQuestComplete[currentLevel].questDone[currentQuestNumber] = true
+        print(levelQuestComplete[currentLevel].questDone)
         unwindToThisView(sender: self)
         
     }

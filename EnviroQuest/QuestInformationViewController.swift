@@ -10,6 +10,8 @@ import UIKit
 class QuestInformationViewController: UIViewController {
     var questDescription:String!
     var questTitle:String!
+    var levelNumber:Int!
+    var questChosen:Int!
     @IBOutlet weak var thirdAnnoyingImageIThink: UIImageView!
     @IBOutlet weak var theBackgroundView: UIView!
     @IBOutlet weak var doneButton: UIButton!
@@ -34,7 +36,15 @@ class QuestInformationViewController: UIViewController {
     @IBAction func unwindToQuest(_ sender: UIStoryboardSegue) {
         
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "confirmDone" {
+            let destVC = segue.destination as! QuestDoneViewController
+            destVC.currentQuestNumber = questChosen
+            destVC.currentLevel = levelNumber
+        
+        
+    }
+}
     /*
     // MARK: - Navigation
 

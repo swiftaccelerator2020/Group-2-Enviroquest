@@ -32,22 +32,21 @@ class QuestViewController: UIViewController {
         secondButtonView.layer.cornerRadius = 20
         firstButtonView.layer.cornerRadius = 20
         thirdButtonView.layer.cornerRadius = 20
-   if firstQuestCompleted == true{
-                 firstButtonView.backgroundColor = .green
-               }else{
-                   firstButtonView.backgroundColor = .white
-               }
-               if secondQuestCompleted == true{
-                   secondButtonView.backgroundColor = .green
-               }else{
-                   secondButtonView.backgroundColor = .white
-              }
-
-               if thirdQuestCompleted == true{
-                   thirdButtonView.backgroundColor = .green
-               }else{
-                   thirdButtonView.backgroundColor = .white
-               }
+        if levelQuestComplete[currentLevel.levelNumber].questDone[0] == true{
+            firstButtonView.backgroundColor = .green
+        }else{
+            firstButtonView.backgroundColor = .white
+        }
+        if levelQuestComplete[currentLevel.levelNumber].questDone[1] == true{
+                secondButtonView.backgroundColor = .green
+        }else{
+                secondButtonView.backgroundColor = .white
+        }
+        if levelQuestComplete[currentLevel.levelNumber].questDone[2] == true{
+                thirdButtonView.backgroundColor = .green
+        }else{
+                thirdButtonView.backgroundColor = .white
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -79,6 +78,8 @@ class QuestViewController: UIViewController {
             let destination = destnv?.viewControllers.first as! QuestInformationViewController
             destination.questDescription = currentLevel.questDescriptions[whateverLevelIsThis]
             destination.questTitle = currentLevel.questNames[whateverLevelIsThis]
+            destination.questChosen = whateverLevelIsThis
+            destination.levelNumber = currentLevel.levelNumber
         }
             //There was never anything sus here
         
@@ -86,7 +87,7 @@ class QuestViewController: UIViewController {
             
         }
     /*
-     
+     //OOPS
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

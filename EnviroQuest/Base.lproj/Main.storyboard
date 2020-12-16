@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -935,8 +935,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background" translatesAutoresizingMaskIntoConstraints="NO" id="j9b-kI-yH3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fOQ-F7-ce0">
                                 <rect key="frame" x="52" y="164" width="310" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="VtI-EE-CAy"/>
                                     <constraint firstAttribute="width" constant="310" id="shD-dg-vXm"/>
@@ -988,6 +992,7 @@
                         <constraints>
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="52" id="0ZA-oP-tVB"/>
                             <constraint firstItem="ADU-OX-rZz" firstAttribute="top" secondItem="Un6-lz-0lz" secondAttribute="top" constant="70" id="6O1-4g-qM6"/>
+                            <constraint firstItem="j9b-kI-yH3" firstAttribute="leading" secondItem="qZF-kK-P3V" secondAttribute="leading" id="74u-JW-xcL"/>
                             <constraint firstItem="Uij-kH-3ZB" firstAttribute="top" secondItem="pG8-op-VCh" secondAttribute="bottom" constant="80" id="97u-ZD-64D"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="Uij-kH-3ZB" secondAttribute="trailing" constant="130" id="Bx2-dF-qaC"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="fOQ-F7-ce0" secondAttribute="trailing" constant="52" id="EDx-F4-wj7"/>
@@ -997,13 +1002,17 @@
                             <constraint firstItem="pG8-op-VCh" firstAttribute="top" secondItem="fOQ-F7-ce0" secondAttribute="bottom" constant="37" id="RlT-bW-iNS"/>
                             <constraint firstItem="NZL-bX-VXi" firstAttribute="top" secondItem="Un6-lz-0lz" secondAttribute="top" constant="20" id="Uur-dY-DSZ"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="bottom" secondItem="Uij-kH-3ZB" secondAttribute="bottom" constant="127" id="WFv-s7-lUV"/>
+                            <constraint firstAttribute="bottom" secondItem="j9b-kI-yH3" secondAttribute="bottom" id="ayW-Sl-hBj"/>
                             <constraint firstItem="Un6-lz-0lz" firstAttribute="trailing" secondItem="ADU-OX-rZz" secondAttribute="trailing" constant="150" id="bcD-iu-mvD"/>
+                            <constraint firstItem="j9b-kI-yH3" firstAttribute="top" secondItem="Un6-lz-0lz" secondAttribute="top" id="oT6-Fe-zJb"/>
                             <constraint firstItem="pG8-op-VCh" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="91" id="vsM-k4-2lm"/>
                             <constraint firstItem="ADU-OX-rZz" firstAttribute="leading" secondItem="Un6-lz-0lz" secondAttribute="leading" constant="150" id="x7C-Ee-p9m"/>
                             <constraint firstItem="fOQ-F7-ce0" firstAttribute="top" secondItem="ADU-OX-rZz" secondAttribute="bottom" constant="55" id="yDj-5q-rR1"/>
+                            <constraint firstItem="j9b-kI-yH3" firstAttribute="trailing" secondItem="qZF-kK-P3V" secondAttribute="trailing" id="yZ1-qL-fVG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="anotherStubbornImageView" destination="j9b-kI-yH3" id="uRP-nO-oJb"/>
                         <outlet property="confirmButton" destination="Uij-kH-3ZB" id="YZt-fR-hOs"/>
                         <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
                         <outlet property="exitButton" destination="NZL-bX-VXi" id="Pnz-KF-U1X"/>
@@ -1079,6 +1088,7 @@
         <image name="Done with quest page" width="375" height="812"/>
         <image name="Load screen" width="375" height="812"/>
         <image name="Login page background" width="375" height="812"/>
+        <image name="Photo gallery background" width="375" height="812"/>
         <image name="Photo gallery background-1" width="375" height="812"/>
         <image name="Progress page" width="375" height="812"/>
         <image name="Shop background" width="375" height="812"/>
