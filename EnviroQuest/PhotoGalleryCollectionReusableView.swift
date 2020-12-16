@@ -21,3 +21,5 @@ class PhotoGalleryCollectionReusableView: UICollectionReusableView {
 // it says cannot find sectionHeader in scope :(
 }
 // closing bracket please :scream_cat:
+//HI
+
