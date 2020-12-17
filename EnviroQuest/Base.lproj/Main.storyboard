@@ -870,7 +870,7 @@
                                         <rect key="frame" x="100" y="481" width="154" height="58"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <state key="normal" title="Done">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" systemColor="systemIndigoColor"/>
                                         </state>
                                         <connections>
                                             <action selector="doneButtonPressed:" destination="2N4-ex-dun" eventType="touchUpInside" id="y46-Ay-gOi"/>
@@ -980,7 +980,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-bX-VXi">
                                 <rect key="frame" x="20" y="20" width="30" height="30"/>
-                                <state key="normal" title="Exit"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
                                 <connections>
                                     <action selector="exitButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="xeq-KO-eDU"/>
                                     <segue destination="5Tf-Dm-oK4" kind="unwind" unwindAction="unwindToQuestInfo:" id="dOg-G8-Jk6"/>
