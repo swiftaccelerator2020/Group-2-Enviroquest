@@ -488,7 +488,7 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Shop" image="cart.fill" catalog="system" selectedImage="cart.fill" id="RVk-oE-803"/>
                     <connections>
-                        <outlet property="stubbornImageView" destination="2tI-n0-vLb" id="pii-1C-Dum"/>
+                        <outlet property="stubbornImageView" destination="2tI-n0-vLb" id="5OG-ne-GSo"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

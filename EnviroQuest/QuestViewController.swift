@@ -32,17 +32,17 @@ class QuestViewController: UIViewController {
         secondButtonView.layer.cornerRadius = 20
         firstButtonView.layer.cornerRadius = 20
         thirdButtonView.layer.cornerRadius = 20
-        if levelQuestComplete[currentLevel.levelNumber].questDone[0] == true{
+        if theLevels[currentLevel.levelNumber].questDone[0] == true{
             firstButtonView.backgroundColor = .green
         }else{
             firstButtonView.backgroundColor = .white
         }
-        if levelQuestComplete[currentLevel.levelNumber].questDone[1] == true{
+        if theLevels[currentLevel.levelNumber].questDone[1] == true{
                 secondButtonView.backgroundColor = .green
         }else{
                 secondButtonView.backgroundColor = .white
         }
-        if levelQuestComplete[currentLevel.levelNumber].questDone[2] == true{
+        if theLevels[currentLevel.levelNumber].questDone[2] == true{
                 thirdButtonView.backgroundColor = .green
         }else{
                 thirdButtonView.backgroundColor = .white

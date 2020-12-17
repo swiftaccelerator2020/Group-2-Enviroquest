@@ -10,11 +10,13 @@ public class Level{
     var levelNumber: Int
     var questNames: Array<String>
     var questDescriptions: Array<String>
+    var questDone: Array<Bool>
     var levelCompleted: Bool
-    init(levelNumber: Int, questNames: Array<String>, questDescriptions: Array<String>, levelCompleted: Bool) {
+    init(levelNumber: Int, questNames: Array<String>, questDescriptions: Array<String>, questDone: Array<Bool>, levelCompleted: Bool) {
         self.levelNumber = levelNumber
         self.questNames = questNames
         self.questDescriptions = questDescriptions
+        self.questDone = questDone
         self.levelCompleted = levelCompleted
     }
 }
