@@ -874,6 +874,7 @@
                                         </state>
                                         <connections>
                                             <action selector="doneButtonPressed:" destination="2N4-ex-dun" eventType="touchUpInside" id="y46-Ay-gOi"/>
+                                            <segue destination="3MS-e5-xTY" kind="presentation" identifier="confirmDone" id="OZd-Ar-BOl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -918,7 +919,6 @@
                         <outlet property="questTitleLabel" destination="F3a-Rf-epE" id="MUt-HY-BE0"/>
                         <outlet property="theBackgroundView" destination="uvp-2n-Av5" id="p0g-gJ-U6v"/>
                         <outlet property="thirdAnnoyingImageIThink" destination="W90-iZ-ZMQ" id="bPd-ll-K6p"/>
-                        <segue destination="3MS-e5-xTY" kind="presentation" identifier="confirmDone" id="nwb-fA-zDD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-RT-cIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
