@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -857,7 +857,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
                                         <rect key="frame" x="35" y="130" width="284" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="320" id="Uwt-NC-8xV"/>
@@ -867,10 +867,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzR-Bu-9FG">
-                                        <rect key="frame" x="100" y="481" width="154" height="85"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="100" y="481" width="154" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <state key="normal" title="Done">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="doneButtonPressed:" destination="2N4-ex-dun" eventType="touchUpInside" id="y46-Ay-gOi"/>
@@ -885,7 +885,7 @@
                                     <constraint firstItem="jKj-48-eUn" firstAttribute="centerX" secondItem="F3a-Rf-epE" secondAttribute="centerX" id="9ek-Y7-OW4"/>
                                     <constraint firstItem="BzR-Bu-9FG" firstAttribute="leading" secondItem="uvp-2n-Av5" secondAttribute="leading" constant="100" id="RLy-RW-Srs"/>
                                     <constraint firstItem="jKj-48-eUn" firstAttribute="top" secondItem="F3a-Rf-epE" secondAttribute="bottom" constant="30" id="RO6-jA-ltx"/>
-                                    <constraint firstAttribute="bottom" secondItem="BzR-Bu-9FG" secondAttribute="bottom" constant="23" id="i2O-et-cef"/>
+                                    <constraint firstAttribute="bottom" secondItem="BzR-Bu-9FG" secondAttribute="bottom" constant="50" id="i2O-et-cef"/>
                                     <constraint firstAttribute="trailing" secondItem="F3a-Rf-epE" secondAttribute="trailing" constant="35" id="lgp-hy-pkj"/>
                                     <constraint firstItem="jKj-48-eUn" firstAttribute="trailing" secondItem="F3a-Rf-epE" secondAttribute="trailing" id="t2E-eu-uoL"/>
                                     <constraint firstItem="BzR-Bu-9FG" firstAttribute="top" secondItem="jKj-48-eUn" secondAttribute="bottom" constant="31" id="wTs-sW-IE1"/>

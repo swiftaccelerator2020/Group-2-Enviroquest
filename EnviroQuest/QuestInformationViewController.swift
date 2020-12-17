@@ -19,6 +19,8 @@ class QuestInformationViewController: UIViewController {
     @IBOutlet weak var questTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        doneButton.layer.cornerRadius = 20
+        doneButton.backgroundColor = UIColor.systemIndigo
         thirdAnnoyingImageIThink.contentMode = .scaleAspectFill
         theBackgroundView.layer.cornerRadius = 20
         doneButton.layer.cornerRadius = 20
