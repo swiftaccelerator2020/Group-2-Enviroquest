@@ -16,12 +16,14 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var secondButtonView: UIButton!
     //my keyboard lagged and i nearly put the name as secondButto .-.
     @IBOutlet weak var thirdButtonView: UIButton!
+    @IBOutlet weak var circularProgress: CircularProgressView!
     
     var whateverLevelIsThis = 0
       var currentLevel:Level!
     var firstQuestCompleted = false
     var secondQuestCompleted = false
     var thirdQuestCompleted = false
+    
     
  
     override func viewDidLoad() {
@@ -48,7 +50,38 @@ class QuestViewController: UIViewController {
                 thirdButtonView.backgroundColor = .white
         }
         // Do any additional setup after loading the view.
-    }
+        
+
+       
+            
+            let cp = CircularProgressView(frame: CGRect(x: 10.0, y: 10.0, width: 100.0, height: 100.0))
+            cp.trackColor = UIColor.red
+            cp.progressColor = UIColor.yellow
+            cp.tag = 101
+            self.view.addSubview(cp)
+            
+            cp.center = self.view.center
+            
+            self.perform(#selector(animateProgress), with: nil, afterDelay: 2.0)
+            
+            
+            circularProgress.trackColor = UIColor.white
+            circularProgress.progressColor = UIColor.purple
+            circularProgress.setProgressWithAnimation(duration: 1.0, value: 0.6)
+        }
+        
+        
+        
+        @objc func animateProgress() {
+            let cP = self.view.viewWithTag(101) as! CircularProgressView
+            cP.setProgressWithAnimation(duration: 1.0, value: 0.7)
+            
+        }
+
+        
+        
+        
+    
     
 
     @IBAction func firstButtonPressed(_ sender: Any) {

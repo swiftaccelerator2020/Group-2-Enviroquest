@@ -20,6 +20,7 @@
 		3A1BBFC025680CF70071B496 /* EnviroQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */; };
 		3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29B186257F565700F76C40 /* QuestDoneViewController.swift */; };
 		3A767496257B2D7800735559 /* UICircularProgressRing in Frameworks */ = {isa = PBXBuildFile; productRef = 3A767495257B2D7800735559 /* UICircularProgressRing */; };
+		3A947564258C7BFB00CD944A /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A947563258C7BFB00CD944A /* CircularProgressView.swift */; };
 		A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */; };
 		A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */; };
 		A85F96F3256BA69400E6007E /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */; };
@@ -70,6 +71,7 @@
 		3A1BBFBF25680CF70071B496 /* EnviroQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviroQuestUITests.swift; sourceTree = "<group>"; };
 		3A1BBFC125680CF70071B496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29B186257F565700F76C40 /* QuestDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDoneViewController.swift; sourceTree = "<group>"; };
+		3A947563258C7BFB00CD944A /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A85F96ED256B9F5E00E6007E /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A85F96F2256BA69400E6007E /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				CC3C4C942574CC1900982310 /* Level.swift */,
 				CC65BF9D25879B58005429B8 /* levelDoneOrNot.swift */,
 				3A03BFC22568D571003BB858 /* HomeViewController.swift */,
+				3A947563258C7BFB00CD944A /* CircularProgressView.swift */,
 				3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */,
 				3A03BFBD2568D48E003BB858 /* StoryViewController.swift */,
 				3A1BBFA625680CF60071B496 /* Assets.xcassets */,
@@ -332,6 +335,7 @@
 				CC00AF84258AEF5E006A487B /* PhotosCollectionViewController.swift in Sources */,
 				CCDDF40B2587062700D12216 /* PhotosCollectionReusableView.swift in Sources */,
 				CC6A719A256BE3C5003C3F75 /* QuestViewController.swift in Sources */,
+				3A947564258C7BFB00CD944A /* CircularProgressView.swift in Sources */,
 				3A29B187257F565700F76C40 /* QuestDoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

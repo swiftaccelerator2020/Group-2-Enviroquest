@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import UICircularProgressRing
 
 var currentFactCounter = 1
 var gemCounter = 0
@@ -79,6 +79,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var newFactButton: UIButton!
     @IBOutlet weak var newFactLabel: UILabel!
 
+
+    
     
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var factUIView: UIView!

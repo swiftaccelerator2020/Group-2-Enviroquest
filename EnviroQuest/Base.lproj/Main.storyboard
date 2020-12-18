@@ -197,7 +197,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="ProgressView"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="firstView"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FYv-9Q-62s" secondAttribute="height" multiplier="1:1" id="zxW-Wc-I2N"/>
                                                 </constraints>
@@ -219,9 +219,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE">
+                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="UICircularProgressRingView" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="secondVIew"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
                                                         <real key="value" value="0.0"/>
@@ -716,7 +717,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -820,6 +821,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
                     <connections>
+                        <outlet property="circularProgress" destination="N06-Pg-kBs" id="cL1-Yb-jjh"/>
                         <outlet property="firstButtonView" destination="buw-52-AE2" id="oTo-Jw-ztD"/>
                         <outlet property="secondButtonView" destination="nEq-PM-JAr" id="oy1-4v-ZKz"/>
                         <outlet property="theFirstQuest" destination="fn3-0k-buw" id="FDz-G4-oEG"/>
@@ -873,7 +875,7 @@
                                             <constraint firstAttribute="width" constant="124" id="RtG-RV-L1h"/>
                                             <constraint firstAttribute="height" constant="51" id="lJw-Pk-2G6"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Done">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
