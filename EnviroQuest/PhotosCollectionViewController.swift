@@ -8,8 +8,11 @@
 import UIKit
 
 private let reuseIdentifier = "PhotoCell"
-var shopItems = ["1","2", "3", "4", "5"]
-var shopItemLabels = ["Ten!","Richhh","Ultra Skip","Skip","Darkmode"]
+public var shopItems = ["1","2", "3", "4", "5"]
+public var shopItemLabels = ["Ten!","Richhh","Ultra Skip","Skip","Darkmode"]
+public var currentCount = 0
+
+
 class PhotosCollectionViewController: UICollectionViewController {
     @IBOutlet weak var stubbornImageView: UIImageView!
     
@@ -51,14 +54,16 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as!PhotoCollectionViewCell
-        
-        cell.shopLabel.text = shopItemLabels[indexPath.row]
+        cell.shopButton.setTitle(shopItemLabels[indexPath.row], for: .normal)
+        cell.shopButton.layer.cornerRadius = 5
         cell.shopImage.image = UIImage(named:shopItems[indexPath.row])
+        
+        currentCount = indexPath.row
         // Configure the cell
     
         return cell
     }
-
+    
     // MARK: UICollectionViewDelegate
 
     /*
@@ -68,12 +73,29 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
     */
 
-    /*
+    
     // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
+//    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+//
+//            let alert = UIAlertController(title: "Did you like the last joke?", message: "", preferredStyle: .alert)
+//
+//            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+//                print("The user chose Yes")
+//                let alert2 = UIAlertController(title: "Yay! Thank you!", message: "🥰", preferredStyle: .alert)
+//                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert2, animated: true, completion: nil)
+//            }))
+//
+//            alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+//                print("The user chose No")
+//                let alert2 = UIAlertController(title: "What! You are awful", message: "😡", preferredStyle: .alert)
+//                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert2, animated: true, completion: nil)
+//            }))
+//
+//        return true
+//    }
+//
 
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item

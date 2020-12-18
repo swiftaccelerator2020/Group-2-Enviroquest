@@ -459,33 +459,29 @@
                                                 <constraint firstAttribute="width" constant="90" id="r91-od-zim"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-5Z-F74">
-                                            <rect key="frame" x="5" y="86.5" width="110" height="23.5"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="PhotoCell"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="23.5" id="0Gn-ht-kZQ"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hca-T2-EUU">
+                                            <rect key="frame" x="8" y="85" width="104" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="1ZH-5Z-F74" secondAttribute="bottom" constant="10" id="VA4-2c-Qua"/>
-                                        <constraint firstItem="1ZH-5Z-F74" firstAttribute="top" secondItem="p4T-dE-Aw4" secondAttribute="bottom" constant="10" id="Yg5-WK-Hti"/>
-                                        <constraint firstAttribute="trailing" secondItem="1ZH-5Z-F74" secondAttribute="trailing" constant="5" id="dTJ-ez-vpJ"/>
+                                        <constraint firstItem="hca-T2-EUU" firstAttribute="centerX" secondItem="p4T-dE-Aw4" secondAttribute="centerX" id="PXB-GK-PX5"/>
                                         <constraint firstItem="p4T-dE-Aw4" firstAttribute="leading" secondItem="Sag-bE-bWP" secondAttribute="leading" constant="15" id="ekw-BU-VII"/>
                                         <constraint firstItem="p4T-dE-Aw4" firstAttribute="top" secondItem="Sag-bE-bWP" secondAttribute="top" constant="20" id="fuu-AP-JYG"/>
+                                        <constraint firstItem="hca-T2-EUU" firstAttribute="top" secondItem="p4T-dE-Aw4" secondAttribute="bottom" constant="8.5" id="mSt-vz-4Ri"/>
+                                        <constraint firstItem="hca-T2-EUU" firstAttribute="leading" secondItem="Sag-bE-bWP" secondAttribute="leadingMargin" id="n9k-fq-6p8"/>
                                         <constraint firstAttribute="trailing" secondItem="p4T-dE-Aw4" secondAttribute="trailing" constant="15" id="q0b-IC-1w3"/>
-                                        <constraint firstItem="1ZH-5Z-F74" firstAttribute="leading" secondItem="Sag-bE-bWP" secondAttribute="leading" constant="5" id="qMp-ui-Mv9"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="customSize" width="120" height="120"/>
                                 <connections>
+                                    <outlet property="shopButton" destination="hca-T2-EUU" id="8q9-7w-gWu"/>
                                     <outlet property="shopImage" destination="p4T-dE-Aw4" id="uJV-Zb-5oy"/>
-                                    <outlet property="shopLabel" destination="1ZH-5Z-F74" id="UHT-cp-wdw"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -501,7 +497,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2904" y="-600"/>
+            <point key="canvasLocation" x="2902.898550724638" y="-600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
