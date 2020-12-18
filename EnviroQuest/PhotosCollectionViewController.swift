@@ -8,7 +8,8 @@
 import UIKit
 
 private let reuseIdentifier = "PhotoCell"
-
+var shopItems = ["1","2", "3", "4", "5"]
+var shopItemLabels = ["Ten!","Richhh","Ultra Skip","Skip","Darkmode"]
 class PhotosCollectionViewController: UICollectionViewController {
     @IBOutlet weak var stubbornImageView: UIImageView!
     
@@ -45,12 +46,14 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return 5
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as!PhotoCollectionViewCell
-        cell.shopLabel.text = "Shop Item"
+        
+        cell.shopLabel.text = shopItemLabels[indexPath.row]
+        cell.shopImage.image = UIImage(named:shopItems[indexPath.row])
         // Configure the cell
     
         return cell
