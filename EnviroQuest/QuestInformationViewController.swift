@@ -24,7 +24,7 @@ class QuestInformationViewController: UIViewController {
         thirdAnnoyingImageIThink.contentMode = .scaleAspectFill
         theBackgroundView.layer.cornerRadius = 20
         doneButton.layer.cornerRadius = 20
-        doneButton.layer.backgroundColor = .init(red: 1, green: 1, blue: 1, alpha: 1)
+ 
         questTitleLabel.text = questTitle
         questDecriptionLabel.text = questDescription
         // Do any additional setup after loading the view.
@@ -34,6 +34,7 @@ class QuestInformationViewController: UIViewController {
         self.performSegue(withIdentifier: "confirmDone", sender: nil)
         
     }
+    
     
     @IBAction func unwindToQuest(_ sender: UIStoryboardSegue) {
         
