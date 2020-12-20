@@ -107,21 +107,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     // Uncomment this method to specify if the specified item should be selected
 //    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
 //
-//            let alert = UIAlertController(title: "Did you like the last joke?", message: "", preferredStyle: .alert)
 //
-//            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
-//                print("The user chose Yes")
-//                let alert2 = UIAlertController(title: "Yay! Thank you!", message: "🥰", preferredStyle: .alert)
-//                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                self.present(alert2, animated: true, completion: nil)
-//            }))
-//
-//            alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
-//                print("The user chose No")
-//                let alert2 = UIAlertController(title: "What! You are awful", message: "😡", preferredStyle: .alert)
-//                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                self.present(alert2, animated: true, completion: nil)
-//            }))
 //
 //        return true
 //    }
