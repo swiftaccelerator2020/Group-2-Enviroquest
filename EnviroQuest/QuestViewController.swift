@@ -49,6 +49,9 @@ class QuestViewController: UIViewController {
         }else{
                 thirdButtonView.backgroundColor = .white
         }
+        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+            theLevels[currentLevel.levelNumber].levelCompleted = true
+        }
         // Do any additional setup after loading the view.
         
 

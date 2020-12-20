@@ -9,7 +9,7 @@ import UIKit
 import UICircularProgressRing
 
 var currentFactCounter = 1
-var gemCounter = 0
+public var gemCounter = 0
 
 
 //struct ProgressRingExample: View? {

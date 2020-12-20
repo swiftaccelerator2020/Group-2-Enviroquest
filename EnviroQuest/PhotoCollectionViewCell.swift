@@ -12,4 +12,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var shopButton: UIButton!
 
+    @IBAction func buttonClicked(_ sender: Any) {
+    }
 }
