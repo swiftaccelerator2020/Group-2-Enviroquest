@@ -16,7 +16,8 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var secondButtonView: UIButton!
     //my keyboard lagged and i nearly put the name as secondButto .-.
     @IBOutlet weak var thirdButtonView: UIButton!
-//    @IBOutlet weak var circularProgress: CircularProgressView!
+    //circularprogress should be commented to remove cpr
+    @IBOutlet weak var circularProgress: CircularProgressView!
     
     var whateverLevelIsThis = 0
       var currentLevel:Level!
@@ -36,18 +37,25 @@ class QuestViewController: UIViewController {
         thirdButtonView.layer.cornerRadius = 20
         if theLevels[currentLevel.levelNumber].questDone[0] == true{
             firstButtonView.backgroundColor = .green
+            firstButtonView.isEnabled = false
         }else{
             firstButtonView.backgroundColor = .white
+            firstButtonView.isEnabled = true
         }
         if theLevels[currentLevel.levelNumber].questDone[1] == true{
                 secondButtonView.backgroundColor = .green
+            secondButtonView.isEnabled = false
         }else{
                 secondButtonView.backgroundColor = .white
+            secondButtonView.isEnabled = true
         }
         if theLevels[currentLevel.levelNumber].questDone[2] == true{
                 thirdButtonView.backgroundColor = .green
+            thirdButtonView.isEnabled = false
+            print(String(theLevels[currentLevel.levelNumber].questDone[2]))
         }else{
                 thirdButtonView.backgroundColor = .white
+            thirdButtonView.isEnabled = true
         }
         if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
             theLevels[currentLevel.levelNumber].levelCompleted = true
@@ -56,31 +64,31 @@ class QuestViewController: UIViewController {
         
 
        
-            
-//            let cp = CircularProgressView(frame: CGRect(x: 10.0, y: 10.0, width: 100.0, height: 100.0))
-//            cp.trackColor = UIColor.red
-//            cp.progressColor = UIColor.yellow
-//            cp.tag = 101
-//            self.view.addSubview(cp)
-//
-//            cp.center = self.view.center
-//
-//            self.perform(#selector(animateProgress), with: nil, afterDelay: 2.0)
-//
-//
-//            circularProgress.trackColor = UIColor.white
-//            circularProgress.progressColor = UIColor.purple
-//            circularProgress.setProgressWithAnimation(duration: 1.0, value: 0.6)
+            //everything below until you see "STAWP HERE" is to be uncommented to remove cpr
+            let cp = CircularProgressView(frame: CGRect(x: 10.0, y: 10.0, width: 100.0, height: 100.0))
+            cp.trackColor = UIColor.red
+            cp.progressColor = UIColor.yellow
+            cp.tag = 101
+            self.view.addSubview(cp)
+
+            cp.center = self.view.center
+
+            self.perform(#selector(animateProgress), with: nil, afterDelay: 2.0)
+
+
+            circularProgress.trackColor = UIColor.white
+            circularProgress.progressColor = UIColor.purple
+            circularProgress.setProgressWithAnimation(duration: 1.0, value: 0.6)
         }
         
         
         
-//        @objc func animateProgress() {
-//            let cP = self.view.viewWithTag(101) as! CircularProgressView
-//            cP.setProgressWithAnimation(duration: 1.0, value: 0.7)
-//
-//        }
+        @objc func animateProgress() {
+            let cP = self.view.viewWithTag(101) as! CircularProgressView
+            cP.setProgressWithAnimation(duration: 1.0, value: 0.7)
 
+        }
+//STAWP HERE
         
         
         
@@ -99,6 +107,8 @@ class QuestViewController: UIViewController {
     @IBAction func thirdButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
         whateverLevelIsThis = 2
+        print(String(theLevels[currentLevel.levelNumber].questDone[2]))
+        print("OI IM HERE")
     }
     
     @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
