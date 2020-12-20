@@ -12,7 +12,8 @@ public var shopItems = ["1","2", "3", "4", "5"]
 public var shopItemLabels = ["Ten!","Richhh","Ultra Skip","Skip","Darkmode"]
 public var currentCount = 0
 public var inventory = ["randomobject1", "randomobject2"]
-public var shopItemDescriptions = ["Ten: Shows that you have completed ten quests!", "Richhh: Shows that you are RICHHHH", "Ultra Skip: Allows you to skip a whole level", "Skip: Allows you to skip a quest", "Darkmode: The superior mode"]
+public var shopItemDescriptions = ["Ten: Shows that you have completed ten quests", "Richhh: Shows that you are RICHHHH", "Ultra Skip: Allows you to skip a whole level", "Skip: Allows you to skip a quest", "Darkmode: The superior mode"]
+
 public var shopCosts = [100, 300, 60, 20, 100]
 
 
@@ -79,7 +80,7 @@ class PhotosCollectionViewController: UICollectionViewController {
       didSelectItemAt indexPath: IndexPath) {
         print("Cell \(indexPath.row) clicked")
         if gemCounter >= shopCosts[indexPath.row]{
-            let alert = UIAlertController(title: "Buy this?", message: "You are buying \(shopItemLabels[indexPath.row]) for \(String(shopCosts[indexPath.row])) gems.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Buy this?", message: "You are buying \(shopItemLabels[indexPath.row]) for \(String(shopCosts[indexPath.row])) gems.\n \(shopItemDescriptions[indexPath.row]). \nAre you sure?", preferredStyle: .alert)
                
                            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
                                print("The user chose Yes")
