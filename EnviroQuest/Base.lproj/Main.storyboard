@@ -300,6 +300,13 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-ow-BRG">
+                                <rect key="frame" x="337" y="108" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="settingsButtonPressed:" destination="Dxm-Uq-uNS" eventType="touchUpInside" id="Agv-Id-El2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uzc-FY-6EW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -308,6 +315,8 @@
                             <constraint firstItem="Uzc-FY-6EW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nH0-I7-4Hd" secondAttribute="trailing" symbolic="YES" id="Bhd-JS-5Uh"/>
                             <constraint firstItem="Uzc-FY-6EW" firstAttribute="trailing" secondItem="ZIt-6j-9RR" secondAttribute="trailing" constant="20" id="Bkk-lf-rr1"/>
                             <constraint firstItem="ZIt-6j-9RR" firstAttribute="leading" secondItem="Uzc-FY-6EW" secondAttribute="leading" constant="20" id="Ew6-El-A8M"/>
+                            <constraint firstItem="Uzc-FY-6EW" firstAttribute="trailing" secondItem="8cI-ow-BRG" secondAttribute="trailing" constant="20" id="J8G-Fx-MLG"/>
+                            <constraint firstItem="8cI-ow-BRG" firstAttribute="top" secondItem="Uzc-FY-6EW" secondAttribute="top" constant="20" id="Jd8-CJ-xO2"/>
                             <constraint firstItem="ZIt-6j-9RR" firstAttribute="centerY" secondItem="G0O-7Y-vnm" secondAttribute="centerY" id="hXv-By-5Pt"/>
                             <constraint firstItem="nH0-I7-4Hd" firstAttribute="leading" secondItem="Uzc-FY-6EW" secondAttribute="leading" constant="20" id="j1L-q8-IO7"/>
                             <constraint firstItem="V1K-A7-7ar" firstAttribute="leading" secondItem="G0O-7Y-vnm" secondAttribute="leading" id="nbB-du-qBX"/>
@@ -324,11 +333,12 @@
                         <outlet property="helloLabel" destination="tf7-IR-MSQ" id="R67-EN-C4I"/>
                         <outlet property="newFactButton" destination="Mg7-hC-PtO" id="S4C-tD-cBZ"/>
                         <outlet property="newFactLabel" destination="pNh-L8-SOv" id="4s1-dD-sxk"/>
+                        <outlet property="settingsButton" destination="8cI-ow-BRG" id="1p8-YF-mTM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeA-po-lEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3807" y="78"/>
+            <point key="canvasLocation" x="3805.7971014492755" y="77.678571428571431"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="JFv-B4-SK2">
