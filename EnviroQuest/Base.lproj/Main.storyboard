@@ -723,7 +723,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
