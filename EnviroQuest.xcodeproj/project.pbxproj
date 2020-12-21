@@ -10,6 +10,7 @@
 		3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */; };
 		3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFBD2568D48E003BB858 /* StoryViewController.swift */; };
 		3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFC22568D571003BB858 /* HomeViewController.swift */; };
+		3A18E4432590D147008C4427 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18E4422590D147008C4427 /* SettingsViewController.swift */; };
 		3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9D25680CF30071B496 /* AppDelegate.swift */; };
 		3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */; };
 		3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA125680CF30071B496 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		3A03BFB82568D430003BB858 /* EnterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDetailsViewController.swift; sourceTree = "<group>"; };
 		3A03BFBD2568D48E003BB858 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		3A03BFC22568D571003BB858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A18E4422590D147008C4427 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3A1BBF9A25680CF30071B496 /* EnviroQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnviroQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBF9D25680CF30071B496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				3A18E4422590D147008C4427 /* SettingsViewController.swift */,
 				CC00AF83258AEF5E006A487B /* PhotosCollectionViewController.swift */,
 				A833C5EC256DFD430053C648 /* PhotoCollectionViewCell.swift */,
 				CCDDF405258704C200D12216 /* PhotoGalleryCollectionReusableView.swift */,
@@ -319,6 +322,7 @@
 			files = (
 				3A03BFBE2568D48E003BB858 /* StoryViewController.swift in Sources */,
 				A833C5ED256DFD430053C648 /* PhotoCollectionViewCell.swift in Sources */,
+				3A18E4432590D147008C4427 /* SettingsViewController.swift in Sources */,
 				3A03BFB92568D430003BB858 /* EnterDetailsViewController.swift in Sources */,
 				CC65BF9E25879B58005429B8 /* levelDoneOrNot.swift in Sources */,
 				3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */,

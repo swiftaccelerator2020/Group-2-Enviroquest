@@ -512,6 +512,21 @@
             </objects>
             <point key="canvasLocation" x="2902.898550724638" y="-600"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="grr-9x-18k">
+            <objects>
+                <viewController id="7Ud-ym-5uI" customClass="SettingsViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfN-HG-Uxs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zw6-Go-mjZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFt-GS-abC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4065" y="-697"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
             <objects>

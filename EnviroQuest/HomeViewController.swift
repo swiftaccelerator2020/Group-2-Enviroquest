@@ -78,7 +78,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var gemsCounterLabel: UILabel!
     @IBOutlet weak var newFactButton: UIButton!
     @IBOutlet weak var newFactLabel: UILabel!
-
+    @IBOutlet weak var settingsButton: UIButton!
+    
 
     
     
@@ -125,6 +126,8 @@ class HomeViewController: UIViewController {
     }
 
     
+    @IBAction func settingsButtonPressed(_ sender: Any) {
+    }
     
     
   
