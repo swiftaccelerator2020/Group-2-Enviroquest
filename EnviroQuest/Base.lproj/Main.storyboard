@@ -541,16 +541,49 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-cn-LaA">
+                                <rect key="frame" x="30" y="271" width="354" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9LP-3n-0JG">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="400"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-of-H0n">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="vLB-VU-Gjx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="QinGuan"/>
+                                                <connections>
+                                                    <segue destination="As1-uD-zEi" kind="presentation" identifier="showSettingsDetails" id="gRg-gf-UY2"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A QunGuan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n2-do-X9h">
+                                                <rect key="frame" x="85" y="0.0" width="269" height="400"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="HcM-Sp-gK7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zw6-Go-mjZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hfd-cn-LaA" firstAttribute="top" secondItem="9Ha-p4-1f1" secondAttribute="bottom" constant="39.5" id="9c9-Us-zKx"/>
                             <constraint firstItem="Zev-Hs-3BO" firstAttribute="trailing" secondItem="zw6-Go-mjZ" secondAttribute="trailing" id="ALH-C1-BYU"/>
                             <constraint firstItem="Zev-Hs-3BO" firstAttribute="top" secondItem="jfN-HG-Uxs" secondAttribute="top" id="AwE-zi-XWn"/>
                             <constraint firstAttribute="bottom" secondItem="Zev-Hs-3BO" secondAttribute="bottom" id="FP3-sI-93e"/>
                             <constraint firstItem="Zev-Hs-3BO" firstAttribute="leading" secondItem="zw6-Go-mjZ" secondAttribute="leading" id="SNk-e3-Dig"/>
+                            <constraint firstItem="zw6-Go-mjZ" firstAttribute="trailing" secondItem="hfd-cn-LaA" secondAttribute="trailing" constant="30" id="U51-EE-j1S"/>
                             <constraint firstItem="9Ha-p4-1f1" firstAttribute="leading" secondItem="zw6-Go-mjZ" secondAttribute="leading" constant="30" id="WbU-8L-EbR"/>
                             <constraint firstItem="zw6-Go-mjZ" firstAttribute="trailing" secondItem="9Ha-p4-1f1" secondAttribute="trailing" constant="30" id="bt4-HJ-Sk3"/>
+                            <constraint firstItem="hfd-cn-LaA" firstAttribute="leading" secondItem="zw6-Go-mjZ" secondAttribute="leading" constant="30" id="fqq-De-iUE"/>
                             <constraint firstItem="9Ha-p4-1f1" firstAttribute="top" secondItem="zw6-Go-mjZ" secondAttribute="top" constant="100" id="oyv-Et-Tr0"/>
                         </constraints>
                     </view>
@@ -561,6 +594,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFt-GS-abC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4063.7681159420295" y="-697.09821428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WuI-YT-AeH">
+            <objects>
+                <viewController id="As1-uD-zEi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Y3-fF-F9m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-nP-W18">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qin Guan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ta0-SZ-Ftb">
+                                <rect key="frame" x="172" y="110" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bI9-9J-EqZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzY-2Q-Iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4757.971014492754" y="-691.07142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
