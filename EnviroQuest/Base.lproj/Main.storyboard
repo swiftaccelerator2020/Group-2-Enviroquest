@@ -616,9 +616,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-nP-W18">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-nP-W18">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2A9-ni-ZMk">
                                 <rect key="frame" x="50" y="100" width="314" height="312"/>
@@ -691,8 +690,12 @@
                         <viewLayoutGuide key="safeArea" id="bI9-9J-EqZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cgs-nP-W18" secondAttribute="bottom" id="6CA-9T-QoL"/>
                             <constraint firstItem="4Mj-KN-HMs" firstAttribute="top" secondItem="bI9-9J-EqZ" secondAttribute="top" constant="20" id="9kw-UM-Xgb"/>
+                            <constraint firstItem="cgs-nP-W18" firstAttribute="trailing" secondItem="bI9-9J-EqZ" secondAttribute="trailing" id="ECO-dA-Rbq"/>
                             <constraint firstItem="4Mj-KN-HMs" firstAttribute="leading" secondItem="bI9-9J-EqZ" secondAttribute="leading" constant="20" id="FSX-Os-FKk"/>
+                            <constraint firstItem="cgs-nP-W18" firstAttribute="top" secondItem="bI9-9J-EqZ" secondAttribute="top" id="Ln1-La-xcf"/>
+                            <constraint firstItem="cgs-nP-W18" firstAttribute="leading" secondItem="bI9-9J-EqZ" secondAttribute="leading" id="OAX-4M-95w"/>
                             <constraint firstItem="2A9-ni-ZMk" firstAttribute="top" secondItem="8Y3-fF-F9m" secondAttribute="top" constant="100" id="ZEd-gQ-y7K"/>
                             <constraint firstItem="bI9-9J-EqZ" firstAttribute="trailing" secondItem="2A9-ni-ZMk" secondAttribute="trailing" constant="50" id="gMb-m4-bWs"/>
                             <constraint firstItem="2A9-ni-ZMk" firstAttribute="leading" secondItem="bI9-9J-EqZ" secondAttribute="leading" constant="50" id="q5d-5t-jdS"/>
