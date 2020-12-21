@@ -9,6 +9,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var settingsImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

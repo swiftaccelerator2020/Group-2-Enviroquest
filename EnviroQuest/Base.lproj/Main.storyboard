@@ -305,6 +305,7 @@
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsButtonPressed:" destination="Dxm-Uq-uNS" eventType="touchUpInside" id="Agv-Id-El2"/>
+                                    <segue destination="7Ud-ym-5uI" kind="presentation" identifier="settings" modalPresentationStyle="fullScreen" id="8t8-Qg-5bB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -519,13 +520,47 @@
                     <view key="view" contentMode="scaleToFill" id="jfN-HG-Uxs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="Zev-Hs-3BO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Ha-p4-1f1">
+                                <rect key="frame" x="30" y="144" width="354" height="87.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Qin Guan 🇨🇳" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-51-WQv">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-zg-yu3">
+                                        <rect key="frame" x="0.0" y="61.5" width="354" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zw6-Go-mjZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zev-Hs-3BO" firstAttribute="trailing" secondItem="zw6-Go-mjZ" secondAttribute="trailing" id="ALH-C1-BYU"/>
+                            <constraint firstItem="Zev-Hs-3BO" firstAttribute="top" secondItem="jfN-HG-Uxs" secondAttribute="top" id="AwE-zi-XWn"/>
+                            <constraint firstAttribute="bottom" secondItem="Zev-Hs-3BO" secondAttribute="bottom" id="FP3-sI-93e"/>
+                            <constraint firstItem="Zev-Hs-3BO" firstAttribute="leading" secondItem="zw6-Go-mjZ" secondAttribute="leading" id="SNk-e3-Dig"/>
+                            <constraint firstItem="9Ha-p4-1f1" firstAttribute="leading" secondItem="zw6-Go-mjZ" secondAttribute="leading" constant="30" id="WbU-8L-EbR"/>
+                            <constraint firstItem="zw6-Go-mjZ" firstAttribute="trailing" secondItem="9Ha-p4-1f1" secondAttribute="trailing" constant="30" id="bt4-HJ-Sk3"/>
+                            <constraint firstItem="9Ha-p4-1f1" firstAttribute="top" secondItem="zw6-Go-mjZ" secondAttribute="top" constant="100" id="oyv-Et-Tr0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="settingsImageView" destination="Zev-Hs-3BO" id="5Rc-4R-Lho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFt-GS-abC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4065" y="-697"/>
+            <point key="canvasLocation" x="4063.7681159420295" y="-697.09821428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
