@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -723,7 +723,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo gallery background-1" translatesAutoresizingMaskIntoConstraints="NO" id="bil-NG-GNv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -827,7 +827,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
                     <connections>
-                        <outlet property="circularProgress" destination="N06-Pg-kBs" id="cL1-Yb-jjh"/>
                         <outlet property="firstButtonView" destination="buw-52-AE2" id="oTo-Jw-ztD"/>
                         <outlet property="secondButtonView" destination="nEq-PM-JAr" id="oy1-4v-ZKz"/>
                         <outlet property="theFirstQuest" destination="fn3-0k-buw" id="FDz-G4-oEG"/>
@@ -865,10 +864,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
-                                        <rect key="frame" x="35" y="130" width="284" height="320"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qin Guan generation is a very complicated process that requires quite some time. Do it anyway?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-48-eUn">
+                                        <rect key="frame" x="35" y="130" width="284" height="370"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="320" id="Uwt-NC-8xV"/>
+                                            <constraint firstAttribute="height" constant="370" id="Uwt-NC-8xV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -900,7 +899,7 @@
                                     <constraint firstAttribute="trailing" secondItem="F3a-Rf-epE" secondAttribute="trailing" constant="35" id="lgp-hy-pkj"/>
                                     <constraint firstAttribute="bottom" secondItem="Po0-cs-hpU" secondAttribute="bottom" constant="24" id="npb-4g-vCm"/>
                                     <constraint firstItem="jKj-48-eUn" firstAttribute="trailing" secondItem="F3a-Rf-epE" secondAttribute="trailing" id="t2E-eu-uoL"/>
-                                    <constraint firstItem="Po0-cs-hpU" firstAttribute="top" secondItem="jKj-48-eUn" secondAttribute="bottom" constant="64" id="ulk-KO-jix"/>
+                                    <constraint firstItem="Po0-cs-hpU" firstAttribute="top" secondItem="jKj-48-eUn" secondAttribute="bottom" constant="14" id="ulk-KO-jix"/>
                                 </constraints>
                             </view>
                         </subviews>

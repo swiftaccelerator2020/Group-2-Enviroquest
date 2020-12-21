@@ -1,9 +1,9 @@
-////
-////  CircularProgressView.swift
-////  Circular Progress Bar
-////
-////  Created by Apple April on 18/12/20.
-////
+//
+//  CircularProgressView.swift
+//  Circular Progress Bar
+//
+//  Created by Apple April on 18/12/20.
+//
 //entire file to be commented to remove cpr
 import UIKit
 
