@@ -127,7 +127,10 @@ class HomeViewController: UIViewController {
 
     
     @IBAction func settingsButtonPressed(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "showSettings", sender: nil)
     }
+    
     
     
   
@@ -145,5 +148,10 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+        
+    }
 
 }

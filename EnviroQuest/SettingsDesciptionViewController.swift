@@ -9,9 +9,23 @@ import UIKit
 
 class SettingsDesciptionViewController: UIViewController {
 
+    @IBOutlet weak var settingsDescriptionImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var settingsNameLabel: UILabel!
+    @IBOutlet weak var settingsAgeLabel: UILabel!
+    @IBOutlet weak var settingsNameTextField: UITextField!
+    @IBOutlet weak var settingsAgeTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        settingsDescriptionImageView.contentMode = .scaleAspectFill
+    
+        
         // Do any additional setup after loading the view.
     }
     
@@ -25,5 +39,8 @@ class SettingsDesciptionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        
+    }
+    
 }

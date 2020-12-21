@@ -305,7 +305,7 @@
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsButtonPressed:" destination="Dxm-Uq-uNS" eventType="touchUpInside" id="Agv-Id-El2"/>
-                                    <segue destination="7Ud-ym-5uI" kind="presentation" identifier="settings" modalPresentationStyle="fullScreen" id="8t8-Qg-5bB"/>
+                                    <segue destination="vje-3G-9XK" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" id="8t8-Qg-5bB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -525,7 +525,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Ha-p4-1f1">
-                                <rect key="frame" x="30" y="144" width="354" height="87.5"/>
+                                <rect key="frame" x="30" y="188" width="354" height="87.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Qin Guan 🇨🇳" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-51-WQv">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="46.5"/>
@@ -542,7 +542,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-cn-LaA">
-                                <rect key="frame" x="30" y="271" width="354" height="400"/>
+                                <rect key="frame" x="30" y="315" width="354" height="400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9LP-3n-0JG">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="400"/>
@@ -555,6 +555,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="QinGuanMode"/>
                                                 <connections>
+                                                    <action selector="settingsOptionOnePressed:" destination="7Ud-ym-5uI" eventType="touchUpInside" id="ocw-1k-eRq"/>
                                                     <segue destination="As1-uD-zEi" kind="presentation" identifier="showSettingsDetails" id="gRg-gf-UY2"/>
                                                 </connections>
                                             </button>
@@ -587,13 +588,25 @@
                             <constraint firstItem="9Ha-p4-1f1" firstAttribute="top" secondItem="zw6-Go-mjZ" secondAttribute="top" constant="100" id="oyv-Et-Tr0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Pfx-1j-ibD">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="aMM-bV-8vs">
+                            <connections>
+                                <segue destination="4xs-Ft-SD7" kind="unwind" unwindAction="unwindToHome:" id="7UQ-87-2hv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="settingsDesciptionOne" destination="3n2-do-X9h" id="qbV-wI-pAx"/>
+                        <outlet property="settingsHelloLabel" destination="6TE-51-WQv" id="Okz-sG-e4c"/>
                         <outlet property="settingsImageView" destination="Zev-Hs-3BO" id="5Rc-4R-Lho"/>
+                        <outlet property="settingsOptionOne" destination="cqf-of-H0n" id="95x-Ms-8bE"/>
+                        <outlet property="settingsWelcomeLabel" destination="FdK-zg-yu3" id="uzJ-Uv-myZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFt-GS-abC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4xs-Ft-SD7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4063.7681159420295" y="-697.09821428571422"/>
+            <point key="canvasLocation" x="4973.913043478261" y="-697.09821428571422"/>
         </scene>
         <!--Settings Desciption View Controller-->
         <scene sceneID="WuI-YT-AeH">
@@ -661,22 +674,44 @@
                                         <rect key="frame" x="0.0" y="268" width="314" height="44"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="As1-uD-zEi" eventType="touchUpInside" id="Mmt-FF-dul"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mj-KN-HMs">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="CAx-Hf-EPh" kind="unwind" unwindAction="unwindToSettings:" id="DdY-jC-gb5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bI9-9J-EqZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4Mj-KN-HMs" firstAttribute="top" secondItem="bI9-9J-EqZ" secondAttribute="top" constant="20" id="9kw-UM-Xgb"/>
+                            <constraint firstItem="4Mj-KN-HMs" firstAttribute="leading" secondItem="bI9-9J-EqZ" secondAttribute="leading" constant="20" id="FSX-Os-FKk"/>
                             <constraint firstItem="2A9-ni-ZMk" firstAttribute="top" secondItem="8Y3-fF-F9m" secondAttribute="top" constant="100" id="ZEd-gQ-y7K"/>
                             <constraint firstItem="bI9-9J-EqZ" firstAttribute="trailing" secondItem="2A9-ni-ZMk" secondAttribute="trailing" constant="50" id="gMb-m4-bWs"/>
                             <constraint firstItem="2A9-ni-ZMk" firstAttribute="leading" secondItem="bI9-9J-EqZ" secondAttribute="leading" constant="50" id="q5d-5t-jdS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="saveButton" destination="xKc-ZD-AoN" id="BJm-02-4Lr"/>
+                        <outlet property="settingsAgeLabel" destination="Gql-v1-2O8" id="w4I-d7-5zO"/>
+                        <outlet property="settingsAgeTextField" destination="prZ-76-Ofz" id="HlK-IU-GlX"/>
+                        <outlet property="settingsDescriptionImageView" destination="cgs-nP-W18" id="RF3-55-Oki"/>
+                        <outlet property="settingsNameLabel" destination="26t-0F-kwb" id="wB9-h5-tfI"/>
+                        <outlet property="settingsNameTextField" destination="fin-8w-CBr" id="V3u-BT-hrx"/>
+                        <outlet property="titleLabel" destination="ta0-SZ-Ftb" id="ENb-rI-1aA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzY-2Q-Iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CAx-Hf-EPh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4757.971014492754" y="-691.07142857142856"/>
+            <point key="canvasLocation" x="5668.115942028986" y="-691.07142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
@@ -1271,6 +1306,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YmL-jv-qei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5789.8550724637689" y="-1398.2142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fwj-Lu-vox">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vje-3G-9XK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VSh-xK-O8L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Ud-ym-5uI" kind="relationship" relationship="rootViewController" id="Gci-lm-4M9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8r-Pc-kRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4063.7681159420295" y="-697.09821428571422"/>
         </scene>
     </scenes>
     <resources>
