@@ -97,19 +97,21 @@ class QuestViewController: UIViewController {
     
 
     @IBAction func firstButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
         whateverLevelIsThis = 0
+        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+        
     }
     @IBAction func secondButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
         whateverLevelIsThis = 1
+        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+        
+        
     }
     
     @IBAction func thirdButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
         whateverLevelIsThis = 2
-        print(String(theLevels[currentLevel.levelNumber].questDone[2]))
-        print("OI IM HERE")
+        self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
+
     }
     
     @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {

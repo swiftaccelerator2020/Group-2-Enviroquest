@@ -150,6 +150,8 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     */
 
     @IBAction func exitButtonPressed(_ sender: Any) {
+        print(String(theLevels[currentLevel].questDone[currentQuestNumber]))
+        print(String(currentQuestNumber))
         theLevels[currentLevel].questDone[currentQuestNumber] = true
         print(theLevels[currentLevel].questDone)
         unwindToThisView(sender: self)
