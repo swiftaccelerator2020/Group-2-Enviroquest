@@ -163,6 +163,21 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Levels", for: indexPath) as! ProgressTableViewCell
+        if indexPath.row >= 1{
+        if theLevels[indexPath.row - 1].levelCompleted == false{
+            cell.buttonDescriptionView.setTitle("Complete the previous level!", for: .normal)
+            
+        }
+        }
+        print(theLevels[1].levelCompleted)
+        if theLevels[indexPath.row].levelCompleted == false{
+            
+            cell.buttonDescriptionView.setTitle("Incomplete", for: .normal)
+            
+        }else if theLevels[indexPath.row].levelCompleted == true{
+            
+            cell.buttonDescriptionView.setTitle("Completed", for: .normal)
+        }
         
         cell.numberView.layer.cornerRadius = cell.numberView.frame.height/2
         if theLevels[indexPath.row].levelCompleted == true{
