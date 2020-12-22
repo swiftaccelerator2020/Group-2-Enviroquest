@@ -12,11 +12,14 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var letsGoButton: UIButton!
     @IBOutlet weak var anotherStubbornImageView: UIImageView!
-    //will both link after auto layout
+    @IBOutlet weak var storyBackgroundView: UIButton!
+    
     var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        storyBackgroundView.layer.cornerRadius = 20
+        
         letsGoButton.layer.cornerRadius = 10
         storyLabel.layer.cornerRadius = 20
         anotherStubbornImageView.contentMode = .scaleAspectFill

@@ -300,9 +300,13 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-ow-BRG">
-                                <rect key="frame" x="337" y="108" width="57" height="30"/>
-                                <state key="normal" title="Settings"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-ow-BRG">
+                                <rect key="frame" x="364" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4mF-yc-VPf"/>
+                                    <constraint firstAttribute="width" constant="30" id="Yrp-KL-DWr"/>
+                                </constraints>
+                                <state key="normal" image="iconfinder_multimedia-06_2849830"/>
                                 <connections>
                                     <action selector="settingsButtonPressed:" destination="Dxm-Uq-uNS" eventType="touchUpInside" id="Agv-Id-El2"/>
                                     <segue destination="vje-3G-9XK" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" id="8t8-Qg-5bB"/>
@@ -434,7 +438,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjp-qE-6bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271.0144927536232" y="-966.29464285714278"/>
+            <point key="canvasLocation" x="2338" y="-660"/>
         </scene>
         <!--Shop-->
         <scene sceneID="EfO-mp-Vnr">
@@ -511,7 +515,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7h-5W-HfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2902.898550724638" y="-600"/>
+            <point key="canvasLocation" x="3661" y="-605"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="grr-9x-18k">
@@ -606,7 +610,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFt-GS-abC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4xs-Ft-SD7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4973.913043478261" y="-697.09821428571422"/>
+            <point key="canvasLocation" x="5254" y="78"/>
         </scene>
         <!--Settings Desciption View Controller-->
         <scene sceneID="WuI-YT-AeH">
@@ -618,6 +622,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-nP-W18">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KfC-YI-Ck8" appends="YES" id="8iJ-Q8-3jj"/>
+                                </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2A9-ni-ZMk">
                                 <rect key="frame" x="50" y="100" width="314" height="312"/>
@@ -713,8 +721,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzY-2Q-Iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="CAx-Hf-EPh" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="KfC-YI-Ck8"/>
             </objects>
-            <point key="canvasLocation" x="5668.115942028986" y="-691.07142857142856"/>
+            <point key="canvasLocation" x="5961" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">
@@ -803,6 +812,7 @@
                     <connections>
                         <outlet property="anotherStubbornImageView" destination="j97-KB-Mgg" id="CLp-ae-Nqu"/>
                         <outlet property="letsGoButton" destination="F75-eX-dkj" id="vUl-JK-AHP"/>
+                        <outlet property="storyBackgroundView" destination="F75-eX-dkj" id="OAm-8R-07o"/>
                         <outlet property="storyLabel" destination="bgv-w4-Hq8" id="Olb-W1-nzV"/>
                     </connections>
                 </viewController>
@@ -1326,7 +1336,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8r-Pc-kRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4063.7681159420295" y="-697.09821428571422"/>
+            <point key="canvasLocation" x="4541" y="78"/>
         </scene>
     </scenes>
     <resources>
@@ -1345,6 +1355,7 @@
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="iconfinder_multimedia-06_2849830" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
