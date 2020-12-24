@@ -16,8 +16,8 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var secondButtonView: UIButton!
     //my keyboard lagged and i nearly put the name as secondButto .-.
     @IBOutlet weak var thirdButtonView: UIButton!
-    //circularprogress should be commented to remove cpr
-//    @IBOutlet weak var circularProgress: CircularProgressView!
+
+
     
     var whateverLevelIsThis = 0
       var currentLevel:Level!
