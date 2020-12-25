@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UICircularProgressRing
 
 
 class QuestViewController: UIViewController {
@@ -16,7 +17,8 @@ class QuestViewController: UIViewController {
     @IBOutlet weak var secondButtonView: UIButton!
     //my keyboard lagged and i nearly put the name as secondButto .-.
     @IBOutlet weak var thirdButtonView: UIButton!
-
+    @IBOutlet weak var progressView: CircularProgressView!
+    
 
     
     var whateverLevelIsThis = 0
@@ -25,11 +27,28 @@ class QuestViewController: UIViewController {
     var secondQuestCompleted = false
     var thirdQuestCompleted = false
     
-    
+    var countFired: CGFloat = 0
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        theFirstQuest.text = currentLevel.questNames[0]
+        
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
+            self.countFired += 1
+            
+            DispatchQueue.main.async {
+                self.progressView.progress = min(0.03 * self.countFired, 1)
+                
+                if self.progressView.progress == 1 {
+                    timer.invalidate()
+                }
+                
+            }
+        })
+    
+    
+
+        
+    theFirstQuest.text = currentLevel.questNames[0]
         theSecondQuest.text = currentLevel.questNames[1]
         theThirdQuest.text = currentLevel.questNames[2]
         secondButtonView.layer.cornerRadius = 20

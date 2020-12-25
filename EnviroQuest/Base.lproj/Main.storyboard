@@ -1052,6 +1052,7 @@
                     <navigationItem key="navigationItem" id="gdh-TP-y3I"/>
                     <connections>
                         <outlet property="firstButtonView" destination="buw-52-AE2" id="oTo-Jw-ztD"/>
+                        <outlet property="progressView" destination="N06-Pg-kBs" id="gis-Sa-VaK"/>
                         <outlet property="secondButtonView" destination="nEq-PM-JAr" id="oy1-4v-ZKz"/>
                         <outlet property="theFirstQuest" destination="fn3-0k-buw" id="FDz-G4-oEG"/>
                         <outlet property="theSecondQuest" destination="GtF-re-ewT" id="TQn-9x-g3v"/>
