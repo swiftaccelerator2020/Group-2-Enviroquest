@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public class levelDoneOrNot{
+class levelDoneOrNot{
     var levelNumber: Int
     var questDone: Array<Bool>
     var levelDone: Bool
@@ -16,5 +16,4 @@ public class levelDoneOrNot{
         self.questDone = questDone
         self.levelDone = levelDone
     }
-    
 }
