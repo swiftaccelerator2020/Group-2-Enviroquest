@@ -12,32 +12,6 @@ var currentFactCounter = 1
 public var gemCounter = 0
 
 
-//struct ProgressRingExample: View? {
-//    @State var progress = RingProgress.percent(0.44)
-//
-//    var body: some View {
-//        VStack {
-//            ProgressRing(
-//                progress: $progress,
-//                axis: .top,
-//                clockwise: true,
-//                outerRingStyle: .init(
-//                    color: .color(.gray),
-//                    strokeStyle: .init(lineWidth: 20)
-//                ),
-//                innerRingStyle: .init(
-//                    color: .color(.green),
-//                    strokeStyle: .init(lineWidth: 10),
-//                    padding: 5
-//                )
-//            )
-//                .animation(.easeInOut(duration: 5))
-//                .padding(32)
-//        }
-//    }
-//}
-//
-//
 
 
 
@@ -80,18 +54,47 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var newFactLabel: UILabel!
     @IBOutlet weak var settingsButton: UIButton!
     
-
+    @IBOutlet weak var leftProgressRing: CircularProgressView!
+    
+    @IBOutlet weak var rightProgressRing: CircularProgressView!
     
     
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var factUIView: UIView!
     
     var receivedName = ""
-   
+    var countFiredRight: CGFloat = 0
+    var countFiredLeft: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
+            self.countFiredRight += 1
+            
+            DispatchQueue.main.async {
+                self.rightProgressRing.progress = min(0.03 * self.countFiredRight, 1)
+                
+                if self.rightProgressRing.progress == 1 {
+                    timer.invalidate()
+                }
+                
+            }
+        })
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
+            self.countFiredLeft += 1
+            
+            DispatchQueue.main.async {
+                self.leftProgressRing.progress = min(0.03 * self.countFiredLeft, 1)
+                
+                if self.leftProgressRing.progress == 1 {
+                    timer.invalidate()
+                }
+                
+            }
+        })
         
+    
         
         
         

@@ -336,8 +336,10 @@
                         <outlet property="factUIView" destination="4ZZ-7T-pXX" id="GPD-8N-Sq3"/>
                         <outlet property="gemsCounterLabel" destination="nH0-I7-4Hd" id="TdE-8Z-e8J"/>
                         <outlet property="helloLabel" destination="tf7-IR-MSQ" id="R67-EN-C4I"/>
+                        <outlet property="leftProgressRing" destination="FYv-9Q-62s" id="oOh-8H-JmS"/>
                         <outlet property="newFactButton" destination="Mg7-hC-PtO" id="S4C-tD-cBZ"/>
                         <outlet property="newFactLabel" destination="pNh-L8-SOv" id="4s1-dD-sxk"/>
+                        <outlet property="rightProgressRing" destination="IaM-ix-BdE" id="w2o-yQ-cVQ"/>
                         <outlet property="settingsButton" destination="8cI-ow-BRG" id="1p8-YF-mTM"/>
                     </connections>
                 </viewController>
