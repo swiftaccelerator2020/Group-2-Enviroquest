@@ -194,7 +194,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="od6-Ra-S6x">
                                         <rect key="frame" x="0.0" y="111" width="374" height="182"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="firstView"/>
@@ -219,7 +219,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="UICircularProgressRingView" customModule="EnviroQuest" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="182"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="secondVIew"/>

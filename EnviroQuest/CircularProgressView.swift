@@ -12,7 +12,7 @@ class CircularProgressView: UIView {
     private var backgroundLayer: CAShapeLayer!
     private var foregroundLayer: CAShapeLayer!
     private var textLayer: CATextLayer!
-    private var gradientLayer: CAGradientLayer!
+//    private var gradientLayer: CAGradientLayer!
     public var progress: CGFloat = 0 {
         didSet {
             didProgressUpdated()
@@ -35,13 +35,13 @@ class CircularProgressView: UIView {
         backgroundLayer = createCircularLayer(rect: rect, strokeColor: UIColor.lightGray.cgColor, fillColor: UIColor.clear.cgColor, lineWidth: lineWidth)
         foregroundLayer = createCircularLayer(rect: rect, strokeColor: UIColor.red.cgColor, fillColor: UIColor.clear.cgColor, lineWidth: lineWidth)
         
-        gradientLayer = CAGradientLayer()
-        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.5)
-        
-        gradientLayer.colors = [UIColor.red.cgColor, UIColor.orange.cgColor]
-        gradientLayer.frame = rect
-        gradientLayer.mask = foregroundLayer
+//        gradientLayer = CAGradientLayer()
+//        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.5)
+//        gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.5)
+//
+//        gradientLayer.colors = [UIColor.red.cgColor, UIColor.orange.cgColor]
+//        gradientLayer.frame = rect
+//        gradientLayer.mask = foregroundLayer
 
         let center = CGPoint(x: width/2, y: height/2)
         let radius = (min(width, height) - lineWidth)/2
@@ -78,7 +78,7 @@ class CircularProgressView: UIView {
 
 
         layer.addSublayer(backgroundLayer)
-        layer.addSublayer(gradientLayer)
+        layer.addSublayer(foregroundLayer)
         layer.addSublayer(textLayer)
     }
 
