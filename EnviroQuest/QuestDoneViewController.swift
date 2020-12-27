@@ -157,6 +157,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
             theLevels[currentLevel].levelCompleted = true
         }
         print(theLevels[currentLevel].questDone)
+        Level.saveToFile(levelStats: theLevels)
         unwindToThisView(sender: self)
         
     }
