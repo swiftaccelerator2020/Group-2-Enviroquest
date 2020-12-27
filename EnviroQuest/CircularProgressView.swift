@@ -8,6 +8,14 @@
 import UIKit
 
 class CircularProgressView: UIView {
+    
+    
+    
+    @IBInspectable public var backGroundCircleColor: UIColor = UIColor.lightGray
+    @IBInspectable public var startGradientColor: UIColor = UIColor.red
+    @IBInspectable public var endGradientColor: UIColor = UIColor.orange
+    @IBInspectable public var textColor: UIColor = UIColor.white
+    
 
     private var backgroundLayer: CAShapeLayer!
     private var foregroundLayer: CAShapeLayer!
@@ -25,6 +33,11 @@ class CircularProgressView: UIView {
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        
+        
+        guard layer.sublayers == nil else {
+            return
+        }
         
         let width = rect.width
         let height = rect.height

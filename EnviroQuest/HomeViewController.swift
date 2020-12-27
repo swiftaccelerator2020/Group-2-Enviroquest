@@ -69,6 +69,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        leftProgressRing.layer.backgroundColor = UIColor.clear.cgColor
+        rightProgressRing.layer.backgroundColor = UIColor.clear.cgColor
+        
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
             self.countFiredRight += 1
             
