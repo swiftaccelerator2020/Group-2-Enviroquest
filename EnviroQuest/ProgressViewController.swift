@@ -35,12 +35,15 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Levels", for: indexPath) as! ProgressTableViewCell
-        if indexPath.row >= 1{
-        if theLevels[indexPath.row - 1].levelCompleted == false{
-            cell.buttonDescriptionView.setTitle("Complete the previous level!", for: .normal)
-            
-        }
-        }
+//        if indexPath.row >= 1{
+//        if theLevels[indexPath.row - 1].levelCompleted == false{
+//            cell.buttonDescriptionView.setTitle("Complete the previous level!", for: .normal)
+//
+//        }
+//        }
+        print("Level 1 = ")
+        print(theLevels[0].levelCompleted)
+        print("Level 2 = ")
         print(theLevels[1].levelCompleted)
         if theLevels[indexPath.row].levelCompleted == false{
             

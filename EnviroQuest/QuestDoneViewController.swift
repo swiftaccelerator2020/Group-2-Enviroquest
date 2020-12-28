@@ -162,7 +162,7 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         print(String(currentQuestNumber))
         theLevels[currentLevel].questDone[currentQuestNumber] = true
         if theLevels[currentLevel].questDone[0] == true && theLevels[currentLevel].questDone[1] == true && theLevels[currentLevel].questDone[2] == true{
-            theLevels[currentLevel].levelCompleted = true
+            theLevels[currentLevel-1].levelCompleted = true
         }
         print(theLevels[currentLevel].questDone)
         Level.saveToFile(levelStats: theLevels)
