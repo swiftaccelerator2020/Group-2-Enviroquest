@@ -21,9 +21,11 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsOptionOne.setTitle("Edit Information", for: .normal)
+        settingsOptionOne.setTitle("Edit Information -", for: .normal)
+        settingsOptionOne.layer.cornerRadius = 15
         settingsDesciptionOne.text = "Edit your Name / Age"
-        settingsOptionTwo.setTitle("Credits", for: .normal)
+        settingsOptionTwo.setTitle("Credits -", for: .normal)
+        settingsOptionTwo.layer.cornerRadius = 15
         settingsDesciptionTwo.text = "See the story behind EnviroQuest"
         
         receivedName = UserDefaults.standard.string(forKey: "Username") ?? ""
