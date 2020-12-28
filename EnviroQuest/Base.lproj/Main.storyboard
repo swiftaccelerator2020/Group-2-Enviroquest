@@ -196,7 +196,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-9Q-62s" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="firstView"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FYv-9Q-62s" secondAttribute="height" multiplier="1:1" id="zxW-Wc-I2N"/>
@@ -221,7 +221,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-ix-BdE" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="182"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="secondVIew"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
@@ -951,7 +951,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N06-Pg-kBs" customClass="CircularProgressView" customModule="EnviroQuest" customModuleProvider="target">
                                 <rect key="frame" x="111" y="158" width="192" height="192"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="192" id="Au2-uq-bPG"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="aFw-QI-w5v"/>
