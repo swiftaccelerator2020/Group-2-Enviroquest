@@ -48,7 +48,7 @@ class SettingsDesciptionViewController: UIViewController, UITextFieldDelegate {
         UserDefaults.standard.set(settingsAgeTextField.text, forKey: "Age")
         
         
-        let saveAlert = UIAlertController(title: "Done!", message: "Your new information has been saved!", preferredStyle: .alert)
+        let saveAlert = UIAlertController(title: "Done!", message: "Your new information has been saved! Please reopen the app to see changes", preferredStyle: .alert)
         saveAlert.addAction(UIAlertAction(title: "Ok!", style: .default, handler: { _ in
             
         }))

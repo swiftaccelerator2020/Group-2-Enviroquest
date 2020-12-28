@@ -15,13 +15,16 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsOptionOne: UIButton!
     @IBOutlet weak var settingsDesciptionOne: UILabel!
     
-    
+    var receivedName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        receivedName = UserDefaults.standard.string(forKey: "Username") ?? ""
 
         settingsImageView.contentMode = .scaleAspectFill
-        // Do any additional setup after loading the view.
+        settingsHelloLabel.text = "Hello, \(receivedName)"
+        
+        
     }
     
 
