@@ -547,26 +547,48 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-cn-LaA">
-                                <rect key="frame" x="30" y="315" width="354" height="400"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-cn-LaA">
+                                <rect key="frame" x="30" y="315" width="354" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9LP-3n-0JG">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-of-H0n">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="400"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="vLB-VU-Gjx"/>
+                                                    <constraint firstAttribute="width" constant="150" id="vLB-VU-Gjx"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <state key="normal" title="QinGuanMode"/>
+                                                <state key="normal" title="QinGuanOne"/>
                                                 <connections>
                                                     <action selector="settingsOptionOnePressed:" destination="7Ud-ym-5uI" eventType="touchUpInside" id="ocw-1k-eRq"/>
                                                     <segue destination="As1-uD-zEi" kind="presentation" identifier="showSettingsDetails" id="gRg-gf-UY2"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A QinGuan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n2-do-X9h">
-                                                <rect key="frame" x="135" y="0.0" width="219" height="400"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Qin Guan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n2-do-X9h">
+                                                <rect key="frame" x="165" y="0.0" width="189" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jrq-b8-5LD">
+                                        <rect key="frame" x="0.0" y="100" width="354" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-c6-na8">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="3fV-2i-z6m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="SecondQinGuan"/>
+                                                <connections>
+                                                    <action selector="settingsOptionOnePressed:" destination="7Ud-ym-5uI" eventType="touchUpInside" id="TIv-T8-Nnz"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A QinGuan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtP-B7-cN3">
+                                                <rect key="frame" x="165" y="0.0" width="189" height="100"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -575,7 +597,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="HcM-Sp-gK7"/>
+                                    <constraint firstAttribute="height" constant="200" id="HcM-Sp-gK7"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -603,9 +625,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="settingsDesciptionOne" destination="3n2-do-X9h" id="qbV-wI-pAx"/>
+                        <outlet property="settingsDesciptionTwo" destination="PtP-B7-cN3" id="pLV-s7-F5k"/>
                         <outlet property="settingsHelloLabel" destination="6TE-51-WQv" id="Okz-sG-e4c"/>
                         <outlet property="settingsImageView" destination="Zev-Hs-3BO" id="5Rc-4R-Lho"/>
                         <outlet property="settingsOptionOne" destination="cqf-of-H0n" id="95x-Ms-8bE"/>
+                        <outlet property="settingsOptionTwo" destination="jrn-c6-na8" id="sdI-p6-YcK"/>
                         <outlet property="settingsWelcomeLabel" destination="FdK-zg-yu3" id="uzJ-Uv-myZ"/>
                     </connections>
                 </viewController>
@@ -613,6 +637,21 @@
                 <exit id="4xs-Ft-SD7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5254" y="78"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pfh-ai-1D4">
+            <objects>
+                <viewController id="FQt-wb-v4j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1T-rS-tgq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="chC-2F-Vrd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTW-af-VLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6079" y="366"/>
         </scene>
         <!--Settings Desciption View Controller-->
         <scene sceneID="WuI-YT-AeH">
@@ -725,7 +764,7 @@
                 <exit id="CAx-Hf-EPh" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="KfC-YI-Ck8"/>
             </objects>
-            <point key="canvasLocation" x="5961" y="78"/>
+            <point key="canvasLocation" x="6093" y="-276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32r-Kz-w6g">

@@ -14,11 +14,18 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsWelcomeLabel: UILabel!
     @IBOutlet weak var settingsOptionOne: UIButton!
     @IBOutlet weak var settingsDesciptionOne: UILabel!
+    @IBOutlet weak var settingsOptionTwo: UIButton!
+    @IBOutlet weak var settingsDesciptionTwo: UILabel!
     
     var receivedName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingsOptionOne.setTitle("Edit Information", for: .normal)
+        settingsDesciptionOne.text = "Edit your Name / Age"
+        settingsOptionTwo.setTitle("Credits", for: .normal)
+        settingsDesciptionTwo.text = "See the story behind EnviroQuest"
+        
         receivedName = UserDefaults.standard.string(forKey: "Username") ?? ""
 
         settingsImageView.contentMode = .scaleAspectFill
