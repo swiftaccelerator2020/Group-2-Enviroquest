@@ -1213,7 +1213,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="ceR-Vq-fNj"/>
+                                    <action selector="uploadImageButtonPressed:" destination="3MS-e5-xTY" eventType="touchUpInside" id="Jsl-cb-tz3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-bX-VXi">
@@ -1257,7 +1257,7 @@
                         <outlet property="doneLabel" destination="ADU-OX-rZz" id="zLZ-5q-X0k"/>
                         <outlet property="exitButton" destination="NZL-bX-VXi" id="Pnz-KF-U1X"/>
                         <outlet property="questImageView" destination="fOQ-F7-ce0" id="982-Yq-NOV"/>
-                        <outlet property="uploadImageButton" destination="pG8-op-VCh" id="5pq-Ve-wqW"/>
+                        <outlet property="uploadImageButton" destination="pG8-op-VCh" id="vlp-xu-Iqi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhx-22-WEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
