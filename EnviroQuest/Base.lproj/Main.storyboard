@@ -585,6 +585,7 @@
                                                 <state key="normal" title="SecondQinGuan"/>
                                                 <connections>
                                                     <action selector="settingsOptionOnePressed:" destination="7Ud-ym-5uI" eventType="touchUpInside" id="TIv-T8-Nnz"/>
+                                                    <segue destination="FQt-wb-v4j" kind="presentation" identifier="showCredits" id="odg-Jw-4BK"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A QinGuan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtP-B7-cN3">
@@ -638,20 +639,43 @@
             </objects>
             <point key="canvasLocation" x="5254" y="78"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Credits View Controller-->
         <scene sceneID="pfh-ai-1D4">
             <objects>
-                <viewController id="FQt-wb-v4j" sceneMemberID="viewController">
+                <viewController id="FQt-wb-v4j" customClass="SettingsCreditsViewController" customModule="EnviroQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1T-rS-tgq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done with quest page" translatesAutoresizingMaskIntoConstraints="NO" id="ZRc-32-VIY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-kx-7AS">
+                                <rect key="frame" x="69" y="158" width="255" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="chC-2F-Vrd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRc-32-VIY" firstAttribute="trailing" secondItem="chC-2F-Vrd" secondAttribute="trailing" id="J10-KZ-cFi"/>
+                            <constraint firstAttribute="bottom" secondItem="ZRc-32-VIY" secondAttribute="bottom" id="Ngk-VC-WRl"/>
+                            <constraint firstItem="ZRc-32-VIY" firstAttribute="leading" secondItem="chC-2F-Vrd" secondAttribute="leading" id="cn7-Ch-InT"/>
+                            <constraint firstItem="ZRc-32-VIY" firstAttribute="top" secondItem="chC-2F-Vrd" secondAttribute="top" id="eRR-rI-5eD"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PRE-VV-a3b"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="ZRc-32-VIY" id="QLw-sj-pET"/>
+                        <outlet property="creditsLabel" destination="Gnz-kx-7AS" id="Yh1-dj-7ci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTW-af-VLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6079" y="366"/>
+            <point key="canvasLocation" x="6078.2608695652179" y="365.625"/>
         </scene>
         <!--Settings Desciption View Controller-->
         <scene sceneID="WuI-YT-AeH">

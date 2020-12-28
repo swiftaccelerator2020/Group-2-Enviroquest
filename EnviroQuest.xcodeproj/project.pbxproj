@@ -12,6 +12,7 @@
 		3A03BFC32568D571003BB858 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03BFC22568D571003BB858 /* HomeViewController.swift */; };
 		3A18E4432590D147008C4427 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18E4422590D147008C4427 /* SettingsViewController.swift */; };
 		3A18E4482590E347008C4427 /* SettingsDesciptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18E4472590E347008C4427 /* SettingsDesciptionViewController.swift */; };
+		3A18E4B02599BBD4008C4427 /* SettingsCreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18E4AF2599BBD4008C4427 /* SettingsCreditsViewController.swift */; };
 		3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9D25680CF30071B496 /* AppDelegate.swift */; };
 		3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */; };
 		3A1BBFA225680CF30071B496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBFA125680CF30071B496 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		3A03BFC22568D571003BB858 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3A18E4422590D147008C4427 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3A18E4472590E347008C4427 /* SettingsDesciptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDesciptionViewController.swift; sourceTree = "<group>"; };
+		3A18E4AF2599BBD4008C4427 /* SettingsCreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCreditsViewController.swift; sourceTree = "<group>"; };
 		3A1BBF9A25680CF30071B496 /* EnviroQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnviroQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1BBF9D25680CF30071B496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				3A1BBF9F25680CF30071B496 /* SceneDelegate.swift */,
 				3A1BBFA125680CF30071B496 /* ViewController.swift */,
 				3A1BBFA325680CF30071B496 /* Main.storyboard */,
+				3A18E4AF2599BBD4008C4427 /* SettingsCreditsViewController.swift */,
 				3A18E4472590E347008C4427 /* SettingsDesciptionViewController.swift */,
 				3A18E4422590D147008C4427 /* SettingsViewController.swift */,
 				CC00AF83258AEF5E006A487B /* PhotosCollectionViewController.swift */,
@@ -332,6 +335,7 @@
 				A85F96EE256B9F5E00E6007E /* ProgressViewController.swift in Sources */,
 				3A1BBF9E25680CF30071B496 /* AppDelegate.swift in Sources */,
 				CCD3D14525727A4F00BAE5D7 /* PhotoGalleryCollectionViewController.swift in Sources */,
+				3A18E4B02599BBD4008C4427 /* SettingsCreditsViewController.swift in Sources */,
 				CCD3D14A25727B3200BAE5D7 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				CC3C4C952574CC1900982310 /* Level.swift in Sources */,
 				3A1BBFA025680CF30071B496 /* SceneDelegate.swift in Sources */,
