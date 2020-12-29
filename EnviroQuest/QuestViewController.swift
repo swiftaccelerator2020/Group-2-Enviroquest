@@ -165,7 +165,7 @@ class QuestViewController: UIViewController {
     }
     
     @IBAction func skipButtonPressed(_ sender: Any) {
-        
+        //:(
         if inventory.contains("Skip") || inventory.contains("Ultra Skip"){
             if !inventory.contains("Skip"){
                 let alert = UIAlertController(title: "Skip Level", message: "You have the items 'Ultra Skip'. This skips the whole level. Would you like to use it? ", preferredStyle: .alert)
@@ -174,9 +174,12 @@ class QuestViewController: UIViewController {
                                    print("The user chose Yes")
                                 if let index = inventory.firstIndex(of: "Ultra Skip") {
                                     inventory.remove(at: index)
+                                    UserDefaults.standard.setValue(inventory, forKey: "inventory")
+                                  
                                     self.levelComplete()
                                     Level.saveToFile(levelStats: theLevels)
                                 }
+                                
                 
                                }))
                    
@@ -196,6 +199,7 @@ class QuestViewController: UIViewController {
                                print("The user chose Yes")
                             if let index = inventory.firstIndex(of: "Skip") {
                                 inventory.remove(at: index)
+                                UserDefaults.standard.setValue(inventory, forKey: "inventory")
                             }
                             let alert2 = UIAlertController(title: "Skip Quest", message: "Which quest would you like to skip?", preferredStyle: .alert)
                                
@@ -237,10 +241,12 @@ class QuestViewController: UIViewController {
                                    print("The user chose Yes")
                                 if let index = inventory.firstIndex(of: "Ultra Skip") {
                                     inventory.remove(at: index)
-                                    self.levelComplete()
-                                    Level.saveToFile(levelStats: theLevels)
+                                    UserDefaults.standard.setValue(inventory, forKey: "inventory")
+                                    
                                 }
                 
+                                self.levelComplete()
+                                Level.saveToFile(levelStats: theLevels)
                                }))
                    
                                alert4.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
@@ -262,6 +268,8 @@ class QuestViewController: UIViewController {
                                    print("The user chose Yes")
                                 if let index = inventory.firstIndex(of: "Skip") {
                                     inventory.remove(at: index)
+                                    UserDefaults.standard.setValue(inventory, forKey: "inventory")
+                                    UserDefaults.standard.setValue(inventory, forKey: "inventory")
                                 }
                                 let alert2 = UIAlertController(title: "Skip Quest", message: "Which quest would you like to skip?", preferredStyle: .alert)
                                    
