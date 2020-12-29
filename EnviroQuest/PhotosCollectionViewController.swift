@@ -14,7 +14,7 @@ public var currentCount = 0
 public var inventory = ["randomobject1", "randomobject2"]
 public var shopItemDescriptions = ["Ten: Shows that you have completed ten quests", "Richhh: Shows that you are RICHHHH", "Ultra Skip: Allows you to skip a whole level", "Skip: Allows you to skip a quest", "Darkmode: The superior mode"]
 
-public var shopCosts = [100, 300, 60, 20, 100]
+public var shopCosts = [100, 300, 0, 0, 100]
 
 
 class PhotosCollectionViewController: UICollectionViewController {

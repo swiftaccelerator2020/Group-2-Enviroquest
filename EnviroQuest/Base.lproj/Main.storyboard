@@ -1087,6 +1087,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DN-Od-AVO">
+                                <rect key="frame" x="116" y="766" width="182" height="30"/>
+                                <state key="normal" title="Want to skip?"/>
+                                <connections>
+                                    <action selector="skipButtonPressed:" destination="sjb-tq-vpW" eventType="touchUpInside" id="LOv-VV-Wi6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h8P-Lo-pdE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1104,6 +1111,9 @@
                             <constraint firstItem="nEq-PM-JAr" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="54" id="ZLd-lM-m2l"/>
                             <constraint firstItem="fn3-0k-buw" firstAttribute="centerX" secondItem="buw-52-AE2" secondAttribute="centerX" id="bfH-Vn-XZy"/>
                             <constraint firstItem="bil-NG-GNv" firstAttribute="trailing" secondItem="hhQ-qC-EDO" secondAttribute="trailing" id="c42-Of-oL3"/>
+                            <constraint firstItem="0DN-Od-AVO" firstAttribute="leading" secondItem="h8P-Lo-pdE" secondAttribute="leading" constant="116" id="cEG-Ap-6Xn"/>
+                            <constraint firstItem="0DN-Od-AVO" firstAttribute="top" secondItem="7A7-T7-Qst" secondAttribute="bottom" constant="22" id="eCU-fw-RZZ"/>
+                            <constraint firstItem="0DN-Od-AVO" firstAttribute="centerX" secondItem="OEZ-AJ-LHk" secondAttribute="centerX" id="fP3-2z-56F"/>
                             <constraint firstItem="GtF-re-ewT" firstAttribute="centerY" secondItem="nEq-PM-JAr" secondAttribute="centerY" id="g8J-oX-YBX"/>
                             <constraint firstItem="h8P-Lo-pdE" firstAttribute="trailing" secondItem="7A7-T7-Qst" secondAttribute="trailing" constant="54" id="gVa-z1-dnW"/>
                             <constraint firstItem="7A7-T7-Qst" firstAttribute="top" secondItem="nEq-PM-JAr" secondAttribute="bottom" constant="35" id="gxS-6i-Eae"/>

@@ -132,6 +132,181 @@ class QuestViewController: UIViewController {
         self.performSegue(withIdentifier: "revealQuestInfo", sender: nil)
 
     }
+    func levelComplete(){
+        theLevels[self.currentLevel.levelNumber-1].levelCompleted = true
+        theLevels[self.currentLevel.levelNumber].questDone = [true,true,true]
+    }
+    func setFirstQuestToTrue(){
+        theLevels[self.currentLevel.levelNumber].questDone[0] = true
+        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+            theLevels[currentLevel.levelNumber-1].levelCompleted = true
+        }
+        print(theLevels[self.currentLevel.levelNumber].questDone[0])
+        print("THE LEVEL IS:")
+        print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
+    }
+    func setSecondQuestToTrue(){
+        theLevels[self.currentLevel.levelNumber].questDone[1] = true
+        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+            theLevels[currentLevel.levelNumber-1].levelCompleted = true
+        }
+        print(theLevels[self.currentLevel.levelNumber].questDone[1])
+        print("THE LEVEL IS:")
+        print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
+    }
+    func setThirdQuestToTrue(){
+        theLevels[self.currentLevel.levelNumber].questDone[2] = true
+        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+            theLevels[currentLevel.levelNumber-1].levelCompleted = true
+        }
+        print(theLevels[self.currentLevel.levelNumber].questDone[2])
+        print("THE LEVEL IS:")
+        print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
+    }
+    
+    @IBAction func skipButtonPressed(_ sender: Any) {
+        
+        if inventory.contains("Skip") || inventory.contains("Ultra Skip"){
+            if !inventory.contains("Skip"){
+                let alert = UIAlertController(title: "Skip Level", message: "You have the items 'Ultra Skip'. This skips the whole level. Would you like to use it? ", preferredStyle: .alert)
+                   
+                               alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                                   print("The user chose Yes")
+                                if let index = inventory.firstIndex(of: "Ultra Skip") {
+                                    inventory.remove(at: index)
+                                    self.levelComplete()
+                                    Level.saveToFile(levelStats: theLevels)
+                                }
+                
+                               }))
+                   
+                               alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+                                   print("The user chose No")
+                                   
+                               }))
+
+            self.present(alert, animated: true, completion: nil)
+            }else if !inventory.contains("Ultra Skip"){
+            let alert = UIAlertController(title: "Skip Level", message: "You have the items 'Skip'. This allows you to skip one quest. Use it?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+                    print("The user chose No")
+                    
+                }))
+                           alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                               print("The user chose Yes")
+                            if let index = inventory.firstIndex(of: "Skip") {
+                                inventory.remove(at: index)
+                            }
+                            let alert2 = UIAlertController(title: "Skip Quest", message: "Which quest would you like to skip?", preferredStyle: .alert)
+                               
+                                           alert2.addAction(UIAlertAction(title: "First", style: .default, handler: { _ in
+                                               print("The user chose Yes")
+                                            self.setFirstQuestToTrue()
+                                                Level.saveToFile(levelStats: theLevels)
+                                            
+                            
+                                           }))
+                               
+                                           alert2.addAction(UIAlertAction(title: "Second", style: .default, handler: { _ in
+                                               print("The user chose 2")
+                                            self.setSecondQuestToTrue()
+                                            
+                                            Level.saveToFile(levelStats: theLevels)
+                                               
+                                           }))
+                            alert2.addAction(UIAlertAction(title: "Third", style: .default, handler: { _ in
+                                print("The user chose 3")
+                                self.setThirdQuestToTrue()
+                                Level.saveToFile(levelStats: theLevels)
+                                
+                            }))
+                            
+        self.present(alert2, animated: true, completion: nil)
+                           }))
+                self.present(alert, animated: true, completion: nil)
+        }else{
+            let alert = UIAlertController(title: "Skip Level/Quest!", message: "Would you like to Use your ultra skip or skip?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { _ in
+                print("He cancelled :(")
+              
+            }))
+            alert.addAction(UIAlertAction(title: "Ultra Skip", style: .default, handler: { _ in
+                let alert4 = UIAlertController(title: "Skip Level", message: "You have the items 'Ultra Skip'. This skips the whole level. Would you like to use it? ", preferredStyle: .alert)
+                   
+                               alert4.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                                   print("The user chose Yes")
+                                if let index = inventory.firstIndex(of: "Ultra Skip") {
+                                    inventory.remove(at: index)
+                                    self.levelComplete()
+                                    Level.saveToFile(levelStats: theLevels)
+                                }
+                
+                               }))
+                   
+                               alert4.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+                                   print("The user chose No")
+                                   
+                               }))
+
+            self.present(alert4, animated: true, completion: nil)
+              
+            }))
+
+            alert.addAction(UIAlertAction(title: "Skip", style: .default, handler: { _ in
+                let alert3 = UIAlertController(title: "Skip Level", message: "You have the items 'Skip'. This allows you to skip one quest. Use it?", preferredStyle: .alert)
+                    alert3.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+                        print("The user chose No")
+                        
+                    }))
+                               alert3.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                                   print("The user chose Yes")
+                                if let index = inventory.firstIndex(of: "Skip") {
+                                    inventory.remove(at: index)
+                                }
+                                let alert2 = UIAlertController(title: "Skip Quest", message: "Which quest would you like to skip?", preferredStyle: .alert)
+                                   
+                                               alert2.addAction(UIAlertAction(title: "First", style: .default, handler: { _ in
+                                                   print("The user chose Yes")
+                                                self.setFirstQuestToTrue()
+                                                    Level.saveToFile(levelStats: theLevels)
+                                                
+                                
+                                               }))
+                                   
+                                               alert2.addAction(UIAlertAction(title: "Second", style: .default, handler: { _ in
+                                                   print("The user chose 2")
+                                                self.setSecondQuestToTrue()
+                                                
+                                                Level.saveToFile(levelStats: theLevels)
+                                                   
+                                               }))
+                                alert2.addAction(UIAlertAction(title: "Third", style: .default, handler: { _ in
+                                    print("The user chose 3")
+                                    self.setThirdQuestToTrue()
+                                    Level.saveToFile(levelStats: theLevels)
+                                    
+                                }))
+                                
+            self.present(alert2, animated: true, completion: nil)
+                               }))
+                    self.present(alert3, animated: true, completion: nil)
+               
+              
+            }))
+
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }else{
+        let alert = UIAlertController(title: "No Skips!", message: "Go to the shop to buy more skips!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            
+          
+        }))
+        self.present(alert, animated: true, completion: nil)
+    
+    }
+}
     
     @IBAction func unwindToQuestInfo(_ sender: UIStoryboardSegue) {
         
