@@ -135,10 +135,18 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     
-    
-    @IBAction func uploadImageButtonPressed(_ sender: UIButton) {
-        self.imagePicker.present(from: sender)
+    @IBAction func uploadImageButtonPressed(_ sender: Any) {
+        let ohnoAlert = UIAlertController(title: "Oh no!", message: "Uploading image is only available for Level 20 onwards!", preferredStyle: .alert)
+        ohnoAlert.addAction(UIAlertAction(title: "Ok got it!", style: .default, handler: { _ in
+            
+        }))
+        self.present(ohnoAlert
+                     , animated: true, completion: nil)
+        
+        
+                
     }
+    
     /*
     // MARK: - Navigation
 
@@ -154,9 +162,10 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         print(String(currentQuestNumber))
         theLevels[currentLevel].questDone[currentQuestNumber] = true
         if theLevels[currentLevel].questDone[0] == true && theLevels[currentLevel].questDone[1] == true && theLevels[currentLevel].questDone[2] == true{
-            theLevels[currentLevel].levelCompleted = true
+            theLevels[currentLevel-1].levelCompleted = true
         }
         print(theLevels[currentLevel].questDone)
+        Level.saveToFile(levelStats: theLevels)
         unwindToThisView(sender: self)
         
     }

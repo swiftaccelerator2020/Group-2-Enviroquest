@@ -11,7 +11,11 @@ private let reuseIdentifier = "PhotoCell"
 public var shopItems = ["1","2", "3", "4", "5"]
 public var shopItemLabels = ["Ten!","Richhh","Ultra Skip","Skip","Darkmode"]
 public var currentCount = 0
-public var inventory = ["randomobject1", "randomobject2"]
+var currentGems = UserDefaults.standard.integer(forKey: "gems")
+
+
+ var inventory = ["randomobject1", "randomobject2"]
+
 public var shopItemDescriptions = ["Ten: Shows that you have completed ten quests", "Richhh: Shows that you are RICHHHH", "Ultra Skip: Allows you to skip a whole level", "Skip: Allows you to skip a quest", "Darkmode: The superior mode"]
 
 public var shopCosts = [100, 300, 60, 20, 100]
@@ -23,6 +27,8 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stubbornImageView.contentMode = .scaleAspectFill
+        inventory = UserDefaults.standard.stringArray(forKey: "inventory") ?? [""]
+//uh
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,6 +36,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        collectionView.reloadData()
     }
 
     
@@ -79,21 +86,27 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView,
       didSelectItemAt indexPath: IndexPath) {
         print("Cell \(indexPath.row) clicked")
-        if gemCounter >= shopCosts[indexPath.row]{
+        if currentGems >= shopCosts[indexPath.row]{
             let alert = UIAlertController(title: "Buy this?", message: "You are buying \(shopItemLabels[indexPath.row]) for \(String(shopCosts[indexPath.row])) gems.\n \(shopItemDescriptions[indexPath.row]). \nAre you sure?", preferredStyle: .alert)
-               
-                           alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
-                               print("The user chose Yes")
-                            gemCounter -= (shopCosts[indexPath.row])
-                            inventory.append(shopItemLabels[indexPath.row])
             
-                           }))
-               
-                           alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
-                               print("The user chose No")
-                               
-                           }))
-        self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
+                print("The user chose Yes")
+                currentGems -= (shopCosts[indexPath.row])
+                inventory.append(shopItemLabels[indexPath.row])
+                
+                UserDefaults.standard.set(currentGems, forKey: "gems") //this one works
+                UserDefaults.standard.set(inventory, forKey: "inventory")
+                //this doesn't run i think it doesn't save
+                
+                //yes it is google meet pro
+                
+            }))
+            
+            alert.addAction(UIAlertAction(title: "No", style: .default, handler: { _ in
+                print("The user chose No")
+                
+            }))
+            self.present(alert, animated: true, completion: nil)
         }else{
             let alert = UIAlertController(title: "Not enough gems!", message: "Complete more quests to get more gems!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in

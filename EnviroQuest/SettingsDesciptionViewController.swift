@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsDesciptionViewController: UIViewController {
+class SettingsDesciptionViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var settingsDescriptionImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,6 +22,10 @@ class SettingsDesciptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        settingsAgeTextField.delegate = self
+        settingsNameTextField.delegate = self
+        
 
         settingsDescriptionImageView.contentMode = .scaleAspectFill
     
@@ -40,7 +44,16 @@ class SettingsDesciptionViewController: UIViewController {
     }
     */
     @IBAction func saveButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(settingsNameTextField.text, forKey: "Username")
+        UserDefaults.standard.set(settingsAgeTextField.text, forKey: "Age")
         
+        
+        let saveAlert = UIAlertController(title: "Done!", message: "Your new information has been saved! Please reopen the app to see changes", preferredStyle: .alert)
+        saveAlert.addAction(UIAlertAction(title: "Ok!", style: .default, handler: { _ in
+            
+        }))
+        self.present(saveAlert
+                     , animated: true, completion: nil)
     }
     
 }
