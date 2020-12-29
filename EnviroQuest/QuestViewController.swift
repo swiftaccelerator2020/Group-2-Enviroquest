@@ -54,32 +54,36 @@ class QuestViewController: UIViewController {
         secondButtonView.layer.cornerRadius = 20
         firstButtonView.layer.cornerRadius = 20
         thirdButtonView.layer.cornerRadius = 20
-        if theLevels[currentLevel.levelNumber].questDone[0] == true{
+        if theLevels[currentLevel.levelNumber-1].questDone[0] == true{
             firstButtonView.backgroundColor = .green
             firstButtonView.isEnabled = false
         }else{
             firstButtonView.backgroundColor = .white
             firstButtonView.isEnabled = true
         }
-        if theLevels[currentLevel.levelNumber].questDone[1] == true{
+        if theLevels[currentLevel.levelNumber-1].questDone[1] == true{
                 secondButtonView.backgroundColor = .green
             secondButtonView.isEnabled = false
         }else{
                 secondButtonView.backgroundColor = .white
             secondButtonView.isEnabled = true
         }
-        if theLevels[currentLevel.levelNumber].questDone[2] == true{
+        if theLevels[currentLevel.levelNumber-1].questDone[2] == true{
                 thirdButtonView.backgroundColor = .green
             thirdButtonView.isEnabled = false
-            print(String(theLevels[currentLevel.levelNumber].questDone[2]))
+            print(String(theLevels[currentLevel.levelNumber-1].questDone[2]))
         }else{
                 thirdButtonView.backgroundColor = .white
             thirdButtonView.isEnabled = true
         }
-        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
-            theLevels[currentLevel.levelNumber].levelCompleted = true
+        if theLevels[currentLevel.levelNumber-1].questDone[0] == true && theLevels[currentLevel.levelNumber-1].questDone[1] == true && theLevels[currentLevel.levelNumber-1].questDone[2] == true{
+            theLevels[currentLevel.levelNumber-1].levelCompleted = true
         }
         // Do any additional setup after loading the view.
+        
+//        if currentLevel.levelNumber == 20 {
+//
+//        }
         
 
        
@@ -134,32 +138,32 @@ class QuestViewController: UIViewController {
     }
     func levelComplete(){
         theLevels[self.currentLevel.levelNumber-1].levelCompleted = true
-        theLevels[self.currentLevel.levelNumber].questDone = [true,true,true]
+        theLevels[self.currentLevel.levelNumber-1].questDone = [true,true,true]
     }
     func setFirstQuestToTrue(){
-        theLevels[self.currentLevel.levelNumber].questDone[0] = true
-        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+        theLevels[self.currentLevel.levelNumber-1].questDone[0] = true
+        if theLevels[currentLevel.levelNumber-1].questDone[0] == true && theLevels[currentLevel.levelNumber-1].questDone[1] == true && theLevels[currentLevel.levelNumber-1].questDone[2] == true{
             theLevels[currentLevel.levelNumber-1].levelCompleted = true
         }
-        print(theLevels[self.currentLevel.levelNumber].questDone[0])
+        print(theLevels[self.currentLevel.levelNumber-1].questDone[0])
         print("THE LEVEL IS:")
         print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
     }
     func setSecondQuestToTrue(){
-        theLevels[self.currentLevel.levelNumber].questDone[1] = true
-        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+        theLevels[self.currentLevel.levelNumber-1].questDone[1] = true
+        if theLevels[currentLevel.levelNumber-1].questDone[0] == true && theLevels[currentLevel.levelNumber-1].questDone[1] == true && theLevels[currentLevel.levelNumber-1].questDone[2] == true{
             theLevels[currentLevel.levelNumber-1].levelCompleted = true
         }
-        print(theLevels[self.currentLevel.levelNumber].questDone[1])
+        print(theLevels[self.currentLevel.levelNumber-1].questDone[1])
         print("THE LEVEL IS:")
         print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
     }
     func setThirdQuestToTrue(){
-        theLevels[self.currentLevel.levelNumber].questDone[2] = true
-        if theLevels[currentLevel.levelNumber].questDone[0] == true && theLevels[currentLevel.levelNumber].questDone[1] == true && theLevels[currentLevel.levelNumber].questDone[2] == true{
+        theLevels[self.currentLevel.levelNumber-1].questDone[2] = true
+        if theLevels[currentLevel.levelNumber-1].questDone[0] == true && theLevels[currentLevel.levelNumber-1].questDone[1] == true && theLevels[currentLevel.levelNumber-1].questDone[2] == true{
             theLevels[currentLevel.levelNumber-1].levelCompleted = true
         }
-        print(theLevels[self.currentLevel.levelNumber].questDone[2])
+        print(theLevels[self.currentLevel.levelNumber-1].questDone[2])
         print("THE LEVEL IS:")
         print(theLevels[self.currentLevel.levelNumber-1].levelCompleted)
     }

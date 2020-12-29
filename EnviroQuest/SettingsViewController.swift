@@ -26,7 +26,7 @@ class SettingsViewController: UIViewController {
         settingsDesciptionOne.text = "Edit your Name / Age"
         settingsOptionTwo.setTitle("Credits -", for: .normal)
         settingsOptionTwo.layer.cornerRadius = 15
-        settingsDesciptionTwo.text = "See the story behind EnviroQuest"
+        settingsDesciptionTwo.text = "Credits for EnviroQuest"
         
         receivedName = UserDefaults.standard.string(forKey: "Username") ?? ""
 
