@@ -788,12 +788,17 @@
                         <outlet property="settingsDescriptionImageView" destination="cgs-nP-W18" id="RF3-55-Oki"/>
                         <outlet property="settingsNameLabel" destination="26t-0F-kwb" id="wB9-h5-tfI"/>
                         <outlet property="settingsNameTextField" destination="fin-8w-CBr" id="V3u-BT-hrx"/>
+                        <outlet property="tgr" destination="KfC-YI-Ck8" id="JRQ-4f-4Zd"/>
                         <outlet property="titleLabel" destination="ta0-SZ-Ftb" id="ENb-rI-1aA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzY-2Q-Iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="CAx-Hf-EPh" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="KfC-YI-Ck8"/>
+                <tapGestureRecognizer id="KfC-YI-Ck8">
+                    <connections>
+                        <action selector="tgrTapped:" destination="As1-uD-zEi" id="58y-Oc-N9T"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6093" y="-276"/>
         </scene>
