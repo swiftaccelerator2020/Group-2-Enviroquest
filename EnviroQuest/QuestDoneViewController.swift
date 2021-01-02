@@ -158,13 +158,13 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     */
 
     @IBAction func exitButtonPressed(_ sender: Any) {
-        print(String(theLevels[currentLevel].questDone[currentQuestNumber]))
+        print(String(theLevels[currentLevel-1].questDone[currentQuestNumber]))
         print(String(currentQuestNumber))
-        theLevels[currentLevel].questDone[currentQuestNumber] = true
-        if theLevels[currentLevel].questDone[0] == true && theLevels[currentLevel].questDone[1] == true && theLevels[currentLevel].questDone[2] == true{
+        theLevels[currentLevel-1].questDone[currentQuestNumber] = true
+        if theLevels[currentLevel-1].questDone[0] == true && theLevels[currentLevel-1].questDone[1] == true && theLevels[currentLevel-1].questDone[2] == true{
             theLevels[currentLevel-1].levelCompleted = true
         }
-        print(theLevels[currentLevel].questDone)
+        print(theLevels[currentLevel-1].questDone)
         Level.saveToFile(levelStats: theLevels)
         unwindToThisView(sender: self)
         

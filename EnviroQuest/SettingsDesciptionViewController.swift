@@ -16,6 +16,7 @@ class SettingsDesciptionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var settingsNameTextField: UITextField!
     @IBOutlet weak var settingsAgeTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet var tgr: UITapGestureRecognizer!
     
     
     
@@ -56,4 +57,13 @@ class SettingsDesciptionViewController: UIViewController, UITextFieldDelegate {
                      , animated: true, completion: nil)
     }
     
+    @IBAction func tgrTapped(_ sender: Any) {
+        settingsNameTextField.resignFirstResponder()
+        settingsAgeTextField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
 }

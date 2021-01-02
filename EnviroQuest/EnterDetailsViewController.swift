@@ -52,6 +52,10 @@ class EnterDetailsViewController: UIViewController, UITextFieldDelegate {
         
         
     }
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return false
+        }
 }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
