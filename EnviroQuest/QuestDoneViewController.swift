@@ -99,10 +99,17 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     var questComplete: Bool!
     var currentLevel: Int!
     var currentQuestNumber:Int!
+    var confirmButtonUsed: Bool!
+  
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if theLevels[currentLevel-1].questDone[currentQuestNumber] == true{
+            confirmButtonUsed = true
+        }else{
+            confirmButtonUsed = false
+        }
         uploadImageButton.layer.cornerRadius = 20
         confirmButton.layer.cornerRadius = 20
         anotherStubbornImageView.contentMode = .scaleAspectFill
@@ -111,6 +118,8 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func confirmButtonPressed(_ sender: Any) {
+        print("confirm button used = \(String(confirmButtonUsed))")
+        if confirmButtonUsed == false{
         var currentGems = UserDefaults.standard.integer(forKey: "gems")
         currentGems += 10
         UserDefaults.standard.setValue(currentGems, forKey: "gems")
@@ -124,7 +133,15 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         self.present(alert, animated: true, completion: nil)
         
         
-        confirmButton.isEnabled = false
+        confirmButtonUsed = true
+        } else if confirmButtonUsed == true{
+            let alert = UIAlertController(title: "Oops!", message: "You have already done this quest! Are you trying to get more gems...\nCreator-chan is disappointed.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                
+              
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
         
         
         
@@ -158,6 +175,8 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
     */
 
     @IBAction func exitButtonPressed(_ sender: Any) {
+        print(String(confirmButtonUsed))
+        if confirmButtonUsed == true{
         print(String(theLevels[currentLevel-1].questDone[currentQuestNumber]))
         print(String(currentQuestNumber))
         theLevels[currentLevel-1].questDone[currentQuestNumber] = true
@@ -167,6 +186,9 @@ class QuestDoneViewController: UIViewController, UIImagePickerControllerDelegate
         print(theLevels[currentLevel-1].questDone)
         Level.saveToFile(levelStats: theLevels)
         unwindToThisView(sender: self)
+        }else{
+            print("welp they be going")
+        }
         
     }
     func unwindToThisView(sender: Any) {
